@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	                    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- Artery Service -->
+	<bean id="loginService" class="com.thunisoft.artery.services.login.shiro.LoginService" />
+	<bean id="sessionService" class="com.thunisoft.artery.services.login.shiro.SessionService" />
+	
+	<!-- 密码策略采用Md5 -->
+	<bean id="credentialsMatcher" class="org.apache.shiro.authc.credential.HashedCredentialsMatcher">
+		<property name="hashAlgorithmName" value="MD5" />
+	</bean>
+	
+	<bean id='permissionResolver' class="com.thunisoft.artery.services.login.shiro.ArteryPermissionResolver"></bean>
+	
+	<bean id="arteryRealm" class="com.thunisoft.artery.services.login.shiro.ArteryRealm">
+		<property name="cachingEnabled" value="true" />
+		<property name="authenticationCachingEnabled" value="false" />
+		<property name="authorizationCachingEnabled" value="true" />
+		<property name="permissionResolver" ref="permissionResolver" />
+		<property name="credentialsMatcher" ref="credentialsMatcher" />
+	</bean>
+	<bean id="uimRealm" class="com.thunisoft.artery.uim.UIMRealm">
+		<property name="cachingEnabled" value="true" />
+		<property name="authenticationCachingEnabled" value="false" />
+		<property name="authorizationCachingEnabled" value="true" />
+		<property name="permissionResolver" ref="permissionResolver" />
+	</bean>
+
+	<bean id="shiroCacheManager" class="com.thunisoft.artery.services.login.shiro.MemoryCacheManager" />
+
+	<bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+		<property name="realms">
+			<list>
+				<ref bean="arteryRealm" />
+				<!-- <ref bean="uimRealm" /> -->
+			</list>
+		</property>
+		<property name="cacheManager" ref="shiroCacheManager"/>
+	</bean>
+
+	<!-- custom filters -->
+	<bean id="authenticationFilter" class="com.thunisoft.artery.services.login.shiro.filters.AuthenticationFilter" />
+	<bean id="anonymousFilter" class="com.thunisoft.artery.services.login.shiro.filters.AnonymousFilter" />
+	<bean id="checkFormRightFilter" class="com.thunisoft.artery.services.login.shiro.filters.CheckFormRightFilter" />
+	
+	<bean id="casFilter" class="org.apache.shiro.cas.CasFilter">
+		<property name="failureUrl" value="/error" />
+	</bean>
+	<!-- Shiro Filter -->
+	<bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+		<property name="securityManager" ref="securityManager" />
+		<property name="filters">
+			<map>
+				<entry key="authentication" value-ref="authenticationFilter" />
+				<entry key="anonymous" value-ref="anonymousFilter" />
+				<entry key="checkFormRight" value-ref="checkFormRightFilter" />
+				<entry key="cas" value-ref="casFilter" />
+			</map>
+		</property>
+		<property name="filterChainDefinitions">
+			<value>
+				/cas = cas 
+				/* = anon 
+				/**/*.js = anon
+				/**/*.css = anon
+				/**/*.png = anon
+				/**/*.jpg = anon
+				/**/*.gif = anon
+				/**/*.swf = anon
+				/**/*.ico = anon
+				/**/*.svg = anon
+				/**/*.eot = anon
+				/**/*.otf = anon
+				/**/*.ttf = anon
+				/**/*.woff = anon
+				/**/*.woff2 = anon
+				/artery/refresh.do = anon
+                <!-- /form/** = anonymous,checkFormRight
+                /** = authentication -->
+				/form/** = anon
+				/** = anon
+			</value>
+		</property>
+	</bean>
+    
+</beans>

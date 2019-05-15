@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CASE:schema xmlns="http://dataexchange.court.gov.cn/2015/data" xmlns:CASE="http://www.w3.org/2001/XMLSchema" targetNamespace="http://dataexchange.court.gov.cn/2015/data" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<CASE:include schemaLocation="_0A_类型_基础.xsd"/>
+	<CASE:complexType name="委托办理确认1">
+		<CASE:sequence>
+		    <CASE:element name="案件标识" type="C20" minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="委托ID" type="C32" minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="确认序号" type="SN" minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="确认结果" type="C1" minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="办理结果退回原因" type="C255" minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="确认日期" type="D" minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="更新时间" 		type="DT" 	minOccurs="1" maxOccurs="1"/> 
+		</CASE:sequence>
+	</CASE:complexType>
+	<CASE:complexType name="委托办理确认">
+		<CASE:sequence>
+			<CASE:element name="委托办理确认" type="委托办理确认1" minOccurs="0" maxOccurs="32768"/>
+		</CASE:sequence>
+	</CASE:complexType>
+	<CASE:element name="实施类案件委托办理确认" type="委托办理确认"/>
+</CASE:schema>

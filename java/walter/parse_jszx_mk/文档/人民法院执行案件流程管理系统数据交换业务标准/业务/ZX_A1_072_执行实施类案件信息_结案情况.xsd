@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CASE:schema   xmlns="http://dataexchange.court.gov.cn/2015/data"
+          xmlns:CASE="http://www.w3.org/2001/XMLSchema"
+     targetNamespace="http://dataexchange.court.gov.cn/2015/data"
+  elementFormDefault="qualified"
+attributeFormDefault="unqualified">
+  
+  <CASE:include schemaLocation="_0A_类型_基础.xsd" />
+  <CASE:complexType name="结案情况1">
+    <CASE:sequence>
+		<CASE:element name="案件标识"				type="ID"	minOccurs="1" maxOccurs="1"/>
+		<CASE:element name="分期执行"				type="B"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="结案案由"				type="SN"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="结案方式"				type="SDM"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="结案日期"				type="D"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="执行完毕事由"			type="SDM"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="不予受理原因"			type="SDM"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="不予执行理由"			type="SDM"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="终结本次执行事由"		type="SDM"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="终结执行事由"			type="SDM"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="销案事由"				type="SDM"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="结案标的金额"          type="M"		minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="实际到位金额"			type="M"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="申请人放弃标的金额"	type="M"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="尚未执行标的金额"		type="M"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="其中迟延履行金"		type="M"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="其中迟延履行利息"		type="M"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="特定物到位情况"		type="C240"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="行为履行情况"			type="C240"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="财产性权益执行情况"	type="C240"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="结案文书"				type="SN"	minOccurs="0" maxOccurs="1"/>		
+		<CASE:element name="实结标志" 				type="C1" 	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="申请人申请终结本次执行程序"	type="C1" 	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="更新时间" 				type="DT" 	minOccurs="1" maxOccurs="1"/>		
+    </CASE:sequence>
+  </CASE:complexType>
+  <CASE:complexType name="结案情况">
+    <CASE:sequence>
+		<CASE:element name="结案情况" type="结案情况1"  minOccurs="0" maxOccurs="1"/>
+	</CASE:sequence>
+  </CASE:complexType>
+  <CASE:element name="实施类案件结案情况" type="结案情况"/>
+</CASE:schema>

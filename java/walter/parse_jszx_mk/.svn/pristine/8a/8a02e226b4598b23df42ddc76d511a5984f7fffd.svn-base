@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CASE:schema  xmlns="http://dataexchange.court.gov.cn/2015/data"
+         xmlns:CASE="http://www.w3.org/2001/XMLSchema"
+   targetNamespace="http://dataexchange.court.gov.cn/2015/data"
+elementFormDefault="qualified">
+
+	<CASE:include schemaLocation="_0A_类型_基础.xsd"/>
+	
+	<CASE:complexType name="人员信息1">
+		<CASE:sequence>
+			<CASE:element name="人员标识"		type="N"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="姓名"			type="C60"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="登录标识"		type="C60"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="性别"			type="SDM"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="出生日期"		type="D"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="民族"			type="SDM"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="文化程度"		type="SDM"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="婚姻状况"		type="SDM"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="身份证号码"		type="C20"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="政治面貌"		type="SDM"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="行政级别"		type="SDM"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="职务"			type="SDM"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="编制"			type="SDM"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="电话号码"		type="C20"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="手机号码"		type="C20"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="有效"			type="B"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="法官等级"		type="SDM"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="法警等级"		type="SDM"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="所在机构"		type="N"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="更新时间" 	    type="DT" 	minOccurs="1" maxOccurs="1"/>
+		</CASE:sequence>
+	</CASE:complexType>
+	<CASE:complexType name="人员信息">
+		<CASE:sequence>
+			<CASE:element name="人员信息" type="人员信息1" minOccurs="0"  maxOccurs="32768"/>
+		</CASE:sequence>
+	</CASE:complexType>
+	<CASE:element name="人员信息" type="人员信息"/>
+</CASE:schema>

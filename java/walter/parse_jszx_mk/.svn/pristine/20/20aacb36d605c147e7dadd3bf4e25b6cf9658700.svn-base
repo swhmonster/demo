@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CASE:schema   xmlns="http://dataexchange.court.gov.cn/2015/data"
+          xmlns:CASE="http://www.w3.org/2001/XMLSchema"
+     targetNamespace="http://dataexchange.court.gov.cn/2015/data"
+  elementFormDefault="qualified"
+attributeFormDefault="unqualified">
+
+  <CASE:include schemaLocation="_0A_类型_基础.xsd" />
+  <CASE:complexType name="对行为的执行1">
+    <CASE:sequence>
+		<CASE:element name="案件标识"			type="ID"				minOccurs="1" maxOccurs="1"/>
+		<CASE:element name="序号_对行为的执行"	type="SN"				minOccurs="1" maxOccurs="1"/>
+		<CASE:element name="行为的内容"			type="C240"				minOccurs="1" maxOccurs="1"/>
+		<CASE:element name="行为履行期限"		type="D"				minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="对行为执行情况"	type="对行为执行情况"	minOccurs="0" maxOccurs="5000"/>
+		<CASE:element name="更新时间" 			type="DT" 				minOccurs="1" maxOccurs="1"/>   
+    </CASE:sequence>
+  </CASE:complexType>
+ 
+	<CASE:complexType name="对行为执行情况">
+		<CASE:sequence>
+			<CASE:element name="序号_对行为的执行情况"	type="SN"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="强制执行日期"			type="D"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="处理结果"				type="SDM"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="执行情况"				type="C200"	minOccurs="0" maxOccurs="1"/>
+		</CASE:sequence>
+	</CASE:complexType>
+  <CASE:complexType name="对行为的执行">
+    <CASE:sequence>
+		<CASE:element name="对行为的执行" type="对行为的执行1"  minOccurs="0" maxOccurs="32768"/>
+	</CASE:sequence>
+  </CASE:complexType>
+  <CASE:element name="实施类案件对行为的执行" type="对行为的执行"/>
+</CASE:schema>

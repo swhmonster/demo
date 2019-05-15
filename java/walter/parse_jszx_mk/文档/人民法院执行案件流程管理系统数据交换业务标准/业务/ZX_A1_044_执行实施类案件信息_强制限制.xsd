@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CASE:schema   xmlns="http://dataexchange.court.gov.cn/2015/data"
+          xmlns:CASE="http://www.w3.org/2001/XMLSchema"
+     targetNamespace="http://dataexchange.court.gov.cn/2015/data"
+  elementFormDefault="qualified"
+attributeFormDefault="unqualified">
+
+  <CASE:include schemaLocation="_0A_类型_基础.xsd" />
+  <CASE:complexType name="强制限制1">
+    <CASE:sequence>
+		<CASE:element name="案件标识"			type="ID"	minOccurs="1" maxOccurs="1"/>
+		<CASE:element name="序号_强制限制"		type="SN"	minOccurs="1" maxOccurs="1"/>
+		<CASE:element name="被限制人"			type="SN"	minOccurs="1" maxOccurs="1"/>
+		<CASE:element name="限制原因"			type="C240"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="限制种类"			type="SDM"	minOccurs="1" maxOccurs="1"/>
+		<CASE:element name="限制内容"			type="C240"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="协执单位"			type="C100"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="开始日期"			type="D"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="强制限制文书"		type="SN"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="解除日期"			type="D"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="解除原因"			type="C240"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="解除强制限制文书"	type="BB"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="复议序号"			type="SN"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="复议申请日期"		type="D"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="复议类型"			type="SDM"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="复议申请书"			type="SN"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="移送复议法院日期"	type="D"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="复议内容"			type="C240"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="复议法院"			type="SN"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="复议结果"			type="SDM"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="答复日期"			type="D"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="处理结果"			type="C240"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="更新时间" 			type="DT" 	minOccurs="1" maxOccurs="1"/>   		
+    </CASE:sequence>
+  </CASE:complexType>
+ <CASE:complexType name="强制限制">
+    <CASE:sequence>
+		<CASE:element name="强制限制" type="强制限制1"  minOccurs="0" maxOccurs="32768"/>
+	</CASE:sequence>
+  </CASE:complexType>
+  <CASE:element name="实施类案件强制限制" type="强制限制"/>
+</CASE:schema>

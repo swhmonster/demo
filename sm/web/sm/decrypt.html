@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>解密</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/decrypt.css" />
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<script type="text/javascript" src="js/decrypt.js" ></script>
+	</head>
+
+	<body>
+		<div class="col-lg-6">
+			<div class="input-group input-center">
+				<input id="t4" type="text" class="form-control" placeholder="请选择需要解密的文件">
+				<span class="input-group-btn">
+        			<input type="file" id="file1" onchange="getFilePath()" style="filter:alpha(opacity=0);opacity:0;width: 0;height: 0;"/>   
+        			<button id="bd1" class="btn btn-default" type="button" onclick="selectFile();">请选择</button>
+      			</span>
+			</div>
+			<div class="input-group input-center">
+				<input type="text" class="form-control" placeholder="请选输入密钥">
+				<span class="input-group-btn">
+        			<button id="bd2" class="btn btn-default" type="button">随机生成</button>
+      			</span>
+			</div>
+			<button id="btn2" type="button" class="btn btn-primary">解密并保存</button>
+		</div>
+	</body>
+
+</html>

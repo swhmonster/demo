@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="GB2312"?>
+<CASE:schema   xmlns="http://dataexchange.court.gov.cn/2009/data"
+          xmlns:CASE="http://www.w3.org/2001/XMLSchema"
+     targetNamespace="http://dataexchange.court.gov.cn/2009/data"
+  elementFormDefault="qualified"
+attributeFormDefault="unqualified">
+
+  <CASE:include schemaLocation="_0_结构_复用.xsd"/>
+  <CASE:include schemaLocation="_3_结构_行政.xsd"/>
+
+  <CASE:complexType name="行政一审">
+    <CASE:sequence>
+      <CASE:element name="案件标识"           type="案件标识"           minOccurs="1" maxOccurs="1"/>
+      <CASE:element name="原审情况"           type="原审情况"           minOccurs="0" maxOccurs="1"/>
+      <CASE:element name="后续情况"           type="后续情况"           minOccurs="0" maxOccurs="1"/>
+      <CASE:element name="收案和立案信息"     type="收案和立案_一审"    minOccurs="0" maxOccurs="1"/>
+      <CASE:element name="管辖处理情况"       type="管辖处理情况"       minOccurs="0" maxOccurs="1"/>
+      <CASE:group    ref="诉讼费承担与救助"                             minOccurs="0" maxOccurs="1"/>
+      <CASE:element name="立案移交和退案"     type="立案移交和退案"     minOccurs="0" maxOccurs="1"/>
+      <CASE:element name="办案期限"           type="办案期限"           minOccurs="0" maxOccurs="1"/>
+      <CASE:element name="案件审理情况"       type="案件审理_一审"      minOccurs="0" maxOccurs="1"/>
+      <CASE:element name="群体或集团诉讼"     type="群体或集团诉讼"     minOccurs="0" maxOccurs="1"/>
+      <CASE:element name="结案情况"           type="结案情况_一审"      minOccurs="0" maxOccurs="1"/>
+      <CASE:element name="上抗诉情况"         type="上抗诉情况"         minOccurs="0" maxOccurs="1"/>
+      <CASE:element name="当事人"             type="当事人"             minOccurs="0" maxOccurs="1"/>
+      <CASE:element name="被告行政行为"       type="被告行政行为"       minOccurs="0" maxOccurs="1"/>
+      <CASE:element name="诉讼保全和先予执行" type="诉讼保全和先予执行" minOccurs="0" maxOccurs="1"/>
+      <CASE:element name="诉讼担保情况"       type="诉讼担保情况"       minOccurs="0" maxOccurs="1"/>
+      <CASE:group    ref="成员与回避"                                   minOccurs="0" maxOccurs="1"/>
+      <CASE:group    ref="证据及鉴定"                                   minOccurs="0" maxOccurs="1"/>
+      <CASE:element name="案件处理情况"       type="案件处理情况"       minOccurs="0" maxOccurs="1"/>
+      <CASE:element name="当事人诉讼活动"     type="诉讼活动_行"        minOccurs="0" maxOccurs="1"/>
+      <CASE:element name="法庭使用记录"       type="法庭使用记录"       minOccurs="0" maxOccurs="1"/>
+      <CASE:element name="妨碍诉讼行为处理"   type="妨碍诉讼行为处理"   minOccurs="0" maxOccurs="1"/>
+      <CASE:group    ref="文书及送达"                                   minOccurs="0" maxOccurs="1"/>
+      <CASE:group    ref="审限事件记录"                                 minOccurs="0" maxOccurs="1"/>
+      <CASE:group    ref="评议与讨论"                                   minOccurs="0" maxOccurs="1"/>
+      <CASE:element name="控辩意见"           type="控辩意见"           minOccurs="0" maxOccurs="1"/>
+      <CASE:element name="司法建议"           type="司法建议"           minOccurs="0" maxOccurs="1"/>
+      <CASE:element name="复议处理"           type="复议处理"           minOccurs="0" maxOccurs="1"/>
+      <CASE:element name="批办记录"           type="批办记录"           minOccurs="0" maxOccurs="1"/>
+      <CASE:element name="程序变更"           type="程序变更"           minOccurs="0" maxOccurs="1"/>
+      <CASE:element name="销案情况"           type="销案情况"           minOccurs="0" maxOccurs="1"/>
+      <CASE:element name="审理阶段"           type="审理阶段"           minOccurs="0" maxOccurs="1"/>
+      <CASE:element name="实体文件"           type="实体文件"           minOccurs="0" maxOccurs="1"/>
+      <CASE:element name="诉讼档案管理"       type="诉讼档案管理"       minOccurs="0" maxOccurs="1"/>
+      <CASE:element name="与案实体名录"       type="与案实体名录"       minOccurs="0" maxOccurs="1"/>
+    </CASE:sequence>
+  </CASE:complexType>
+
+  <CASE:element name="行政一审案件" type="行政一审"/>
+
+</CASE:schema>

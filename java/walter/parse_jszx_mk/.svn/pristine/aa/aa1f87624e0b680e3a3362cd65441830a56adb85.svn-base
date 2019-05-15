@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CASE:schema   xmlns="http://dataexchange.court.gov.cn/2015/data"
+          xmlns:CASE="http://www.w3.org/2001/XMLSchema"
+     targetNamespace="http://dataexchange.court.gov.cn/2015/data"
+  elementFormDefault="qualified"
+attributeFormDefault="unqualified">
+
+	<CASE:include schemaLocation="_0A_类型_基础.xsd" />
+	<CASE:complexType name="司法审计1">
+		<CASE:sequence>
+			<CASE:element name="案件标识"		type="ID"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="序号_司法审计"	type="SN"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="被审计人"		type="SN"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="审计原因"		type="C240"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="开始日期"		type="D"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="审计机构"		type="C100"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="结束日期"		type="D"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="审计结果"		type="C240"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="处理结果"		type="C240"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="执行线索序号"	type="BB"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="查明财产清单"	type="BB"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="审计文书序号"	type="BB"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="申请日期" type="D" minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="是否准许申请" type="B" minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="不准许原因" type="C240" minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="审计费负担人" type="N" minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="被执行人负担理由" type="SDM" minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="负担数额" type="M" minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="是否缴纳" type="C1" minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="更新时间" 		type="DT" 	minOccurs="1" maxOccurs="1"/>   
+		</CASE:sequence>
+	</CASE:complexType>
+	<CASE:complexType name="司法审计">
+		<CASE:sequence>
+			<CASE:element name="司法审计" type="司法审计1"  minOccurs="0" maxOccurs="32768"/>
+		</CASE:sequence>
+	</CASE:complexType>
+	<CASE:element name="实施类案件司法审计" type="司法审计"/>
+</CASE:schema>

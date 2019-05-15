@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CASE:schema   xmlns="http://dataexchange.court.gov.cn/2015/data"
+          xmlns:CASE="http://www.w3.org/2001/XMLSchema"
+     targetNamespace="http://dataexchange.court.gov.cn/2015/data"
+  elementFormDefault="qualified"
+attributeFormDefault="unqualified">
+
+  <CASE:include schemaLocation="_0A_类型_基础.xsd" />
+  <CASE:complexType name="执行异议1">
+    <CASE:sequence>
+		<CASE:element name="案件标识"				type="ID"	minOccurs="1" maxOccurs="1"/>
+		<CASE:element name="序号_执行异议"			type="SN"	minOccurs="1" maxOccurs="1"/>
+		<CASE:element name="提出异议人"				type="C100"	minOccurs="1" maxOccurs="1"/>
+		<CASE:element name="提出异议日期"			type="D"	minOccurs="1" maxOccurs="1"/>
+		<CASE:element name="执行异议类型"			type="SDM"	minOccurs="1" maxOccurs="1"/>
+		<CASE:element name="异议内容"				type="C200"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="裁定日期"				type="D"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="裁定结果"				type="SDM"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="收到反对意见通知日期"	type="D"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="执行异议裁定文书"		type="SN"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="裁定内容"				type="C240"	minOccurs="0" maxOccurs="1"/>		
+		<CASE:element name="申请复议序号"			type="SN"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="复议结果"				type="C240"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="裁定案号"				type="C100"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="承办人意见"				type="C240"	minOccurs="0" maxOccurs="1"/> 
+		<CASE:element name="更新时间" 				type="DT" 	minOccurs="1" maxOccurs="1"/>   
+    </CASE:sequence>
+  </CASE:complexType>
+  <CASE:complexType name="执行异议">
+    <CASE:sequence>
+		<CASE:element name="执行异议" type="执行异议1"  minOccurs="0" maxOccurs="32768"/>
+	 </CASE:sequence>
+  </CASE:complexType>
+  <CASE:element name="实施类案件执行异议" type="执行异议"/>  
+</CASE:schema>

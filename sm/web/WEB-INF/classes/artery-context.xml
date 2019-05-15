@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	                    http://www.springframework.org/schema/beans/spring-beans.xsd
+	                    http://www.springframework.org/schema/context 
+	                    http://www.springframework.org/schema/context/spring-context.xsd">
+	<!-- 自动扫描 -->
+	<context:component-scan base-package="com.thunisoft.artery" >
+		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller" />
+	</context:component-scan>
+	<context:component-scan base-package="com.thunisoft.summer" >
+		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller" />
+	</context:component-scan>
+
+	<bean id="arterySpringContext" class="com.thunisoft.artery.ArterySpringContext" />
+	
+	<!--当不需要数据源时可以删除原数据源，启用本注释配置  --> 
+	<bean id="dataSource" class="com.thunisoft.artery.services.datasource.ArteryDataSourceNoDb" />
+	 
+	<bean id="transactionManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	<!-- MyBatis -->
+	<bean id="mybatisSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="plugins">
+			<array>
+				<bean class="com.thunisoft.artery.services.datasource.interceptor.TagParserInterceptor"/>
+				<bean class="com.thunisoft.artery.parse.dataset.mybatis.ArteryInterceptor"/>
+			</array>
+		</property>
+	</bean>
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<property name="basePackage" value="com.thunisoft.artery.service.organ.impl.mapper,
+		com.thunisoft.artery.service.role.impl.mapper,
+		com.thunisoft.artery.module.schedule.impl.mapper,
+		com.thunisoft.artery.writ.mapper,
+		com.thunisoft.artery.service.right.impl.mapper" />
+		<property name="sqlSessionFactoryBeanName" value="mybatisSessionFactory" />
+	</bean>
+	<!-- 项目页面配置 -->
+	<bean id="urlConfig" class="com.thunisoft.artery.services.config.UrlConfig">
+		<property name="index" value="/console"></property>
+		<property name="login" value="/artery/pub/login/login.jsp"></property>
+		<property name="logout" value="/index"></property>
+		<property name="SSOServer" value=""></property>
+		<property name="error" value="/artery/pub/jsp/error.jsp"></property>
+	</bean>
+	<!-- 文件上传 单位：bytes-->
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="defaultEncoding" value="utf-8"></property>
+		<property name="maxUploadSize" value="2147483648"></property>
+		<property name="maxInMemorySize" value="40960"></property>
+	</bean>
+	<!-- *.properties配置文件加载 -->
+	<bean id="arteryConfigProperties" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+		<property name="ignoreResourceNotFound" value="true" />
+		<property name="locations">
+			<list>
+				<value>classpath*:/ptconfig/*/props/config.properties</value>
+				<value>classpath:/props/config.properties</value>
+				<value>classpath:/props/local.properties</value>
+			</list>
+		</property>
+	</bean>
+	<!-- 国际化-->
+	<bean id="messageSource" class="com.thunisoft.artery.support.message.ArteryResourceBundleMessageSource">
+        <property name="basenames">
+            <list>
+                <value>classpath*:/ptconfig/*/props/message</value>
+                <value>classpath:/props/message</value>
+            </list>
+        </property>
+        <property name="useCodeAsDefaultMessage" value="true"/>
+        <property name="defaultEncoding" value="UTF-8"/>
+        <property name="cacheSeconds" value="-1"/>
+    </bean>
+</beans>

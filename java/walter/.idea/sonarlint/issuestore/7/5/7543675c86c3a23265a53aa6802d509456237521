@@ -1,0 +1,36 @@
+
+Osquid:S1141"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
+Gsquid:S1481"2Remove this unused "typeElement10" local variable.(ý£à€
+M
+squid:S106"9Replace this use of System.out or System.err by a logger.(³ë…¨
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(µ²àÓþÿÿÿÿ
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ô«Í¦úÿÿÿÿ
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(€œ£¦úÿÿÿÿ
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+Ksquid:S1481"1Remove this unused "typeElement4" local variable.(•ð›«øÿÿÿÿ
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(äøº
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(·µš…
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(á‘ÿÿÿÿÿ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ù›ªåþÿÿÿÿ
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(ý™øøÿÿÿÿ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ó·†öüÿÿÿÿ
+Gsquid:S1481"2Remove this unused "typeElement12" local variable.(ÈÎ´˜
+Vsquid:S1075"ARefactor your code to get this URI from a customizable parameter.(ñâ‰ó
+Ksquid:S1481"1Remove this unused "typeElement8" local variable.(úõöÿüÿÿÿÿ
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(®ŽÛÖûÿÿÿÿ
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÈÂá÷
+Lsquid:S1481"2Remove this unused "typeElement13" local variable.(òœÏšøÿÿÿÿ
+\squid:S3027"GPut single-quotes around '\\' to use the faster "indexOf(char)" method.(ô¤ã“
+jsquid:S2095"PUse try-with-resources or close this "OutputStreamWriter" in a "finally" clause.(÷¹Ï¾ûÿÿÿÿ
+M
+squid:S106"9Replace this use of System.out or System.err by a logger.(Íêî†
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(÷Ôðôøÿÿÿÿ
+^squid:S1192"IDefine a constant instead of duplicating this literal "Property" 3 times.(ÙÚ…
+8squid:S1148"#Use a logger to log this exception.(Ç’Çê
+Lsquid:S1481"2Remove this unused "typeElement11" local variable.(û¡«¤ýÿÿÿÿ

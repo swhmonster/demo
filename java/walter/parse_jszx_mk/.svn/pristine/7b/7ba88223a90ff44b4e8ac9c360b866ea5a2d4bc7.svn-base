@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CASE:schema   xmlns="http://dataexchange.court.gov.cn/2015/data"
+          xmlns:CASE="http://www.w3.org/2001/XMLSchema"
+     targetNamespace="http://dataexchange.court.gov.cn/2015/data"
+  elementFormDefault="qualified"
+attributeFormDefault="unqualified">
+
+
+  <CASE:include schemaLocation="_0A_类型_基础.xsd" />
+  <CASE:complexType name="罚款1">
+    <CASE:sequence>
+		<CASE:element name="案件标识"			type="ID"	minOccurs="1" maxOccurs="1"/>
+		<CASE:element name="序号_罚款"			type="SN"	minOccurs="1" maxOccurs="1"/>
+		<CASE:element name="被罚款人"			type="SN"	minOccurs="1" maxOccurs="1"/>
+		<CASE:element name="罚款原因"			type="SDM"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="发现日期"			type="D"	minOccurs="1" maxOccurs="1"/>
+		<CASE:element name="罚款日期"			type="D"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="罚款金额"			type="M"	minOccurs="1" maxOccurs="1"/>
+		<CASE:element name="罚款文书"			type="BB"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="履行日期"			type="D"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="履行金额"			type="M"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="复议序号"			type="SN"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="复议申请日期"		type="D"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="复议类型"			type="SDM"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="复议内容"			type="C240"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="复议申请书"			type="TN"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="复议法院"			type="SN"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="移送复议法院日期"	type="D"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="复议结果"			type="SDM"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="复议答复日期"		type="D"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="对复议后续处理"	type="C240"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="复议决定书"			type="SN"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="更新时间" 			type="DT" 	minOccurs="1" maxOccurs="1"/>   
+    </CASE:sequence>
+  </CASE:complexType>
+  <CASE:complexType name="罚款">
+    <CASE:sequence>
+		<CASE:element name="罚款" type="罚款1"  minOccurs="0" maxOccurs="32768"/>
+	</CASE:sequence>
+  </CASE:complexType>
+  <CASE:element name="实施类案件罚款" type="罚款"/>
+</CASE:schema>

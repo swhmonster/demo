@@ -1,0 +1,459 @@
+2017-07-24 13:51:30 [INFO ] [main ] c.t.p.ConfigManager - Start load xml mapping config
+2017-07-24 13:51:31 [INFO ] [main ] c.t.p.ConfigManager - Load xml mapping config from src/config/tabledesc end, cost :   1s 287ms
+2017-07-24 13:51:31 [INFO ] [main ] c.t.p.ConfigManager - Start load xsd file...
+2017-07-24 13:51:34 [INFO ] [main ] c.t.p.ConfigManager - Load xsd file from src/config/xsd/merged end, cost :   2s 945ms
+2017-07-24 13:51:34 [INFO ] [main ] c.t.p.ConfigManager - Loadding Converters from converts.xml
+2017-07-24 13:51:34 [INFO ] [main ] c.t.p.ConfigManager - Load Converters end, cost :    6ms
+2017-07-24 13:51:34 [INFO ] [main ] c.t.p.ConfigManager - Loadding propSetters from propSetters.xml
+2017-07-24 13:51:34 [INFO ] [main ] c.t.p.ConfigManager - Load propSetters end, cost :    2ms
+2017-07-24 13:51:34 [INFO ] [main ] c.t.p.ConfigManager - Loadding insDelProcs from insDelProcs.xml
+2017-07-24 13:51:34 [INFO ] [main ] c.t.p.ConfigManager - Load insDelProcs end, cost :    1ms
+2017-07-24 13:51:34 [INFO ] [main ] c.t.p.ConfigManager - Loadding delProcs from delProcs.xml
+2017-07-24 13:51:34 [INFO ] [main ] c.t.p.ConfigManager - Load delProcs end, cost :    1ms
+2017-07-24 13:51:34 [INFO ] [main ] c.t.p.ConfigManager - Loadding loadIncrTab from incrTables
+2017-07-24 13:51:34 [INFO ] [main ] c.t.p.ConfigManager - Load loadIncrTab end, cost :    1ms
+2017-07-24 13:51:37 [INFO ] [main ] c.t.p.MainProcess - 加载配置完毕，耗时：  7s 236ms
+2017-07-24 13:51:37 [INFO ] [main ] c.t.p.Executor - 初始化完成，解析线程:4, 保存线程:5, 队列:50, 拆分:5 
+数据文件路径：D:/09imp/data
+2017-07-24 13:51:37 [INFO ] [main ] c.t.p.Executor - 任务状态: 0/0/0/0/0/0/0/0/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  14ms
+2017-07-24 13:51:37 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:51:37 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:51:42 [INFO ] [main ] c.t.p.Executor - 任务状态: 0/0/0/0/0/0/0/0/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  5s  15ms
+2017-07-24 13:51:42 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 1
+2017-07-24 13:51:42 [INFO ] [px-1 ] c.t.p.p.ParseXmlService - [JG_3350_20170715115246.zip], 解析完毕, 耗时： 350ms
+2017-07-24 13:51:43 [INFO ] [sd-1 ] c.t.p.p.SaveDataService - [JG_3350_20170715115246.zip]-[0/0], 删除完毕, 耗时： 251ms
+2017-07-24 13:51:47 [INFO ] [main ] c.t.p.Executor - 任务状态: 1/0/0/0/0/0/1/0/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时: 10s  16ms
+2017-07-24 13:51:47 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:51:52 [INFO ] [main ] c.t.p.Executor - 任务状态: 1/0/0/0/0/0/1/0/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时: 15s  16ms
+2017-07-24 13:51:52 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:51:57 [INFO ] [main ] c.t.p.Executor - 任务状态: 1/0/0/0/0/0/1/0/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时: 20s  17ms
+2017-07-24 13:51:57 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:52:02 [INFO ] [main ] c.t.p.Executor - 任务状态: 1/0/0/0/0/0/1/0/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时: 25s  17ms
+2017-07-24 13:52:02 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:52:07 [INFO ] [main ] c.t.p.Executor - 任务状态: 1/0/0/0/0/0/1/0/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时: 30s  18ms
+2017-07-24 13:52:07 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:52:12 [INFO ] [main ] c.t.p.Executor - 任务状态: 1/0/0/0/0/0/1/0/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时: 35s  20ms
+2017-07-24 13:52:12 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:52:16 [INFO ] [sd-1 ] c.t.p.p.SaveDataService - [JG_3350_20170715115246.zip]-[0/0], 保存数据完毕, 表个数：2, 记录数：897, 耗时： 32s 808ms
+2017-07-24 13:52:16 [INFO ] [log-4] c.t.p.p.DbLogService - [JG_3350_20170715115246.zip], 任务成功, 任务编号：[8480ea24e2d5412caa704117ae985971], 耗时：  37ms
+2017-07-24 13:52:16 [INFO ] [log-2] c.t.p.p.DbLogService - [JG_3350_20170715115246.zip], 保存xml日志完毕, 耗时：  92ms
+2017-07-24 13:52:17 [INFO ] [main ] c.t.p.Executor - 任务状态: 1/0/0/0/0/0/0/1/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时: 40s  35ms
+2017-07-24 13:52:17 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:52:22 [INFO ] [main ] c.t.p.Executor - 任务状态: 1/0/0/0/0/0/0/1/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时: 45s  36ms
+2017-07-24 13:52:22 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 1
+2017-07-24 13:52:23 [INFO ] [px-2 ] c.t.p.p.ParseXmlService - [JG_3350_20170715115246.zip], 解析完毕, 耗时： 211ms
+2017-07-24 13:52:23 [INFO ] [sd-2 ] c.t.p.p.SaveDataService - [JG_3350_20170715115246.zip]-[0/0], 删除完毕, 耗时：  82ms
+2017-07-24 13:52:27 [INFO ] [main ] c.t.p.Executor - 任务状态: 2/0/0/0/0/0/1/1/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时: 50s  37ms
+2017-07-24 13:52:27 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:52:32 [INFO ] [main ] c.t.p.Executor - 任务状态: 2/0/0/0/0/0/1/1/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时: 55s  38ms
+2017-07-24 13:52:33 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 1
+2017-07-24 13:52:33 [INFO ] [px-3 ] c.t.p.p.ParseXmlService - [JG_3350_20170715115246.zip], 解析完毕, 耗时：  85ms
+2017-07-24 13:52:33 [INFO ] [px-3 ] c.t.p.Executor - [JG_3350_20170715115246.zip], 推迟保存数据库, 冲突XML:[JG_3350.xml], 冲突zip:[JG_3350_20170715115246.zip]
+2017-07-24 13:52:37 [INFO ] [main ] c.t.p.Executor - 任务状态: 3/0/0/0/1/0/1/1/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  1m  0s  38ms
+2017-07-24 13:52:38 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:52:42 [INFO ] [main ] c.t.p.Executor - 任务状态: 3/0/0/0/1/0/1/1/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  1m  5s  40ms
+2017-07-24 13:52:43 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 1
+2017-07-24 13:52:43 [INFO ] [px-4 ] c.t.p.p.ParseXmlService - [JG_3350_20170715115246.zip], 解析完毕, 耗时：  72ms
+2017-07-24 13:52:43 [INFO ] [px-4 ] c.t.p.Executor - [JG_3350_20170715115246.zip], 推迟保存数据库, 冲突XML:[JG_3350.xml], 冲突zip:[JG_3350_20170715115246.zip]
+2017-07-24 13:52:47 [INFO ] [main ] c.t.p.Executor - 任务状态: 4/0/0/0/2/0/1/1/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  1m 10s  40ms
+2017-07-24 13:52:48 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:52:52 [INFO ] [main ] c.t.p.Executor - 任务状态: 4/0/0/0/2/0/1/1/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  1m 15s  41ms
+2017-07-24 13:52:53 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:52:55 [INFO ] [sd-2 ] c.t.p.p.SaveDataService - [JG_3350_20170715115246.zip]-[0/0], 保存数据完毕, 表个数：2, 记录数：897, 耗时： 32s 217ms
+2017-07-24 13:52:55 [INFO ] [log-5] c.t.p.p.DbLogService - [JG_3350_20170715115246.zip], 保存xml日志完毕, 耗时：  36ms
+2017-07-24 13:52:55 [INFO ] [log-7] c.t.p.p.DbLogService - [JG_3350_20170715115246.zip], 任务成功, 任务编号：[bced72485c384384b935768ac16c3162], 耗时：  36ms
+2017-07-24 13:52:55 [INFO ] [sd-3 ] c.t.p.p.SaveDataService - [JG_3350_20170715115246.zip]-[0/0], 删除完毕, 耗时：  96ms
+2017-07-24 13:52:57 [INFO ] [main ] c.t.p.Executor - 任务状态: 4/0/0/0/1/0/1/2/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  1m 20s  42ms
+2017-07-24 13:52:58 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:53:23 [INFO ] [main ] c.t.p.ConfigManager - Start load xml mapping config
+2017-07-24 13:53:24 [INFO ] [main ] c.t.p.ConfigManager - Load xml mapping config from src/config/tabledesc end, cost :  943ms
+2017-07-24 13:53:24 [INFO ] [main ] c.t.p.ConfigManager - Start load xsd file...
+2017-07-24 13:53:26 [INFO ] [main ] c.t.p.ConfigManager - Load xsd file from src/config/xsd/merged end, cost :   2s 662ms
+2017-07-24 13:53:26 [INFO ] [main ] c.t.p.ConfigManager - Loadding Converters from converts.xml
+2017-07-24 13:53:26 [INFO ] [main ] c.t.p.ConfigManager - Load Converters end, cost :    6ms
+2017-07-24 13:53:26 [INFO ] [main ] c.t.p.ConfigManager - Loadding propSetters from propSetters.xml
+2017-07-24 13:53:26 [INFO ] [main ] c.t.p.ConfigManager - Load propSetters end, cost :    2ms
+2017-07-24 13:53:26 [INFO ] [main ] c.t.p.ConfigManager - Loadding insDelProcs from insDelProcs.xml
+2017-07-24 13:53:26 [INFO ] [main ] c.t.p.ConfigManager - Load insDelProcs end, cost :    1ms
+2017-07-24 13:53:26 [INFO ] [main ] c.t.p.ConfigManager - Loadding delProcs from delProcs.xml
+2017-07-24 13:53:26 [INFO ] [main ] c.t.p.ConfigManager - Load delProcs end, cost :    1ms
+2017-07-24 13:53:26 [INFO ] [main ] c.t.p.ConfigManager - Loadding loadIncrTab from incrTables
+2017-07-24 13:53:26 [INFO ] [main ] c.t.p.ConfigManager - Load loadIncrTab end, cost :    1ms
+2017-07-24 13:53:27 [INFO ] [main ] c.t.p.MainProcess - 加载配置完毕，耗时：  4s 138ms
+2017-07-24 13:53:27 [INFO ] [main ] c.t.p.Executor - 初始化完成，解析线程:4, 保存线程:5, 队列:50, 拆分:5 
+数据文件路径：D:/09imp/data
+2017-07-24 13:53:27 [INFO ] [main ] c.t.p.Executor - 任务状态: 0/0/0/0/0/0/0/0/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:   2ms
+2017-07-24 13:53:27 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 2
+2017-07-24 13:53:27 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:53:27 [INFO ] [px-1 ] c.t.p.p.ParseXmlService - [JG_3350_20170715115246.zip], 解析完毕, 耗时： 553ms
+2017-07-24 13:53:27 [INFO ] [px-2 ] c.t.p.p.ParseXmlService - [JG_3350_20170715115246.zip], 解析完毕, 耗时： 604ms
+2017-07-24 13:53:27 [INFO ] [px-2 ] c.t.p.Executor - [JG_3350_20170715115246.zip], 推迟保存数据库, 冲突XML:[JG_3350.xml], 冲突zip:[JG_3350_20170715115246.zip]
+2017-07-24 13:53:28 [INFO ] [sd-1 ] c.t.p.p.SaveDataService - [JG_3350_20170715115246.zip]-[0/0], 删除完毕, 耗时： 102ms
+2017-07-24 13:53:32 [INFO ] [main ] c.t.p.Executor - 任务状态: 2/0/0/0/1/0/1/0/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  5s   3ms
+2017-07-24 13:53:32 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:53:37 [INFO ] [main ] c.t.p.Executor - 任务状态: 2/0/0/0/1/0/1/0/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时: 10s   3ms
+2017-07-24 13:53:37 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:53:42 [INFO ] [main ] c.t.p.Executor - 任务状态: 2/0/0/0/1/0/1/0/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时: 15s   6ms
+2017-07-24 13:53:42 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 1
+2017-07-24 13:53:42 [INFO ] [px-3 ] c.t.p.p.ParseXmlService - [JG_3350_20170715115246.zip], 解析完毕, 耗时：  86ms
+2017-07-24 13:53:42 [INFO ] [px-3 ] c.t.p.Executor - [JG_3350_20170715115246.zip], 推迟保存数据库, 冲突XML:[JG_3350.xml], 冲突zip:[JG_3350_20170715115246.zip]
+2017-07-24 13:53:47 [INFO ] [main ] c.t.p.Executor - 任务状态: 3/0/0/0/2/0/1/0/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时: 20s   7ms
+2017-07-24 13:53:47 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:53:52 [INFO ] [main ] c.t.p.ConfigManager - Start load xml mapping config
+2017-07-24 13:53:53 [INFO ] [main ] c.t.p.ConfigManager - Load xml mapping config from src/config/tabledesc end, cost :  940ms
+2017-07-24 13:53:53 [INFO ] [main ] c.t.p.ConfigManager - Start load xsd file...
+2017-07-24 13:53:56 [INFO ] [main ] c.t.p.ConfigManager - Load xsd file from src/config/xsd/merged end, cost :   2s 565ms
+2017-07-24 13:53:56 [INFO ] [main ] c.t.p.ConfigManager - Loadding Converters from converts.xml
+2017-07-24 13:53:56 [INFO ] [main ] c.t.p.ConfigManager - Load Converters end, cost :    5ms
+2017-07-24 13:53:56 [INFO ] [main ] c.t.p.ConfigManager - Loadding propSetters from propSetters.xml
+2017-07-24 13:53:56 [INFO ] [main ] c.t.p.ConfigManager - Load propSetters end, cost :    2ms
+2017-07-24 13:53:56 [INFO ] [main ] c.t.p.ConfigManager - Loadding insDelProcs from insDelProcs.xml
+2017-07-24 13:53:56 [INFO ] [main ] c.t.p.ConfigManager - Load insDelProcs end, cost :    1ms
+2017-07-24 13:53:56 [INFO ] [main ] c.t.p.ConfigManager - Loadding delProcs from delProcs.xml
+2017-07-24 13:53:56 [INFO ] [main ] c.t.p.ConfigManager - Load delProcs end, cost :    1ms
+2017-07-24 13:53:56 [INFO ] [main ] c.t.p.ConfigManager - Loadding loadIncrTab from incrTables
+2017-07-24 13:53:56 [INFO ] [main ] c.t.p.ConfigManager - Load loadIncrTab end, cost :    1ms
+2017-07-24 13:53:57 [INFO ] [main ] c.t.p.MainProcess - 加载配置完毕，耗时：  4s  73ms
+2017-07-24 13:53:57 [INFO ] [main ] c.t.p.Executor - 初始化完成，解析线程:4, 保存线程:5, 队列:50, 拆分:5 
+数据文件路径：D:/09imp/data
+2017-07-24 13:53:57 [INFO ] [main ] c.t.p.Executor - 任务状态: 0/0/0/0/0/0/0/0/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:0ms
+2017-07-24 13:53:57 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 3
+2017-07-24 13:53:57 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:53:57 [INFO ] [px-2 ] c.t.p.p.ParseXmlService - [JG_3350_20170715115246.zip], 解析完毕, 耗时： 590ms
+2017-07-24 13:53:57 [INFO ] [px-3 ] c.t.p.p.ParseXmlService - [JG_3350_20170715115246.zip], 解析完毕, 耗时： 631ms
+2017-07-24 13:53:57 [INFO ] [px-1 ] c.t.p.p.ParseXmlService - [JG_3350_20170715115246.zip], 解析完毕, 耗时： 631ms
+2017-07-24 13:53:57 [INFO ] [px-3 ] c.t.p.Executor - [JG_3350_20170715115246.zip], 推迟保存数据库, 冲突XML:[JG_3350.xml], 冲突zip:[JG_3350_20170715115246.zip]
+2017-07-24 13:53:57 [INFO ] [px-1 ] c.t.p.Executor - [JG_3350_20170715115246.zip], 推迟保存数据库, 冲突XML:[JG_3350.xml], 冲突zip:[JG_3350_20170715115246.zip]
+2017-07-24 13:53:57 [INFO ] [sd-1 ] c.t.p.p.SaveDataService - [JG_3350_20170715115246.zip]-[0/0], 删除完毕, 耗时：  97ms
+2017-07-24 13:54:04 [INFO ] [main ] c.t.p.ConfigManager - Start load xml mapping config
+2017-07-24 13:54:05 [INFO ] [main ] c.t.p.ConfigManager - Load xml mapping config from src/config/tabledesc end, cost :  952ms
+2017-07-24 13:54:05 [INFO ] [main ] c.t.p.ConfigManager - Start load xsd file...
+2017-07-24 13:54:08 [INFO ] [main ] c.t.p.ConfigManager - Load xsd file from src/config/xsd/merged end, cost :   2s 656ms
+2017-07-24 13:54:08 [INFO ] [main ] c.t.p.ConfigManager - Loadding Converters from converts.xml
+2017-07-24 13:54:08 [INFO ] [main ] c.t.p.ConfigManager - Load Converters end, cost :    8ms
+2017-07-24 13:54:08 [INFO ] [main ] c.t.p.ConfigManager - Loadding propSetters from propSetters.xml
+2017-07-24 13:54:08 [INFO ] [main ] c.t.p.ConfigManager - Load propSetters end, cost :    3ms
+2017-07-24 13:54:08 [INFO ] [main ] c.t.p.ConfigManager - Loadding insDelProcs from insDelProcs.xml
+2017-07-24 13:54:08 [INFO ] [main ] c.t.p.ConfigManager - Load insDelProcs end, cost :    1ms
+2017-07-24 13:54:08 [INFO ] [main ] c.t.p.ConfigManager - Loadding delProcs from delProcs.xml
+2017-07-24 13:54:08 [INFO ] [main ] c.t.p.ConfigManager - Load delProcs end, cost :    1ms
+2017-07-24 13:54:08 [INFO ] [main ] c.t.p.ConfigManager - Loadding loadIncrTab from incrTables
+2017-07-24 13:54:08 [INFO ] [main ] c.t.p.ConfigManager - Load loadIncrTab end, cost :    1ms
+2017-07-24 13:54:09 [INFO ] [main ] c.t.p.MainProcess - 加载配置完毕，耗时：  4s 143ms
+2017-07-24 13:54:09 [INFO ] [main ] c.t.p.Executor - 初始化完成，解析线程:4, 保存线程:5, 队列:50, 拆分:5 
+数据文件路径：D:/09imp/data
+2017-07-24 13:54:09 [INFO ] [main ] c.t.p.Executor - 任务状态: 0/0/0/0/0/0/0/0/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:   1ms
+2017-07-24 13:54:09 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 3
+2017-07-24 13:54:09 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:54:09 [INFO ] [px-2 ] c.t.p.p.ParseXmlService - [JG_3350_20170715115246.zip], 解析完毕, 耗时： 565ms
+2017-07-24 13:54:09 [INFO ] [px-3 ] c.t.p.p.ParseXmlService - [JG_3350_20170715115246.zip], 解析完毕, 耗时： 570ms
+2017-07-24 13:54:09 [INFO ] [px-3 ] c.t.p.Executor - [JG_3350_20170715115246.zip], 推迟保存数据库, 冲突XML:[JG_3350.xml], 冲突zip:[JG_3350_20170715115246.zip]
+2017-07-24 13:54:09 [INFO ] [px-1 ] c.t.p.p.ParseXmlService - [JG_3350_20170715115246.zip], 解析完毕, 耗时： 574ms
+2017-07-24 13:54:09 [INFO ] [px-1 ] c.t.p.Executor - [JG_3350_20170715115246.zip], 推迟保存数据库, 冲突XML:[JG_3350.xml], 冲突zip:[JG_3350_20170715115246.zip]
+2017-07-24 13:54:09 [INFO ] [sd-1 ] c.t.p.p.SaveDataService - [JG_3350_20170715115246.zip]-[0/0], 删除完毕, 耗时： 102ms
+2017-07-24 13:54:15 [INFO ] [main ] c.t.p.ConfigManager - Start load xml mapping config
+2017-07-24 13:54:16 [INFO ] [main ] c.t.p.ConfigManager - Load xml mapping config from src/config/tabledesc end, cost :  990ms
+2017-07-24 13:54:16 [INFO ] [main ] c.t.p.ConfigManager - Start load xsd file...
+2017-07-24 13:54:19 [INFO ] [main ] c.t.p.ConfigManager - Load xsd file from src/config/xsd/merged end, cost :   2s 733ms
+2017-07-24 13:54:19 [INFO ] [main ] c.t.p.ConfigManager - Loadding Converters from converts.xml
+2017-07-24 13:54:19 [INFO ] [main ] c.t.p.ConfigManager - Load Converters end, cost :    5ms
+2017-07-24 13:54:19 [INFO ] [main ] c.t.p.ConfigManager - Loadding propSetters from propSetters.xml
+2017-07-24 13:54:19 [INFO ] [main ] c.t.p.ConfigManager - Load propSetters end, cost :    2ms
+2017-07-24 13:54:19 [INFO ] [main ] c.t.p.ConfigManager - Loadding insDelProcs from insDelProcs.xml
+2017-07-24 13:54:19 [INFO ] [main ] c.t.p.ConfigManager - Load insDelProcs end, cost :    1ms
+2017-07-24 13:54:19 [INFO ] [main ] c.t.p.ConfigManager - Loadding delProcs from delProcs.xml
+2017-07-24 13:54:19 [INFO ] [main ] c.t.p.ConfigManager - Load delProcs end, cost :    1ms
+2017-07-24 13:54:19 [INFO ] [main ] c.t.p.ConfigManager - Loadding loadIncrTab from incrTables
+2017-07-24 13:54:19 [INFO ] [main ] c.t.p.ConfigManager - Load loadIncrTab end, cost :    1ms
+2017-07-24 13:54:20 [INFO ] [main ] c.t.p.MainProcess - 加载配置完毕，耗时：  4s 278ms
+2017-07-24 13:54:20 [INFO ] [main ] c.t.p.Executor - 初始化完成，解析线程:4, 保存线程:5, 队列:50, 拆分:5 
+数据文件路径：D:/09imp/data
+2017-07-24 13:54:20 [INFO ] [main ] c.t.p.Executor - 任务状态: 0/0/0/0/0/0/0/0/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:0ms
+2017-07-24 13:54:20 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 3
+2017-07-24 13:54:20 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:54:20 [INFO ] [px-2 ] c.t.p.p.ParseXmlService - [JG_3350_20170715115246.zip], 解析完毕, 耗时： 571ms
+2017-07-24 13:54:20 [INFO ] [px-3 ] c.t.p.p.ParseXmlService - [JG_3350_20170715115246.zip], 解析完毕, 耗时： 574ms
+2017-07-24 13:54:20 [INFO ] [px-2 ] c.t.p.Executor - [JG_3350_20170715115246.zip], 推迟保存数据库, 冲突XML:[JG_3350.xml], 冲突zip:[JG_3350_20170715115246.zip]
+2017-07-24 13:54:20 [INFO ] [px-1 ] c.t.p.p.ParseXmlService - [JG_3350_20170715115246.zip], 解析完毕, 耗时： 583ms
+2017-07-24 13:54:20 [INFO ] [px-1 ] c.t.p.Executor - [JG_3350_20170715115246.zip], 推迟保存数据库, 冲突XML:[JG_3350.xml], 冲突zip:[JG_3350_20170715115246.zip]
+2017-07-24 13:54:20 [INFO ] [sd-1 ] c.t.p.p.SaveDataService - [JG_3350_20170715115246.zip]-[0/0], 删除完毕, 耗时：  99ms
+2017-07-24 13:54:25 [INFO ] [main ] c.t.p.Executor - 任务状态: 3/0/0/0/2/0/1/0/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  5s   1ms
+2017-07-24 13:54:25 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:54:28 [INFO ] [main ] c.t.p.ConfigManager - Start load xml mapping config
+2017-07-24 13:54:29 [INFO ] [main ] c.t.p.ConfigManager - Load xml mapping config from src/config/tabledesc end, cost :  999ms
+2017-07-24 13:54:29 [INFO ] [main ] c.t.p.ConfigManager - Start load xsd file...
+2017-07-24 13:54:32 [INFO ] [main ] c.t.p.ConfigManager - Load xsd file from src/config/xsd/merged end, cost :   2s 578ms
+2017-07-24 13:54:32 [INFO ] [main ] c.t.p.ConfigManager - Loadding Converters from converts.xml
+2017-07-24 13:54:32 [INFO ] [main ] c.t.p.ConfigManager - Load Converters end, cost :    5ms
+2017-07-24 13:54:32 [INFO ] [main ] c.t.p.ConfigManager - Loadding propSetters from propSetters.xml
+2017-07-24 13:54:32 [INFO ] [main ] c.t.p.ConfigManager - Load propSetters end, cost :    2ms
+2017-07-24 13:54:32 [INFO ] [main ] c.t.p.ConfigManager - Loadding insDelProcs from insDelProcs.xml
+2017-07-24 13:54:32 [INFO ] [main ] c.t.p.ConfigManager - Load insDelProcs end, cost :    1ms
+2017-07-24 13:54:32 [INFO ] [main ] c.t.p.ConfigManager - Loadding delProcs from delProcs.xml
+2017-07-24 13:54:32 [INFO ] [main ] c.t.p.ConfigManager - Load delProcs end, cost :    1ms
+2017-07-24 13:54:32 [INFO ] [main ] c.t.p.ConfigManager - Loadding loadIncrTab from incrTables
+2017-07-24 13:54:32 [INFO ] [main ] c.t.p.ConfigManager - Load loadIncrTab end, cost :    1ms
+2017-07-24 13:54:33 [INFO ] [main ] c.t.p.MainProcess - 加载配置完毕，耗时：  4s  93ms
+2017-07-24 13:54:33 [INFO ] [main ] c.t.p.Executor - 初始化完成，解析线程:4, 保存线程:5, 队列:50, 拆分:5 
+数据文件路径：D:/09imp/data
+2017-07-24 13:54:33 [INFO ] [main ] c.t.p.Executor - 任务状态: 0/0/0/0/0/0/0/0/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:0ms
+2017-07-24 13:54:33 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 3
+2017-07-24 13:54:33 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:54:33 [INFO ] [px-1 ] c.t.p.p.ParseXmlService - [JG_3350_20170715115246.zip], 解析完毕, 耗时： 539ms
+2017-07-24 13:54:33 [INFO ] [px-3 ] c.t.p.p.ParseXmlService - [JG_3350_20170715115246.zip], 解析完毕, 耗时： 545ms
+2017-07-24 13:54:33 [INFO ] [px-3 ] c.t.p.Executor - [JG_3350_20170715115246.zip], 推迟保存数据库, 冲突XML:[JG_3350.xml], 冲突zip:[JG_3350_20170715115246.zip]
+2017-07-24 13:54:33 [INFO ] [px-2 ] c.t.p.p.ParseXmlService - [JG_3350_20170715115246.zip], 解析完毕, 耗时： 559ms
+2017-07-24 13:54:33 [INFO ] [px-2 ] c.t.p.Executor - [JG_3350_20170715115246.zip], 推迟保存数据库, 冲突XML:[JG_3350.xml], 冲突zip:[JG_3350_20170715115246.zip]
+2017-07-24 13:54:33 [INFO ] [sd-1 ] c.t.p.p.SaveDataService - [JG_3350_20170715115246.zip]-[0/0], 删除完毕, 耗时： 100ms
+2017-07-24 13:54:38 [INFO ] [main ] c.t.p.Executor - 任务状态: 3/0/0/0/2/0/1/0/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  5s   1ms
+2017-07-24 13:54:38 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:54:43 [INFO ] [main ] c.t.p.Executor - 任务状态: 3/0/0/0/2/0/1/0/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时: 10s   2ms
+2017-07-24 13:54:43 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:54:48 [INFO ] [main ] c.t.p.Executor - 任务状态: 3/0/0/0/2/0/1/0/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时: 15s   4ms
+2017-07-24 13:54:48 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:54:53 [INFO ] [main ] c.t.p.Executor - 任务状态: 3/0/0/0/2/0/1/0/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时: 20s   5ms
+2017-07-24 13:54:53 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:54:58 [INFO ] [main ] c.t.p.Executor - 任务状态: 3/0/0/0/2/0/1/0/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时: 25s   5ms
+2017-07-24 13:54:58 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 1
+2017-07-24 13:54:58 [ERROR] [px-4 ] c.t.p.Executor - [AJ_2401_20170711132235_01_0002_10.zip], 解析失败, 错误信息:[null]
+2017-07-24 13:54:58 [ERROR] [px-4 ] c.t.p.Executor - null
+java.lang.NullPointerException: null
+	at com.thunisoft.parse09xml.parsing.XmlValidator.loadSchema(XmlValidator.java:136) ~[classes/:na]
+	at com.thunisoft.parse09xml.parsing.XmlValidator.validateAndReadXml(XmlValidator.java:74) ~[classes/:na]
+	at com.thunisoft.parse09xml.parsing.AbstractParseXmlService.validateAndReadXml(AbstractParseXmlService.java:151) ~[classes/:na]
+	at com.thunisoft.parse09xml.parsing.AbstractParseXmlService.parseZipFile(AbstractParseXmlService.java:90) ~[classes/:na]
+	at com.thunisoft.parse09xml.Executor.parsing(Executor.java:484) [classes/:na]
+	at com.thunisoft.parse09xml.Executor.access$17(Executor.java:472) [classes/:na]
+	at com.thunisoft.parse09xml.Executor$6.run(Executor.java:457) [classes/:na]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source) [na:1.6.0_45]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.6.0_45]
+	at java.lang.Thread.run(Unknown Source) [na:1.6.0_45]
+2017-07-24 13:54:58 [ERROR] [log-2] c.t.p.p.DbLogService - [AJ_2401_20170711132235_01_0002_10.zip], 任务失败, 任务编号：[35ccb238235c4086b3182392595ea3ea], 耗时：  36ms
+2017-07-24 13:55:03 [INFO ] [main ] c.t.p.Executor - 任务状态: 4/0/0/0/2/0/1/1/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时: 30s   6ms
+2017-07-24 13:55:03 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:55:05 [INFO ] [sd-1 ] c.t.p.p.SaveDataService - [JG_3350_20170715115246.zip]-[0/0], 保存数据完毕, 表个数：2, 记录数：897, 耗时： 32s 152ms
+2017-07-24 13:55:05 [INFO ] [log-3] c.t.p.p.DbLogService - [JG_3350_20170715115246.zip], 保存xml日志完毕, 耗时：  36ms
+2017-07-24 13:55:05 [INFO ] [log-5] c.t.p.p.DbLogService - [JG_3350_20170715115246.zip], 任务成功, 任务编号：[808f7127b6954b498950a2271ac70d16], 耗时：  35ms
+2017-07-24 13:55:05 [INFO ] [sd-2 ] c.t.p.p.SaveDataService - [JG_3350_20170715115246.zip]-[0/0], 删除完毕, 耗时：  96ms
+2017-07-24 13:55:08 [INFO ] [main ] c.t.p.Executor - 任务状态: 4/0/0/0/1/0/1/2/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时: 35s   6ms
+2017-07-24 13:55:08 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:55:13 [INFO ] [main ] c.t.p.Executor - 任务状态: 4/0/0/0/1/0/1/2/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时: 40s   7ms
+2017-07-24 13:55:13 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 1
+2017-07-24 13:55:13 [INFO ] [px-1 ] c.t.p.p.ParseXmlService - [JG_3350_20170715115246.zip], 解析完毕, 耗时：  83ms
+2017-07-24 13:55:13 [INFO ] [px-1 ] c.t.p.Executor - [JG_3350_20170715115246.zip], 推迟保存数据库, 冲突XML:[JG_3350.xml], 冲突zip:[JG_3350_20170715115246.zip]
+2017-07-24 13:55:18 [INFO ] [main ] c.t.p.Executor - 任务状态: 5/0/0/0/2/0/1/2/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时: 45s   7ms
+2017-07-24 13:55:18 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:55:23 [INFO ] [main ] c.t.p.Executor - 任务状态: 5/0/0/0/2/0/1/2/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时: 50s   8ms
+2017-07-24 13:55:23 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:55:28 [INFO ] [main ] c.t.p.Executor - 任务状态: 5/0/0/0/2/0/1/2/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时: 55s  10ms
+2017-07-24 13:55:28 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:55:33 [INFO ] [main ] c.t.p.Executor - 任务状态: 5/0/0/0/2/0/1/2/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  1m  0s  10ms
+2017-07-24 13:55:33 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:55:38 [INFO ] [main ] c.t.p.ConfigManager - Start load xml mapping config
+2017-07-24 13:55:39 [INFO ] [main ] c.t.p.ConfigManager - Load xml mapping config from src/config/tabledesc end, cost :  986ms
+2017-07-24 13:55:39 [INFO ] [main ] c.t.p.ConfigManager - Start load xsd file...
+2017-07-24 13:55:42 [INFO ] [main ] c.t.p.ConfigManager - Load xsd file from src/config/xsd/merged end, cost :   2s 694ms
+2017-07-24 13:55:42 [INFO ] [main ] c.t.p.ConfigManager - Loadding Converters from converts.xml
+2017-07-24 13:55:42 [INFO ] [main ] c.t.p.ConfigManager - Load Converters end, cost :    8ms
+2017-07-24 13:55:42 [INFO ] [main ] c.t.p.ConfigManager - Loadding propSetters from propSetters.xml
+2017-07-24 13:55:42 [INFO ] [main ] c.t.p.ConfigManager - Load propSetters end, cost :    3ms
+2017-07-24 13:55:42 [INFO ] [main ] c.t.p.ConfigManager - Loadding insDelProcs from insDelProcs.xml
+2017-07-24 13:55:42 [INFO ] [main ] c.t.p.ConfigManager - Load insDelProcs end, cost :    1ms
+2017-07-24 13:55:42 [INFO ] [main ] c.t.p.ConfigManager - Loadding delProcs from delProcs.xml
+2017-07-24 13:55:42 [INFO ] [main ] c.t.p.ConfigManager - Load delProcs end, cost :    3ms
+2017-07-24 13:55:42 [INFO ] [main ] c.t.p.ConfigManager - Loadding loadIncrTab from incrTables
+2017-07-24 13:55:42 [INFO ] [main ] c.t.p.ConfigManager - Load loadIncrTab end, cost :    2ms
+2017-07-24 13:55:42 [INFO ] [main ] c.t.p.MainProcess - 加载配置完毕，耗时：  4s 216ms
+2017-07-24 13:55:42 [INFO ] [main ] c.t.p.Executor - 初始化完成，解析线程:4, 保存线程:5, 队列:50, 拆分:5 
+数据文件路径：D:/09imp/data
+2017-07-24 13:55:42 [INFO ] [main ] c.t.p.Executor - 任务状态: 0/0/0/0/0/0/0/0/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:   1ms
+2017-07-24 13:55:42 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 3
+2017-07-24 13:55:42 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:55:43 [INFO ] [px-2 ] c.t.p.p.ParseXmlService - [JG_3350_20170715115246.zip], 解析完毕, 耗时： 594ms
+2017-07-24 13:55:43 [INFO ] [px-1 ] c.t.p.p.ParseXmlService - [JG_3350_20170715115246.zip], 解析完毕, 耗时： 597ms
+2017-07-24 13:55:43 [INFO ] [px-1 ] c.t.p.Executor - [JG_3350_20170715115246.zip], 推迟保存数据库, 冲突XML:[JG_3350.xml], 冲突zip:[JG_3350_20170715115246.zip]
+2017-07-24 13:55:43 [INFO ] [px-3 ] c.t.p.p.ParseXmlService - [JG_3350_20170715115246.zip], 解析完毕, 耗时： 614ms
+2017-07-24 13:55:43 [INFO ] [px-3 ] c.t.p.Executor - [JG_3350_20170715115246.zip], 推迟保存数据库, 冲突XML:[JG_3350.xml], 冲突zip:[JG_3350_20170715115246.zip]
+2017-07-24 13:55:43 [INFO ] [sd-1 ] c.t.p.p.SaveDataService - [JG_3350_20170715115246.zip]-[0/0], 删除完毕, 耗时：  98ms
+2017-07-24 13:55:47 [INFO ] [main ] c.t.p.Executor - 任务状态: 3/0/0/0/2/0/1/0/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  5s   2ms
+2017-07-24 13:55:47 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:55:52 [INFO ] [main ] c.t.p.Executor - 任务状态: 3/0/0/0/2/0/1/0/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时: 10s   2ms
+2017-07-24 13:55:52 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:55:57 [INFO ] [main ] c.t.p.Executor - 任务状态: 3/0/0/0/2/0/1/0/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时: 15s   3ms
+2017-07-24 13:55:57 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:56:02 [INFO ] [main ] c.t.p.Executor - 任务状态: 3/0/0/0/2/0/1/0/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时: 20s   3ms
+2017-07-24 13:56:02 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:56:07 [INFO ] [main ] c.t.p.Executor - 任务状态: 3/0/0/0/2/0/1/0/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时: 25s   4ms
+2017-07-24 13:56:07 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:56:12 [INFO ] [main ] c.t.p.Executor - 任务状态: 3/0/0/0/2/0/1/0/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时: 30s   4ms
+2017-07-24 13:56:13 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:56:15 [INFO ] [sd-1 ] c.t.p.p.SaveDataService - [JG_3350_20170715115246.zip]-[0/0], 保存数据完毕, 表个数：2, 记录数：897, 耗时： 31s 947ms
+2017-07-24 13:56:15 [INFO ] [log-2] c.t.p.p.DbLogService - [JG_3350_20170715115246.zip], 保存xml日志完毕, 耗时：  37ms
+2017-07-24 13:56:15 [INFO ] [log-4] c.t.p.p.DbLogService - [JG_3350_20170715115246.zip], 任务成功, 任务编号：[9865a46c28af49fbbff9ef98cd68e813], 耗时：  37ms
+2017-07-24 13:56:15 [INFO ] [sd-2 ] c.t.p.p.SaveDataService - [JG_3350_20170715115246.zip]-[0/0], 删除完毕, 耗时：  95ms
+2017-07-24 13:56:17 [INFO ] [main ] c.t.p.Executor - 任务状态: 3/0/0/0/1/0/1/1/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时: 35s   5ms
+2017-07-24 13:56:18 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:56:22 [INFO ] [main ] c.t.p.Executor - 任务状态: 3/0/0/0/1/0/1/1/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时: 40s   5ms
+2017-07-24 13:56:23 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:56:27 [INFO ] [main ] c.t.p.Executor - 任务状态: 3/0/0/0/1/0/1/1/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时: 45s   6ms
+2017-07-24 13:56:28 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:56:32 [INFO ] [main ] c.t.p.Executor - 任务状态: 3/0/0/0/1/0/1/1/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时: 50s   7ms
+2017-07-24 13:56:33 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:56:37 [INFO ] [main ] c.t.p.Executor - 任务状态: 3/0/0/0/1/0/1/1/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时: 55s   7ms
+2017-07-24 13:56:38 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:56:42 [INFO ] [main ] c.t.p.Executor - 任务状态: 3/0/0/0/1/0/1/1/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  1m  0s   8ms
+2017-07-24 13:56:43 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:56:47 [INFO ] [sd-2 ] c.t.p.p.SaveDataService - [JG_3350_20170715115246.zip]-[0/0], 保存数据完毕, 表个数：2, 记录数：897, 耗时： 31s 956ms
+2017-07-24 13:56:47 [INFO ] [log-5] c.t.p.p.DbLogService - [JG_3350_20170715115246.zip], 保存xml日志完毕, 耗时：  36ms
+2017-07-24 13:56:47 [INFO ] [log-7] c.t.p.p.DbLogService - [JG_3350_20170715115246.zip], 任务成功, 任务编号：[4e6bcdf0872a40dfad51a0848b33caac], 耗时：  36ms
+2017-07-24 13:56:47 [INFO ] [sd-3 ] c.t.p.p.SaveDataService - [JG_3350_20170715115246.zip]-[0/0], 删除完毕, 耗时：  82ms
+2017-07-24 13:56:47 [INFO ] [main ] c.t.p.Executor - 任务状态: 3/0/0/0/0/0/1/2/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  1m  5s   8ms
+2017-07-24 13:56:48 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:56:52 [INFO ] [main ] c.t.p.Executor - 任务状态: 3/0/0/0/0/0/1/2/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  1m 10s   9ms
+2017-07-24 13:56:53 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:56:57 [INFO ] [main ] c.t.p.Executor - 任务状态: 3/0/0/0/0/0/1/2/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  1m 15s  10ms
+2017-07-24 13:56:58 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:57:02 [INFO ] [main ] c.t.p.Executor - 任务状态: 3/0/0/0/0/0/1/2/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  1m 20s  11ms
+2017-07-24 13:57:03 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:57:07 [INFO ] [main ] c.t.p.Executor - 任务状态: 3/0/0/0/0/0/1/2/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  1m 25s  11ms
+2017-07-24 13:57:08 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:57:12 [INFO ] [main ] c.t.p.Executor - 任务状态: 3/0/0/0/0/0/1/2/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  1m 30s  12ms
+2017-07-24 13:57:13 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:57:17 [INFO ] [main ] c.t.p.Executor - 任务状态: 3/0/0/0/0/0/1/2/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  1m 35s  12ms
+2017-07-24 13:57:18 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:57:19 [INFO ] [sd-3 ] c.t.p.p.SaveDataService - [JG_3350_20170715115246.zip]-[0/0], 保存数据完毕, 表个数：2, 记录数：897, 耗时： 31s 861ms
+2017-07-24 13:57:19 [INFO ] [log-8] c.t.p.p.DbLogService - [JG_3350_20170715115246.zip], 保存xml日志完毕, 耗时：  36ms
+2017-07-24 13:57:19 [INFO ] [log-10] c.t.p.p.DbLogService - [JG_3350_20170715115246.zip], 任务成功, 任务编号：[c94df36c761e41b2ba059b5b48e16708], 耗时：  36ms
+2017-07-24 13:57:22 [INFO ] [main ] c.t.p.Executor - 任务状态: 3/0/0/0/0/0/0/3/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  1m 40s  13ms
+2017-07-24 13:57:23 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:57:27 [INFO ] [main ] c.t.p.Executor - 任务状态: 3/0/0/0/0/0/0/3/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  1m 45s  14ms
+2017-07-24 13:57:28 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:57:32 [INFO ] [main ] c.t.p.Executor - 任务状态: 3/0/0/0/0/0/0/3/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  1m 50s  15ms
+2017-07-24 13:57:33 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:57:37 [INFO ] [main ] c.t.p.Executor - 任务状态: 3/0/0/0/0/0/0/3/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  1m 55s  16ms
+2017-07-24 13:57:38 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:57:42 [INFO ] [main ] c.t.p.Executor - 任务状态: 3/0/0/0/0/0/0/3/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  2m  0s  16ms
+2017-07-24 13:57:43 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:57:47 [INFO ] [main ] c.t.p.Executor - 任务状态: 3/0/0/0/0/0/0/3/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  2m  5s  17ms
+2017-07-24 13:57:48 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:57:52 [INFO ] [main ] c.t.p.Executor - 任务状态: 3/0/0/0/0/0/0/3/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  2m 10s  17ms
+2017-07-24 13:57:53 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:57:57 [INFO ] [main ] c.t.p.Executor - 任务状态: 3/0/0/0/0/0/0/3/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  2m 15s  18ms
+2017-07-24 13:57:58 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:58:02 [INFO ] [main ] c.t.p.Executor - 任务状态: 3/0/0/0/0/0/0/3/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  2m 20s  18ms
+2017-07-24 13:58:03 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 1
+2017-07-24 13:58:03 [INFO ] [px-4 ] c.t.p.p.ParseXmlService - [JG_3350_20170715115246.zip], 解析完毕, 耗时：  87ms
+2017-07-24 13:58:04 [INFO ] [sd-4 ] c.t.p.p.SaveDataService - [JG_3350_20170715115246.zip]-[0/0], 删除完毕, 耗时：  94ms
+2017-07-24 13:58:07 [INFO ] [main ] c.t.p.Executor - 任务状态: 4/0/0/0/0/0/1/3/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  2m 25s  19ms
+2017-07-24 13:58:08 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:58:12 [INFO ] [main ] c.t.p.Executor - 任务状态: 4/0/0/0/0/0/1/3/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  2m 30s  20ms
+2017-07-24 13:58:13 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:58:17 [INFO ] [main ] c.t.p.Executor - 任务状态: 4/0/0/0/0/0/1/3/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  2m 35s  20ms
+2017-07-24 13:58:18 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:58:22 [INFO ] [main ] c.t.p.Executor - 任务状态: 4/0/0/0/0/0/1/3/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  2m 40s  21ms
+2017-07-24 13:58:24 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:58:27 [INFO ] [main ] c.t.p.Executor - 任务状态: 4/0/0/0/0/0/1/3/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  2m 45s  21ms
+2017-07-24 13:58:29 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:58:32 [INFO ] [main ] c.t.p.Executor - 任务状态: 4/0/0/0/0/0/1/3/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  2m 50s  22ms
+2017-07-24 13:58:34 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:58:36 [INFO ] [sd-4 ] c.t.p.p.SaveDataService - [JG_3350_20170715115246.zip]-[0/0], 保存数据完毕, 表个数：2, 记录数：897, 耗时： 31s 999ms
+2017-07-24 13:58:36 [INFO ] [log-11] c.t.p.p.DbLogService - [JG_3350_20170715115246.zip], 保存xml日志完毕, 耗时：  36ms
+2017-07-24 13:58:36 [INFO ] [log-13] c.t.p.p.DbLogService - [JG_3350_20170715115246.zip], 任务成功, 任务编号：[b5d349c306af46e0a10b7ff105cc63ae], 耗时：  36ms
+2017-07-24 13:58:37 [INFO ] [main ] c.t.p.Executor - 任务状态: 4/0/0/0/0/0/0/4/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  2m 55s  22ms
+2017-07-24 13:58:39 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:58:42 [INFO ] [main ] c.t.p.Executor - 任务状态: 4/0/0/0/0/0/0/4/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  3m  0s  24ms
+2017-07-24 13:58:44 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 1
+2017-07-24 13:58:44 [INFO ] [px-2 ] c.t.p.p.ParseXmlService - [JG_3350_20170715115246.zip], 解析完毕, 耗时：  86ms
+2017-07-24 13:58:44 [INFO ] [sd-5 ] c.t.p.p.SaveDataService - [JG_3350_20170715115246.zip]-[0/0], 删除完毕, 耗时：  84ms
+2017-07-24 13:58:47 [INFO ] [main ] c.t.p.Executor - 任务状态: 5/0/0/0/0/0/1/4/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  3m  5s  26ms
+2017-07-24 13:58:49 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:58:52 [INFO ] [main ] c.t.p.Executor - 任务状态: 5/0/0/0/0/0/1/4/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  3m 10s  27ms
+2017-07-24 13:58:54 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:58:57 [INFO ] [main ] c.t.p.Executor - 任务状态: 5/0/0/0/0/0/1/4/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  3m 15s  27ms
+2017-07-24 13:58:59 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:59:02 [INFO ] [main ] c.t.p.Executor - 任务状态: 5/0/0/0/0/0/1/4/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  3m 20s  28ms
+2017-07-24 13:59:04 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:59:07 [INFO ] [main ] c.t.p.Executor - 任务状态: 5/0/0/0/0/0/1/4/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  3m 25s  28ms
+2017-07-24 13:59:09 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:59:12 [INFO ] [main ] c.t.p.Executor - 任务状态: 5/0/0/0/0/0/1/4/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  3m 30s  29ms
+2017-07-24 13:59:14 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:59:16 [INFO ] [sd-5 ] c.t.p.p.SaveDataService - [JG_3350_20170715115246.zip]-[0/0], 保存数据完毕, 表个数：2, 记录数：897, 耗时： 31s 861ms
+2017-07-24 13:59:16 [INFO ] [log-14] c.t.p.p.DbLogService - [JG_3350_20170715115246.zip], 保存xml日志完毕, 耗时：  37ms
+2017-07-24 13:59:16 [INFO ] [log-16] c.t.p.p.DbLogService - [JG_3350_20170715115246.zip], 任务成功, 任务编号：[fdae30b8199649ec8008b67f922c5f79], 耗时：  37ms
+2017-07-24 13:59:17 [INFO ] [main ] c.t.p.Executor - 任务状态: 5/0/0/0/0/0/0/5/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  3m 35s  29ms
+2017-07-24 13:59:19 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:59:22 [INFO ] [main ] c.t.p.Executor - 任务状态: 5/0/0/0/0/0/0/5/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  3m 40s  30ms
+2017-07-24 13:59:30 [INFO ] [main ] c.t.p.ConfigManager - Start load xml mapping config
+2017-07-24 13:59:31 [INFO ] [main ] c.t.p.ConfigManager - Load xml mapping config from src/config/tabledesc end, cost :   1s  32ms
+2017-07-24 13:59:31 [INFO ] [main ] c.t.p.ConfigManager - Start load xsd file...
+2017-07-24 13:59:34 [INFO ] [main ] c.t.p.ConfigManager - Load xsd file from src/config/xsd/merged end, cost :   3s 106ms
+2017-07-24 13:59:34 [INFO ] [main ] c.t.p.ConfigManager - Loadding Converters from converts.xml
+2017-07-24 13:59:34 [INFO ] [main ] c.t.p.ConfigManager - Load Converters end, cost :    7ms
+2017-07-24 13:59:34 [INFO ] [main ] c.t.p.ConfigManager - Loadding propSetters from propSetters.xml
+2017-07-24 13:59:34 [INFO ] [main ] c.t.p.ConfigManager - Load propSetters end, cost :    3ms
+2017-07-24 13:59:34 [INFO ] [main ] c.t.p.ConfigManager - Loadding insDelProcs from insDelProcs.xml
+2017-07-24 13:59:34 [INFO ] [main ] c.t.p.ConfigManager - Load insDelProcs end, cost :   21ms
+2017-07-24 13:59:34 [INFO ] [main ] c.t.p.ConfigManager - Loadding delProcs from delProcs.xml
+2017-07-24 13:59:34 [INFO ] [main ] c.t.p.ConfigManager - Load delProcs end, cost :    3ms
+2017-07-24 13:59:34 [INFO ] [main ] c.t.p.ConfigManager - Loadding loadIncrTab from incrTables
+2017-07-24 13:59:34 [INFO ] [main ] c.t.p.ConfigManager - Load loadIncrTab end, cost :    2ms
+2017-07-24 13:59:34 [INFO ] [main ] c.t.p.MainProcess - 加载配置完毕，耗时：  4s 800ms
+2017-07-24 13:59:34 [INFO ] [main ] c.t.p.Executor - 初始化完成，解析线程:4, 保存线程:5, 队列:50, 拆分:5 
+数据文件路径：D:/09imp/data
+2017-07-24 13:59:34 [INFO ] [main ] c.t.p.Executor - 任务状态: 0/0/0/0/0/0/0/0/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:0ms
+2017-07-24 13:59:34 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:59:34 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:59:39 [INFO ] [main ] c.t.p.Executor - 任务状态: 0/0/0/0/0/0/0/0/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  5s   1ms
+2017-07-24 13:59:39 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:59:44 [INFO ] [main ] c.t.p.Executor - 任务状态: 0/0/0/0/0/0/0/0/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时: 10s   1ms
+2017-07-24 13:59:45 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 1
+2017-07-24 13:59:45 [INFO ] [px-1 ] c.t.p.p.ParseXmlService - [JG_3350_20170715115246.zip], 解析完毕, 耗时： 443ms
+2017-07-24 13:59:45 [INFO ] [sd-1 ] c.t.p.p.SaveDataService - [JG_3350_20170715115246.zip]-[0/0], 删除完毕, 耗时： 100ms
+2017-07-24 13:59:49 [INFO ] [main ] c.t.p.Executor - 任务状态: 1/0/0/0/0/0/1/0/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时: 15s   2ms
+2017-07-24 13:59:50 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:59:54 [INFO ] [main ] c.t.p.Executor - 任务状态: 1/0/0/0/0/0/1/0/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时: 20s   3ms
+2017-07-24 13:59:55 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 13:59:59 [INFO ] [main ] c.t.p.Executor - 任务状态: 1/0/0/0/0/0/1/0/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时: 25s   4ms
+2017-07-24 14:00:00 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 14:00:04 [INFO ] [main ] c.t.p.Executor - 任务状态: 1/0/0/0/0/0/1/0/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时: 30s   5ms
+2017-07-24 14:00:05 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 14:00:09 [INFO ] [main ] c.t.p.Executor - 任务状态: 1/0/0/0/0/0/1/0/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时: 35s   6ms
+2017-07-24 14:00:10 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 14:00:14 [INFO ] [main ] c.t.p.Executor - 任务状态: 1/0/0/0/0/0/1/0/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时: 40s   7ms
+2017-07-24 14:00:15 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 14:00:17 [INFO ] [sd-1 ] c.t.p.p.SaveDataService - [JG_3350_20170715115246.zip]-[0/0], 保存数据完毕, 表个数：2, 记录数：897, 耗时： 31s 915ms
+2017-07-24 14:00:17 [INFO ] [log-2] c.t.p.p.DbLogService - [JG_3350_20170715115246.zip], 保存xml日志完毕, 耗时：  37ms
+2017-07-24 14:00:17 [INFO ] [log-4] c.t.p.p.DbLogService - [JG_3350_20170715115246.zip], 任务成功, 任务编号：[30754081da234c10a6b617423adfc698], 耗时：  36ms
+2017-07-24 14:00:19 [INFO ] [main ] c.t.p.Executor - 任务状态: 1/0/0/0/0/0/0/1/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时: 45s   7ms
+2017-07-24 14:00:20 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 14:00:24 [INFO ] [main ] c.t.p.Executor - 任务状态: 1/0/0/0/0/0/0/1/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时: 50s   9ms
+2017-07-24 14:00:25 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 1
+2017-07-24 14:00:25 [INFO ] [px-2 ] c.t.p.p.ParseXmlService - [JG_3350_20170715115246.zip], 解析完毕, 耗时： 181ms
+2017-07-24 14:00:25 [INFO ] [sd-2 ] c.t.p.p.SaveDataService - [JG_3350_20170715115246.zip]-[0/0], 删除完毕, 耗时：  92ms
+2017-07-24 14:00:29 [INFO ] [main ] c.t.p.Executor - 任务状态: 2/0/0/0/0/0/1/1/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时: 55s  10ms
+2017-07-24 14:00:30 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 14:00:34 [INFO ] [main ] c.t.p.Executor - 任务状态: 2/0/0/0/0/0/1/1/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  1m  0s  11ms
+2017-07-24 14:00:35 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 14:00:39 [INFO ] [main ] c.t.p.Executor - 任务状态: 2/0/0/0/0/0/1/1/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  1m  5s  12ms
+2017-07-24 14:00:40 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 14:00:44 [INFO ] [main ] c.t.p.Executor - 任务状态: 2/0/0/0/0/0/1/1/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  1m 10s  13ms
+2017-07-24 14:00:45 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 14:00:49 [INFO ] [main ] c.t.p.Executor - 任务状态: 2/0/0/0/0/0/1/1/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  1m 15s  14ms
+2017-07-24 14:00:50 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 14:00:54 [INFO ] [main ] c.t.p.Executor - 任务状态: 2/0/0/0/0/0/1/1/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  1m 20s  15ms
+2017-07-24 14:00:55 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 14:00:57 [INFO ] [sd-2 ] c.t.p.p.SaveDataService - [JG_3350_20170715115246.zip]-[0/0], 保存数据完毕, 表个数：2, 记录数：897, 耗时： 31s 950ms
+2017-07-24 14:00:57 [INFO ] [log-7] c.t.p.p.DbLogService - [JG_3350_20170715115246.zip], 任务成功, 任务编号：[c63a8d10da5c445d8e4fc41253ebe83f], 耗时：  36ms
+2017-07-24 14:00:57 [INFO ] [log-5] c.t.p.p.DbLogService - [JG_3350_20170715115246.zip], 保存xml日志完毕, 耗时：  36ms
+2017-07-24 14:00:59 [INFO ] [main ] c.t.p.Executor - 任务状态: 2/0/0/0/0/0/0/2/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  1m 25s  15ms
+2017-07-24 14:01:00 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 14:01:04 [INFO ] [main ] c.t.p.Executor - 任务状态: 2/0/0/0/0/0/0/2/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  1m 30s  16ms
+2017-07-24 14:01:05 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 14:01:09 [INFO ] [main ] c.t.p.Executor - 任务状态: 2/0/0/0/0/0/0/2/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  1m 35s  16ms
+2017-07-24 14:01:10 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 14:01:14 [INFO ] [main ] c.t.p.Executor - 任务状态: 2/0/0/0/0/0/0/2/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  1m 40s  17ms
+2017-07-24 14:01:15 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 14:01:19 [INFO ] [main ] c.t.p.Executor - 任务状态: 2/0/0/0/0/0/0/2/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  1m 45s  17ms
+2017-07-24 14:01:20 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0
+2017-07-24 14:01:24 [INFO ] [main ] c.t.p.Executor - 任务状态: 2/0/0/0/0/0/0/2/1 (总计/等待解析/解析中/等待保存文件/推迟入库/等待入库/入库中/已完成入库/写日志), 已耗时:  1m 50s  18ms
+2017-07-24 14:01:25 [INFO ] [ft-1 ] c.t.p.p.DbLogService - 从数据库获取任务成功，任务数： 0

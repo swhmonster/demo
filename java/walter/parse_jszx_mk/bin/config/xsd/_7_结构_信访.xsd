@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="GB2312"?>
+<xsd:schema  xmlns="http://dataexchange.court.gov.cn/2009/data"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+   targetNamespace="http://dataexchange.court.gov.cn/2009/data"
+elementFormDefault="qualified">
+
+  <xsd:include schemaLocation="_A_类型_基础.xsd"/>
+  <xsd:include schemaLocation="_0_结构_复用.xsd"/>
+
+  <xsd:complexType name="收案情况">
+    <xsd:sequence>
+      <xsd:element name="案号"         type="C50" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="初访日期"     type="D"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="信访途径"     type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="信访来源"     type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="本次信访人数" type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="重复信访次数" type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="信访特征"     type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="登记人"       type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="接待人"       type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="审批人"       type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="审批意见"     type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="审批日期"     type="D"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="回复方式"     type="TN"  minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="反映问题情况">
+    <xsd:sequence>
+      <xsd:element name="收信人"       type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="反映的问题"   type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="所涉问题日期" type="D"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="被投诉部门"   type="C40" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="内容摘要"     type="BB"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="以往处理情况" type="BB"  minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="办理情况">
+    <xsd:sequence>
+      <xsd:element name="拟办意见"     type="BB"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="承办期限"     type="SN"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="承办部门标识" type="N"    minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="承办部门"     type="C40"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="承办人"       type="SN"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="承办意见"     type="BB"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="审批人"       type="SN"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="审批意见"     type="TN"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="审批日期"     type="D"    minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="回复方式"     type="TN"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="转办单位"     type="C100" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="转办日期"     type="D"    minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="涉案情况1">
+    <xsd:sequence>
+      <xsd:element name="序号_涉案"    type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="案号"         type="C50" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="经办法院"     type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="涉案案件类别" type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="审判程序"     type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="涉案案由"     type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="基本案情"     type="BB"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="结案日期"     type="D"   minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="涉案情况">
+    <xsd:sequence>
+      <xsd:element name="R" type="涉案情况1" minOccurs="0" maxOccurs="32768"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="信访人1">
+    <xsd:sequence>
+      <xsd:element name="序号_信访人"  type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="信访人"       type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="信访人身份"   type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="与当事人关系" type="C20" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="行为能力"     type="TN"  minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="信访人">
+    <xsd:sequence>
+      <xsd:element name="R" type="信访人1" minOccurs="0" maxOccurs="32768"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="原案当事人1">
+    <xsd:sequence>
+      <xsd:element name="序号_原案当事人" type="SN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="原一审诉讼地位"  type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="原二审诉讼地位"  type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="原再审诉讼地位"  type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="原案当事人"      type="SN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="行为能力"        type="TN" minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="原案当事人">
+    <xsd:sequence>
+      <xsd:element name="R" type="原案当事人1" minOccurs="0" maxOccurs="32768"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="法庭使用记录_信访1">
+    <xsd:sequence>
+      <xsd:element name="序号_法庭使用"      type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="法庭用途"           type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="庭次"               type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="开始时间"           type="DT"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="结束时间"           type="DT"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="地点"               type="C40" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="对外宣传"           type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="旁听人数"           type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="人大代表旁听人数"   type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="政协委员旁听人数"   type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="审委会委员到庭听案" type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="笔录"               type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="听证裁决情况"       type="TN"  minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="法庭使用记录_信访">
+    <xsd:sequence>
+      <xsd:element name="R" type="法庭使用记录_信访1" minOccurs="0" maxOccurs="32768"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+</xsd:schema>

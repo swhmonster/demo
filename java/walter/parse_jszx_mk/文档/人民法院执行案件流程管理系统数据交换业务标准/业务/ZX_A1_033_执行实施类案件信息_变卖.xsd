@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CASE:schema   xmlns="http://dataexchange.court.gov.cn/2015/data"
+          xmlns:CASE="http://www.w3.org/2001/XMLSchema"
+     targetNamespace="http://dataexchange.court.gov.cn/2015/data"
+  elementFormDefault="qualified"
+attributeFormDefault="unqualified">
+
+	<CASE:include schemaLocation="_0A_类型_基础.xsd" />
+	<CASE:complexType name="变卖1">
+		<CASE:sequence>
+			<CASE:element name="案件标识"			type="ID"		minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="序号_变卖"			type="SN"		minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="变卖原因"			type="SDM"		minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="义务履行情况"		type="SDM"		minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="变卖裁定书序号"	type="SN"		minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="变卖裁定日期"		type="D"		minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="变卖方式"			type="SDM"		minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="变卖机构名称"		type="C240"		minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="机构选定方式"		type="SDM"		minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="确定机构日期"		type="D"		minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="机构联系人"			type="C50"		minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="变卖委托文书"		type="BB"		minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="变卖明细"			type="变卖明细"	minOccurs="0" maxOccurs="5000"/>
+			<CASE:element name="更新时间" 			type="DT" 		minOccurs="1" maxOccurs="1"/>   
+		</CASE:sequence>
+	</CASE:complexType>
+
+	<CASE:complexType name="变卖明细">
+		<CASE:sequence>
+			<CASE:element name="编号_变卖标的物"	type="SN"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="标的物名称"			type="BB"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="控制日期"			type="D"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="控制方式"			type="SDM"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="标的类别"			type="SDM"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="所有权人"			type="C100"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="瑕疵情况"			type="BB"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="变卖开始日期"		type="D"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="变卖结束日期"		type="D"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="参考价格"			type="M"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="变卖总额"			type="M"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="变卖结果"			type="SDM"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="买受人"				type="C100"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="买受人证件种类"	type="SDM"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="买受人证件号码"	type="C30"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="变卖结果文书序号"	type="SN"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="成交确认书序号"	type="SN"	minOccurs="0" maxOccurs="1"/>
+		</CASE:sequence>
+	</CASE:complexType>
+	<CASE:complexType name="变卖">
+		<CASE:sequence>
+			<CASE:element name="变卖" type="变卖1"  minOccurs="0" maxOccurs="32768"/>
+		</CASE:sequence>
+	</CASE:complexType>
+	<CASE:element name="实施类案件变卖" type="变卖"/>
+</CASE:schema>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration>
+	<proc type="11" sql="{call DB_XSYS.PR_DEL_XSYS(?)}" />
+	<proc type="12" sql="{call DB_XSES.PR_DEL_XSES(?)}" />
+	<proc type="13" sql="{call DB_XSZS.PR_DEL_XSZS(?)}" />
+	<proc type="14" sql="{call DB_XSFH.PR_DEL_XSFH(?)}" />
+	<proc type="15" sql="{call DB_XSXFBG.PR_DEL_XSXFBG(?)}" />
+	<proc type="16" sql="{call DB_QZYL.PR_DEL_QZYL(?)}" />
+	<proc type="17" sql="{call DB_QZYLFY.PR_DEL_QZYLFY(?)}" />
+	<proc type="18" sql="{call DB_JCQZYL.PR_DEL_JCQZYL(?)}" />
+    <proc type="19" sql="{call DB_QZYLJD.PR_DEL_QZYLJD(?)}" />
+	<proc type="21" sql="{call DB_MSYS.PR_DEL_MSYS(?)}" />
+	<proc type="22" sql="{call DB_MSES.PR_DEL_MSES(?)}" />
+	<proc type="23" sql="{call DB_MSZS.PR_DEL_MSZS(?)}" />
+	<proc type="24" sql="{call DB_MSTS.PR_DEL_MSTS(?)}" />
+	<proc type="25" sql="{call DB_MSPC.PR_DEL_MSPC(?)}" />
+    <proc type="26" sql="{call DB_DSRCXZS.PR_DEL_DSRCXZS(?)}" />
+    <proc type="27" sql="{call DB_QZQS.PR_DEL_QZQS(?)}" />
+    <proc type="28" sql="{call DB_RSAQBHLSC.PR_DEL_RSAQBHLSC(?)}" />
+    <proc type="29" sql="{call DB_RSAQBHLBG.PR_DEL_RSAQBHLBG(?)}" />
+	<proc type="31" sql="{call DB_XZYS.PR_DEL_XZYS(?)}" />
+	<proc type="32" sql="{call DB_XZES.PR_DEL_XZES(?)}" />
+	<proc type="33" sql="{call DB_XZZS.PR_DEL_XZZS(?)}" />
+	<proc type="34" sql="{call DB_XZFSZXSC.PR_DEL_XZFSZXSC(?)}" />
+	<proc type="41" sql="{call DB_PCQR.PR_DEL_PCQR(?)}" />
+	<proc type="42" sql="{call DB_PC.PR_DEL_PC(?)}" />
+	<proc type="51" sql="{call DB_ZX.PR_DEL_ZX(?)}" />
+	<proc type="61" sql="{call DB_ZSSCYSPJD.PR_DEL_ZSSCYSPJD(?)}" />
+	<proc type="71" sql="{call DB_XF.PR_DEL_XF(?)}" />
+	<proc type="81" sql="{call DB_SQBQ.PR_DEL_SQBQ(?)}" />
+    <proc type="82" sql="{call DB_FSBQ.PR_DEL_FSBQ(?)}" />
+	<proc type="91" sql="{call DB_JJJC.PR_DEL_JJJC(?)}" />
+	<proc type="JG" sql="{call DB_FY.P_Del_ZZJG(?)}" />
+    <proc type="ZZ" sql="{call DB_AQ.PR_DEL_AQ(?)}" />
+    <proc type="1A" sql="{call DB_MSWFSDSC.PR_DEL_MSWFSDSC(?)}" />
+    <proc type="1B" sql="{call DB_MSWFSDES.PR_DEL_MSWFSDES(?)}" />
+    <proc type="1C" sql="{call DB_MSWFSDZS.PR_DEL_MSWFSDZS(?)}" />
+    <proc type="1D" sql="{call DB_TZZXSX.PR_DEL_TZZXSX(?)}" />
+    <proc type="1E" sql="{call DB_XFYZXBGJD.PR_DEL_XFYZXBGJD(?)}" />
+    <proc type="1F" sql="{call DB_XFYZXBGBA.PR_DEL_XFYZXBGBA(?)}" />
+    <proc type="1Z" sql="{call DB_QTXS.PR_DEL_QTXS(?)}" />
+    <proc type="2Z" sql="{call DB_QTMS.PR_DEL_QTMS(?)}" />
+    <proc type="3Z" sql="{call DB_QTXZ.PR_DEL_QTXZ(?)}" />
+    <proc type="4Z" sql="{call DB_QTPC.PR_DEL_QTPC(?)}" />
+    <proc type="5Z" sql="{call DB_QTZX.PR_DEL_QTZX(?)}" />
+    <proc type="A1" sql="{call DB_SFJZ.PR_DEL_SFJZ(?)}" />
+    <proc type="AZ" sql="{call DB_QTSFJZ.PR_DEL_QTSFJZ(?)}" />
+    <proc type="B1" sql="{call DB_QJSFXZ.PR_DEL_QJSFXZ(?)}" />
+    <proc type="B2" sql="{call DB_GJSFXZ.PR_DEL_GJSFXZ(?)}" />
+    <proc type="C1" sql="{call DB_SFZC.PR_DEL_SFZC(?)}" />
+    <proc type="D1" sql="{call DB_XSGX.PR_DEL_XSGX(?)}" />
+    <proc type="D2" sql="{call DB_MSGX.PR_DEL_MSGX(?)}" />
+    <proc type="D3" sql="{call DB_XZGX.PR_DEL_XZGX(?)}" />
+    <proc type="D4" sql="{call DB_XZPCGX.PR_DEL_XZPCGX(?)}" />
+    
+    <proc type="1G" sql="{call DB_SQAZJYSC.PR_DEL_SQAZJYSC(?)}" />
+    <proc type="1H" sql="{call DB_JCAZJYSC.PR_DEL_JCAZJYSC(?)}" />
+    <proc type="1I" sql="{call DB_AZJYFY.PR_DEL_AZJYFY(?)}" />
+    <proc type="1J" sql="{call DB_AZJYJD.PR_DEL_AZJYJD(?)}" />
+    <proc type="2A" sql="{call DB_QZQSSQSC.PR_DEL_QZQSSQSC(?)}" />
+    <proc type="2B" sql="{call DB_PCSQSC.PR_DEL_PCSQSC(?)}" />
+    <proc type="2C" sql="{call DB_QZQSSS.PR_DEL_QZQSSS(?)}" />
+    <proc type="2D" sql="{call DB_PCSS.PR_DEL_PCSS(?)}" />
+    <proc type="2E" sql="{call DB_QZQSJD.PR_DEL_QZQSJD(?)}" />
+    <proc type="2F" sql="{call DB_PCJD.PR_DEL_PCJD(?)}" />
+    
+    <proc type="B1" sql="{call DB_QJRKYZXSC.PR_DEL_QJRKYZXSC(?)}" />
+    <proc type="B2" sql="{call DB_QJSDWS.PR_DEL_QJSDWS(?)}" />
+    <proc type="B3" sql="{call DB_QJDCQZ.PR_DEL_QJDCQZ(?)}" />
+    <proc type="B4" sql="{call DB_QJBPXRYG.PR_DEL_QJBPXRYG(?)}" />
+    <proc type="B5" sql="{call DB_QJZZYJ.PR_DEL_QJZZYJ(?)}" />
+    <proc type="B6" sql="{call DB_GJCRYZXSC.PR_DEL_GJCRYZXSC(?)}" />
+    <proc type="B7" sql="{call DB_GJSDWS.PR_DEL_GJSDWS(?)}" />
+    <proc type="B8" sql="{call DB_GJDCQZ.PR_DEL_GJDCQZ(?)}" />
+    <proc type="B9" sql="{call DB_GJBPXRYG.PR_DEL_GJBPXRYG(?)}" />
+    <proc type="BA" sql="{call DB_GJYD.PR_DEL_GJYD(?)}" />
+    
+    <proc type="43" sql="{call DB_XZPCYS.PR_DEL_XZPCYS(?)}" />
+    <proc type="44" sql="{call DB_XZPCES.PR_DEL_XZPCES(?)}" />
+    <proc type="45" sql="{call DB_XZPCYZQSC.PR_DEL_XZPCYZQSC(?)}" />
+    <proc type="46" sql="{call DB_XZPCSQSC.PR_DEL_XZPCSQSC(?)}" />
+    <proc type="47" sql="{call DB_XZPCKSSC.PR_DEL_XZPCKSSC(?)}" />
+    <proc type="48" sql="{call DB_XZPCZS.PR_DEL_XZPCZS(?)}" />
+    <proc type="49" sql="{call DB_QTXZPC.PR_DEL_QTXZPC(?)}" />
+
+</configuration>

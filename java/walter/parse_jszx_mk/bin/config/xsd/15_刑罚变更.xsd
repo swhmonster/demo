@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="GB2312"?>
+<CASE:schema   xmlns="http://dataexchange.court.gov.cn/2009/data"
+          xmlns:CASE="http://www.w3.org/2001/XMLSchema"
+     targetNamespace="http://dataexchange.court.gov.cn/2009/data"
+  elementFormDefault="qualified"
+attributeFormDefault="unqualified">
+
+  <CASE:include schemaLocation="_0_结构_复用.xsd"/>
+  <CASE:include schemaLocation="_1_结构_刑事.xsd"/>
+
+  <CASE:complexType name="刑罚变更">
+    <CASE:sequence>
+      <CASE:element name="案件标识"           type="案件标识"         minOccurs="1" maxOccurs="1"/>
+      <CASE:element name="原审情况"           type="原审情况"         minOccurs="0" maxOccurs="1"/>
+      <CASE:element name="收案和立案信息"     type="收案和立案_更刑"  minOccurs="0" maxOccurs="1"/>
+      <CASE:element name="立案移交和退案"     type="立案移交和退案"   minOccurs="0" maxOccurs="1"/>
+      <CASE:element name="办案期限"           type="办案期限"         minOccurs="0" maxOccurs="1"/>
+      <CASE:element name="案件审理情况"       type="案件审理_更刑"    minOccurs="0" maxOccurs="1"/>
+      <CASE:element name="结案情况"           type="结案情况_更刑"    minOccurs="0" maxOccurs="1"/>
+      <CASE:element name="申请刑罚变更罪犯"   type="刑罚变更罪犯"     minOccurs="0" maxOccurs="1"/>
+      <CASE:element name="报核信息"           type="报核信息"         minOccurs="0" maxOccurs="1"/>
+      <CASE:group    ref="成员与回避"                                 minOccurs="0" maxOccurs="1"/>
+      <CASE:element name="案件处理情况"       type="案件处理情况"     minOccurs="0" maxOccurs="1"/>
+      <CASE:element name="法庭使用记录"       type="法庭使用记录"     minOccurs="0" maxOccurs="1"/>
+      <CASE:group    ref="文书及送达"                                 minOccurs="0" maxOccurs="1"/>
+      <CASE:group    ref="审限事件记录"                               minOccurs="0" maxOccurs="1"/>
+      <CASE:group    ref="评议与讨论"                                 minOccurs="0" maxOccurs="1"/>
+      <CASE:element name="强制措施记录"       type="强制措施记录"     minOccurs="0" maxOccurs="1"/>
+      <CASE:element name="批办记录"           type="批办记录"         minOccurs="0" maxOccurs="1"/>
+      <CASE:element name="销案情况"           type="销案情况"         minOccurs="0" maxOccurs="1"/>
+      <CASE:element name="审理阶段"           type="审理阶段"         minOccurs="0" maxOccurs="1"/>
+      <CASE:element name="实体文件"           type="实体文件"         minOccurs="0" maxOccurs="1"/>
+      <CASE:element name="诉讼档案管理"       type="诉讼档案管理"     minOccurs="0" maxOccurs="1"/>
+      <CASE:element name="与案实体名录"       type="与案实体名录"     minOccurs="0" maxOccurs="1"/>
+    </CASE:sequence>
+  </CASE:complexType>
+
+  <CASE:element name="刑罚变更案件" type="刑罚变更"/>
+
+</CASE:schema>

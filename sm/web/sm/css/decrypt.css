@@ -1,0 +1,26 @@
+.input-group{
+	margin-top: 20px;
+}
+
+body{
+	text-align: center;
+}
+
+#btn2{
+	margin-top: 20px;
+}
+
+.form-control{
+	width: 800px;
+}
+
+.col-lg-6{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.input-center {
+	width: 40%;
+	margin: auto;
+	margin-top: 20px;
+}

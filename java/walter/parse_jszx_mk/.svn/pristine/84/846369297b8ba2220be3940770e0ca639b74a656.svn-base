@@ -1,0 +1,910 @@
+<?xml version="1.0" encoding="GB2312"?>
+<xsd:schema  xmlns="http://dataexchange.court.gov.cn/2009/data"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+   targetNamespace="http://dataexchange.court.gov.cn/2009/data"
+elementFormDefault="qualified">
+
+  <xsd:include schemaLocation="_A_类型_基础.xsd"/>
+  <xsd:include schemaLocation="_0_结构_复用.xsd"/>
+
+  <xsd:complexType name="报核信息">
+    <xsd:sequence>
+      <xsd:element name="复核法院"     type="SN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="报核类型"     type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="报核日期"     type="D"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="报核材料"     type="BB" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="移送卷宗日期" type="D"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="接收报核日期" type="D"  minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="指控罪名1">
+    <xsd:sequence>
+      <xsd:element name="序号_罪名" type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="罪名"      type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="罪名注释"  type="C50" minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="指控罪名">
+    <xsd:sequence>
+      <xsd:element name="R" type="指控罪名1" minOccurs="0" maxOccurs="512"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="自诉人1">
+    <xsd:sequence>
+      <xsd:element name="序号_自诉人"  type="SN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="一审诉讼地位" type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="二审诉讼地位" type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="再审诉讼地位" type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="自诉人"       type="SN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="行为能力"     type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="系被害人"     type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="诉讼对象"     type="BB" minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="自诉人">
+    <xsd:sequence>
+      <xsd:element name="R" type="自诉人1" minOccurs="0" maxOccurs="32768"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="被害人1">
+    <xsd:sequence>
+      <xsd:element name="序号_被害人"          type="SN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="一审诉讼地位"         type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="二审诉讼地位"         type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="再审诉讼地位"         type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="被害人"               type="SN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="行为能力"             type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="伤亡情况"             type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="致害人"               type="BB" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="物质损失金额"         type="M"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="提出民事赔偿金额"     type="M"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="单位接受司法救助原因" type="TN" minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="被害人">
+    <xsd:sequence>
+      <xsd:element name="R" type="被害人1" minOccurs="0" maxOccurs="32768"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="被告人1">
+    <xsd:sequence>
+      <xsd:element name="序号_被告人"        type="SN"           minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="实体序号"           type="SN"           minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="一审诉讼地位"       type="TN"           minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="二审诉讼地位"       type="TN"           minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="再审诉讼地位"       type="TN"           minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="被告人"             type="SN"           minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="单位犯罪直接责任人" type="BB"           minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="行为能力"           type="TN"           minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="怀孕或流产"         type="TN"           minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="接受法律援助原因"   type="TN"           minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="处于缓刑假释考验期" type="TN"           minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="撤销缓刑假释"       type="TN"           minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="犯罪金额"           type="M"            minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="罪犯类型"           type="TN"           minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="犯罪参与记录"       type="犯罪参与记录" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="前科劣迹情况"       type="前科劣迹情况" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="强制措施记录"       type="强制措施记录" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="指控罪名"           type="指控罪名"     minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="定罪罪名"           type="指控罪名"     minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="量刑情节"           type="量刑情节"     minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="定罪量刑"           type="定罪量刑"     minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="刑事判决"           type="刑事判决"     minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="附带民诉赔偿"       type="附带民诉赔偿" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="自由刑执行"         type="自由刑执行"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="死刑复核"           type="死刑复核"     minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="死刑执行"           type="死刑执行"     minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="暂缓执行死刑"       type="暂缓执行死刑" minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="被告人">
+    <xsd:sequence>
+      <xsd:element name="R" type="被告人1" minOccurs="0" maxOccurs="32768"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="前科劣迹情况1">
+    <xsd:sequence>
+      <xsd:element name="序号_前科劣迹" type="SN"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="处罚内容"      type="C240" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="处罚原因"      type="C240" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="判处机关"      type="C100" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="开始日期"      type="D"    minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="结束日期"      type="D"    minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="前科劣迹情况">
+    <xsd:sequence>
+      <xsd:element name="R" type="前科劣迹情况1" minOccurs="0" maxOccurs="32768"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="强制措施记录1">
+    <xsd:sequence>
+      <xsd:element name="序号_强制措施" type="SN"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="方式"          type="TN"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="种类"          type="TN"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="机关"          type="TN"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="日期"          type="D"    minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="羁押场所"      type="C100" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="变更原因"      type="TN"   minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="强制措施记录">
+    <xsd:sequence>
+      <xsd:element name="R" type="强制措施记录1" minOccurs="0" maxOccurs="32768"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="量刑情节1">
+    <xsd:sequence>
+      <xsd:element name="序号_情节" type="SN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="种类"      type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="情节"      type="N"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="犯罪事实"  type="SN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="犯罪对象"  type="SN" minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="量刑情节">
+    <xsd:sequence>
+      <xsd:element name="R" type="量刑情节1" minOccurs="0" maxOccurs="32768"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="定罪量刑1">
+    <xsd:sequence>
+      <xsd:element name="序号_量刑"        type="N"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="量刑类型"         type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="指控罪名"         type="SN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="犯罪地位"         type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="判处情况"         type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="宣告无罪原因"     type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="不负刑事责任原因" type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="定罪罪名"         type="SN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="主刑种类"         type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="自由刑刑期年"     type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="自由刑期月"       type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="缓刑种类"         type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="缓刑刑期年"       type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="缓刑刑期月"       type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="单处附加刑"       type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="并处附加刑"       type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="剥夺政治权利终身" type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="剥夺政治权利年"   type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="剥夺政治权利月"   type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="罚金数额"         type="M"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="没收个人财产金额" type="M"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="法定刑以下处刑"   type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="后续审判量刑结果" type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="量刑生效日期"     type="D"  minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="定罪量刑">
+    <xsd:sequence>
+      <xsd:element name="R" type="定罪量刑1" minOccurs="0" maxOccurs="32768"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="刑事判决">
+    <xsd:sequence>
+      <xsd:element name="解除或变更强制措施" type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="被扣赃款物处理"     type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="发还被害人财物折价" type="M"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="没收赃款赃物折价"   type="M"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="其它财物处理"       type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="刑罚交付执行日期"   type="D"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="财产刑即时执行日期" type="D"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="财产刑即时执行金额" type="M"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="财产刑执行完毕"     type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="改判原因"           type="TN" minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="附带民诉赔偿">
+    <xsd:sequence>
+      <xsd:element name="被请求赔偿金额"   type="M"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="判处赔偿金额"     type="M"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="赔偿方式"         type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="赔偿给付完毕"     type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="赔偿即时给付金额" type="M"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="赔偿即时给付日期" type="D"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="后续审判处理结果" type="TN" minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="自由刑执行">
+    <xsd:sequence>
+      <xsd:element name="序号_执行"    type="N"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="交付执行日期" type="D"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="执行方式"     type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="监外执行原因" type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="担保情况"     type="SN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="执行决定书"   type="SN" minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="死刑复核">
+    <xsd:sequence>
+      <xsd:element name="报核日期"         type="D"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="核准死刑日期"     type="D"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="核准死刑罪名"     type="SN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="死刑执行命令"     type="SN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="死刑命令签发日期" type="D"  minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="死刑执行">
+    <xsd:sequence>
+      <xsd:element name="执行日期"       type="D"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="执行地点"       type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="执行方式"       type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="执行人员"       type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="现场监督人"     type="C40" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="执行时罪犯状态" type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="罪犯临刑遗言"   type="BB"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="执行死刑报告"   type="SN"  minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="暂缓执行死刑">
+    <xsd:sequence>
+      <xsd:element name="暂停死刑执行报告" type="SN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="暂停执行原因"     type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="暂停执行死刑命令" type="SN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="暂停执行日期"     type="D"  minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="附带民诉当事人1">
+    <xsd:sequence>
+      <xsd:element name="序号_附带民诉当事人" type="SN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="一审诉讼地位"        type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="二审诉讼地位"        type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="再审诉讼地位"        type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="附带民诉当事人"      type="SN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="被告人类型"          type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="行为能力"            type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="系被害人"            type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="诉讼对象"            type="BB" minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="附带民诉当事人">
+    <xsd:sequence>
+      <xsd:element name="R" type="附带民诉当事人1" minOccurs="0" maxOccurs="32768"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="犯罪事实概况1">
+    <xsd:sequence>
+      <xsd:element name="序号_犯罪事实"      type="SN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="事实描述"           type="BB" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="被告人"             type="BB" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="犯罪对象"           type="BB" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="被害人"             type="BB" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="指控罪名"           type="BB" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="作案时间"           type="DT" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="作案地域"           type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="作案场所"           type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="结伙作案"           type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="犯罪后果"           type="BB" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="轻伤人数"           type="SN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="重伤人数"           type="SN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="重伤并严重残疾人数" type="SN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="死亡人数"           type="SN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="证据"               type="BB" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="证人"               type="BB" minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="犯罪事实概况">
+    <xsd:sequence>
+      <xsd:element name="R" type="犯罪事实概况1" minOccurs="0" maxOccurs="32768"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="犯罪对象1">
+    <xsd:sequence>
+      <xsd:element name="序号_犯罪对象" type="SN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="种类"          type="SN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="数量"          type="F"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="计量单位"      type="TN" minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="犯罪对象">
+    <xsd:sequence>
+      <xsd:element name="R" type="犯罪对象1" minOccurs="0" maxOccurs="32768"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="犯罪参与记录1">
+    <xsd:sequence>
+      <xsd:element name="序号_犯罪详情"        type="SN"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="犯罪事实"             type="SN"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="犯罪对象"             type="SN"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="指控罪名"             type="SN"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="作案时年龄"           type="TN"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="作案时身份"           type="TN"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="犯罪时精神状态"       type="TN"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="作案动机"             type="C100" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="作案手段"             type="C100" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="致轻伤人数"           type="SN"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="致重伤人数"           type="SN"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="致重伤并严重残疾人数" type="SN"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="致死亡人数"           type="SN"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="认定事实的证据"       type="BB"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="证人"                 type="BB"   minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="犯罪参与记录">
+    <xsd:sequence>
+      <xsd:element name="R" type="犯罪参与记录1" minOccurs="0" maxOccurs="32768"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="检察意见1">
+    <xsd:sequence>
+      <xsd:element name="序号_检察意见" type="SN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="来源"          type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="内容"          type="N"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="提出日期"      type="D"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="采纳"          type="TN" minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="检察意见">
+    <xsd:sequence>
+      <xsd:element name="R" type="检察意见1" minOccurs="0" maxOccurs="32768"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="附带民诉概况">
+    <xsd:sequence>
+      <xsd:element name="提起诉讼日期" type="D"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="提起人类型"   type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="原告人"       type="BB" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="被告人"       type="BB" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="提出赔偿总额" type="M"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="立案审批意见" type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="立案审批日期" type="D"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="结案日期"     type="D"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="结案方式"     type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="生效日期"     type="D"  minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="抗诉信息_刑事">
+    <xsd:sequence>
+      <xsd:element name="诉讼范围"     type="TN"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="诉讼类型"     type="TN"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="提起诉讼日期" type="D"    minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="抗诉机关"     type="C100" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="提起诉讼材料" type="BB"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="撤回抗诉日期" type="D"    minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="移送案件日期" type="D"    minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="上级接收日期" type="D"    minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="收案和立案_一审">
+    <xsd:sequence>
+      <xsd:element name="案号"             type="C50" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="收案途径"         type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="诉讼性质"         type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="案件来源"         type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="收到诉状日期"     type="D"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="起诉主罪名"       type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="起诉书"           type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="随案卷宗材料"     type="BB"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="重新起诉"         type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="建议适用简易程序" type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="立案部门标识"     type="N"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="立案部门"         type="C40" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="收案登记人"       type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="审查人"           type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="审查日期"         type="D"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="审查意见"         type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="审批人"           type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="立案审批日期"     type="D"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="审批意见"         type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="立案日期"         type="D"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="新案件来源"       type="N"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="审判流程已公开"   type="N"   minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="收案和立案_二审">
+    <xsd:sequence>
+      <xsd:element name="案号"         type="C50" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="诉讼性质"     type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="案件来源"     type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="收到诉状日期" type="D"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="主罪名"       type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="随案卷宗材料" type="BB"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="立案部门标识" type="N"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="立案部门"     type="C40" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="收案登记人"   type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="审查人"       type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="审查日期"     type="D"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="审查意见"     type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="审批人"       type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="立案审批日期" type="D"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="审批意见"     type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="立案日期"     type="D"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="新案件来源"   type="N"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="适用没收违法所得" type="N" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="针对裁判事项" type="N" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="审判流程已公开"   type="N"   minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="收案和立案_再审">
+    <xsd:sequence>
+      <xsd:element name="案号"             type="C50" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="诉讼性质"         type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="案件来源"         type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="再审方式"         type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="再审类型"         type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="收到再审材料日期" type="D"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="主罪名"           type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="随案卷宗材料"     type="BB"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="立案部门"         type="C40" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="收案登记人"       type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="审批人"           type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="立案审批日期"     type="D"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="审批意见"         type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="立案日期"         type="D"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="案件来源_2015"    type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="审判流程已公开"   type="N"   minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="收案和立案_复核">
+    <xsd:sequence>
+      <xsd:element name="案号"         type="C50" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="案件来源"     type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="复核罪名"     type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="接收报核日期" type="D"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="报核法院"     type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="报核材料"     type="BB"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="随案卷宗材料" type="BB"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="立案部门标识" type="N"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="立案部门"     type="C40" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="收案登记人"   type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="审批人"       type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="立案审批日期" type="D"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="审批意见"     type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="立案日期"     type="D"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="新案件来源"   type="N"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="审判流程已公开"   type="N"   minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="收案和立案_更刑">
+    <xsd:sequence>
+      <xsd:element name="案号"         type="C50" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="收到材料日期" type="D"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="刑罚变更材料" type="BB"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="刑罚变更类型" type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="假释类型"     type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="主罪名"       type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="随案卷宗材料" type="BB"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="立案部门标识" type="N"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="立案部门"     type="C40" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="收案登记人"   type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="审查人"       type="SN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="审查日期"     type="D"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="审查意见"     type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="审批人"       type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="立案审批日期" type="D"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="审批意见"     type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="立案日期"     type="D"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="新案件来源"   type="N"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="审判流程已公开"   type="N"   minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="收案和立案_强医">
+    <xsd:sequence>
+      <xsd:element name="案号"             type="C50" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="案件来源"         type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="收到申请日期"     type="D"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="申请书"           type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="随案卷宗材料"     type="BB"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="涉案主行为"       type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="立案部门标识"     type="N"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="立案部门"         type="C40" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="收案登记人"       type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="审查人"           type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="审查日期"         type="D"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="审查意见"         type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="审批人"           type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="立案审批日期"     type="D"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="审批意见"         type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="立案日期"         type="D"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="新案件来源"       type="N"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="审判流程已公开"   type="N"   minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="收案和立案_解除强医">
+    <xsd:sequence>
+      <xsd:element name="案号"             type="C50" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="案件来源"         type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="收到申请日期"     type="D"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="申请书"           type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="随案卷宗材料"     type="BB"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="违法主行为"       type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="立案部门标识"     type="N"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="立案部门"         type="C40" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="收案登记人"       type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="审查人"           type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="审查日期"         type="D"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="审查意见"         type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="审批人"           type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="立案审批日期"     type="D"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="审批意见"         type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="立案日期"         type="D"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="新案件来源"       type="N"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="审判流程已公开"   type="N"   minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="案件审理_一审">
+    <xsd:sequence>
+      <xsd:element name="接收案件日期"         type="D"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="承办审判庭标识"       type="N"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="承办审判庭"           type="C40" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="承办人"               type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="适用程序"             type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="被告人同意认罪程序"   type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="管辖依据"             type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="庭前证据交换"         type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="法院收集调取证据"     type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="地域涉及"             type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="案件涉及"             type="N"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="案件大小影响"         type="N"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="共同犯罪"             type="N"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="同案被告人不在案原因" type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="案件价值"             type="M"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="审理报告"             type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="公开审理"             type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="不公开审理原因"       type="N"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="委托事项"             type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="受托法院"             type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="受指定或移送法院"     type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="开庭审理"             type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="是否提请院长提交审委会"    type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="是否附带民诉"         type="TN"  minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="案件审理_二审">
+    <xsd:sequence>
+      <xsd:element name="接收案件日期"         type="D"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="承办审判庭标识"       type="N"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="承办审判庭"           type="C40" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="承办人"               type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="庭前证据交换"         type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="法院收集调取证据"     type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="地域涉及"             type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="案件涉及"             type="N"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="案件大小影响"         type="N"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="共同犯罪"             type="N"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="同案被告人不在案原因" type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="案件价值"             type="M"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="审理报告"             type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="公开审理"             type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="不公开审理原因"       type="N"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="委托事项"             type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="受托法院"             type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="受指定或移送法院"     type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="开庭审理"             type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="是否提请院长提交审委会"    type="TN"  minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="案件审理_再审">
+    <xsd:sequence>
+      <xsd:element name="接收案件日期"         type="D"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="承办审判庭标识"       type="N"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="承办审判庭"           type="C40" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="承办人"               type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="庭前证据交换"         type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="法院收集调取证据"     type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="地域涉及"             type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="案件涉及"             type="N"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="案件大小影响"         type="N"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="共同犯罪"             type="N"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="同案被告人不在案原因" type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="案件价值"             type="M"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="审理报告"             type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="公开审理"             type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="不公开审理原因"       type="N"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="委托事项"             type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="受托法院"             type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="受指定或移送法院"     type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="开庭审理"             type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="是否提请院长提交审委会"    type="TN"  minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="案件审理_复核">
+    <xsd:sequence>
+      <xsd:element name="接收案件日期"         type="D"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="承办审判庭标识"       type="N"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="承办审判庭"           type="C40" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="承办人"               type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="庭前证据交换"         type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="法院收集调取证据"     type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="地域涉及"             type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="案件涉及"             type="N"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="案件大小影响"         type="N"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="共同犯罪"             type="N"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="同案被告人不在案原因" type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="案件价值"             type="M"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="审理报告"             type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="公开审理"             type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="不公开审理原因"       type="N"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="开庭审理"             type="TN"  minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="案件审理_更刑">
+    <xsd:sequence>
+      <xsd:element name="接收案件日期"   type="D"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="承办审判庭标识" type="N"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="承办审判庭"     type="C40" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="承办人"         type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="悔改表现"       type="N"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="立功表现"       type="N"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="重大立功表现"   type="N"   minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="案件审理_强医">
+    <xsd:sequence>
+      <xsd:element name="接收案件日期"         type="D"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="承办审判庭标识"       type="N"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="承办审判庭"           type="C40" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="承办人"               type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="庭前证据交换"         type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="法院收集调取证据"     type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="地域涉及"             type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="案件涉及"             type="N"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="案件大小影响"         type="N"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="审理报告"             type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="公开审理"             type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="不公开审理原因"       type="N"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="委托事项"             type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="受托法院"             type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="受指定或移送法院"     type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="开庭审理"             type="TN"  minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:group name="结案情况_初">
+    <xsd:sequence>
+      <xsd:element name="结案日期"     type="D"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="结案案由"     type="SN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="结案方式"     type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="撤诉类型"     type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="撤诉处理事由" type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="结案事由"     type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="判决挽回损失金额" type="M"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="裁判文书是否具有可执行内容"  type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="生效日期"     type="D"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="新结案方式"   type="N"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="是否有结案文书" type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="无结案文书理由" type="C240" minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:group>
+  <xsd:group name="结案情况_终">
+    <xsd:sequence>
+      <xsd:group    ref="结案情况_初"                minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="改判原因"         type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="发回重审原因"     type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="撤销原裁定的处理" type="TN" minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:group>
+
+  <xsd:complexType name="结案情况_一审">
+    <xsd:sequence>
+      <xsd:group    ref="结案情况_初"            minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="不予受理原因" type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="驳回自诉原因" type="TN" minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="结案情况_二审">
+    <xsd:sequence>
+      <xsd:element name="结案日期"     type="D"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="结案案由"     type="SN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="结案方式"     type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="撤诉类型"     type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="撤诉处理事由" type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="终止事由"     type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="判决挽回损失金额" type="M"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="裁判文书是否具有可执行内容"  type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="生效日期"     type="D"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="改判原因"         type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="发回重审原因"     type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="撤销原裁定的处理" type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="下发法院"         type="SN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="新结案方式"       type="N" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="是否有结案文书" type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="无结案文书理由" type="C240" minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="结案情况_再审">
+    <xsd:sequence>
+      <xsd:group    ref="结案情况_终"                minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="受移送法院"       type="SN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="下发法院"         type="SN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="结案方式_2015"    type="TN" minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="结案情况_复核">
+    <xsd:sequence>
+      <xsd:element name="结案日期"             type="D"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="结案案由"             type="SN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="结案方式"             type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="改判原因"             type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="发回重审原因"         type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="终止事由"             type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="特殊情况假释复核结果" type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="判决挽回损失金额"     type="M"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="裁判文书是否具有可执行内容"  type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="生效日期"             type="D"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="新结案方式"           type="N"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="是否有结案文书" type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="无结案文书理由" type="C240" minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="结案情况_更刑">
+    <xsd:sequence>
+      <xsd:element name="本次裁判变更后主刑"   type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="变更后自由刑期年"     type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="变更后自由刑期月"     type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="变更后缓刑刑期年"     type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="变更后缓刑刑期月"     type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="变更后剥夺政治权利年" type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="变更后剥夺政治权利月" type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="撤销原因"             type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="结案日期"             type="D"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="结案案由"             type="SN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="结案方式"             type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="生效日期"             type="D"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="新结案方式"           type="N"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="是否有结案文书" type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="无结案文书理由" type="C240" minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="结案情况_强医">
+    <xsd:sequence>
+      <xsd:element name="结案日期"         type="D" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="结案方式"         type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="违法行为"         type="SN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="新结案方式"       type="N" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="是否有结案文书" type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="无结案文书理由" type="C240" minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="结案情况_解除强医">
+    <xsd:sequence>
+      <xsd:element name="结案日期"         type="D" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="结案方式"         type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="新结案方式"       type="N" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="是否有结案文书" type="TN" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="无结案文书理由" type="C240" minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="刑罚变更罪犯">
+    <xsd:sequence>
+      <xsd:element name="罪犯"             type="SN"               minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="累犯"             type="TN"               minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="罪名"             type="指控罪名"         minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="申请刑罚变更情况" type="申请刑罚变更情况" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="罪犯生效判决刑罚" type="罪犯生效判决刑罚" minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="申请刑罚变更情况">
+    <xsd:sequence>
+      <xsd:element name="报请机关"               type="C100" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="申请次数"               type="TN"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="现服刑地点"             type="C100" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="不得假释犯申请减刑"     type="TN"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="报请理由"               type="TN"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="变更前主刑"             type="TN"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="变更前自由刑期年"       type="TN"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="变更前自由刑期月"       type="TN"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="变更前缓刑刑期年"       type="TN"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="变更前缓刑刑期月"       type="TN"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="变更前剥夺政治权利终身" type="TN"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="变更前剥夺政治权利年"   type="TN"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="变更前剥夺政治权利月"   type="TN"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="上次减刑日期"           type="D"    minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="已服刑期年"             type="TN"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="已服刑期月"             type="TN"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="已服刑期日"             type="TN"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="已减刑期年"             type="TN"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="已减刑期月"             type="TN"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="已减刑期日"             type="TN"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="备注"                   type="C200" minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="罪犯生效判决刑罚">
+    <xsd:sequence>
+      <xsd:element name="经办法院"             type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="案号"                 type="C50" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="生效判决确定罪名"     type="N"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="生效判处主刑"         type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="原判自由刑期年"       type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="原判自由刑期月"       type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="原判缓刑刑期年"       type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="缓刑刑期月"           type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="原判剥夺政治权利终身" type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="原判剥夺政治权利年"   type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="剥夺政治权利月"       type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="原判宣告日期"         type="D"   minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="罪犯被羁押开始日期"   type="D"   minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+
+  <xsd:complexType name="判处情况_强医">
+    <xsd:sequence>
+      <xsd:element name="判处结果"             type="TN"  minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="被申请人行为后果信息1">
+    <xsd:sequence>
+      <xsd:element name="序号_行为后果情况"           type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="被申请人"                    type="BB"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="涉案行为"                    type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="是否存在伤亡或财产损害情况"  type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="发生时间"                    type="DT"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="发生地域"                    type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="发生场所"                    type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="轻伤人数"                    type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="重伤人数"                    type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="重伤并严重残疾人数"          type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="死亡人数"                    type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="财产损失金额"                type="M"   minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="被申请人行为后果信息">
+    <xsd:sequence>
+      <xsd:element name="R" type="被申请人行为后果信息1"  minOccurs="0" maxOccurs="32768"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="被申请人_强医1">
+    <xsd:sequence>
+      <xsd:element name="序号_被申请人"        type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="实体序号"             type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="被申请人"             type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="法定代理人角色"       type="TN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="判处情况"             type="判处情况_强医"          minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="被申请人行为后果信息" type="被申请人行为后果信息"   minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="被申请人_强医">
+    <xsd:sequence>
+      <xsd:element name="R" type="被申请人_强医1"     minOccurs="0" maxOccurs="32768"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="申请人_强医1">
+    <xsd:sequence>
+      <xsd:element name="序号_申请人"          type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="实体序号"             type="SN"  minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="申请人"               type="SN"  minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="申请人_强医">
+    <xsd:sequence>
+      <xsd:element name="R" type="申请人_强医1"  minOccurs="0" maxOccurs="32768"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+</xsd:schema>

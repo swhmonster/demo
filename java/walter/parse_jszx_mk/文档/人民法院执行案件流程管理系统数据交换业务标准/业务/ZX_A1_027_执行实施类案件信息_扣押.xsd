@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CASE:schema   xmlns="http://dataexchange.court.gov.cn/2015/data"
+          xmlns:CASE="http://www.w3.org/2001/XMLSchema"
+     targetNamespace="http://dataexchange.court.gov.cn/2015/data"
+  elementFormDefault="qualified"
+attributeFormDefault="unqualified">
+
+	<CASE:include schemaLocation="_0A_类型_基础.xsd" />
+	<CASE:complexType name="扣押1">
+		<CASE:sequence>
+			<CASE:element name="案件标识"		type="ID"						minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="序号_扣押"		type="SN"						minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="扣押类型"		type="SDM"						minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="提请方式"		type="SDM"						minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="财产所有权人"	type="SN"						minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="拟执行标的额"	type="M"						minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="扣押生效日期"	type="D"						minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="扣押届满日期"	type="D"						minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="扣押地点"		type="C100"						minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="保管人"			type="C100"						minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="保管地点"		type="C100"						minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="扣押清单序号"	type="BB"						minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="扣押清单"		type="BB"						minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="义务履行情况"	type="SDM"						minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="扣押文书序号"	type="BB"						minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="解除扣押原因"	type="SDM"						minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="解扣日期"		type="D"						minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="解除扣押文书"	type="C60"						minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="续扣"			type="续扣"						minOccurs="0" maxOccurs="5000"/>
+			<CASE:element name="部分解扣"		type="部分解扣"					minOccurs="0" maxOccurs="5000"/>
+			<CASE:element name="更新时间" 		type="DT" 						minOccurs="1" maxOccurs="1"/>   
+		</CASE:sequence>
+	</CASE:complexType>
+	
+	<CASE:complexType name="续扣">
+		<CASE:sequence>
+			<CASE:element name="序号_续扣"			type="SN"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="裁定续扣日期"		type="D"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="续扣届满日期"		type="D"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="续扣原因"			type="C240"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="续扣财产清单序号"	type="BB"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="续扣财产清单"		type="BB"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="续扣文书序号"		type="BB"	minOccurs="0" maxOccurs="1"/>
+		</CASE:sequence>
+	</CASE:complexType>		
+
+	<CASE:complexType name="部分解扣">
+		<CASE:sequence>
+			<CASE:element name="序号_部分解扣"			type="SN"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="部分解除扣押原因"		type="C240"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="部分解除查封财产序号"	type="BB"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="部分解除扣押物品"		type="BB"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="剩余扣押物"				type="BB"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="部分解扣日期"			type="D"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="部分解扣文书"			type="BB"	minOccurs="0" maxOccurs="1"/>
+		</CASE:sequence>
+	</CASE:complexType>	
+	<CASE:complexType name="扣押">
+		<CASE:sequence>
+			<CASE:element name="扣押" type="扣押1"  minOccurs="0" maxOccurs="32768"/>
+		</CASE:sequence>
+	</CASE:complexType>
+	<CASE:element name="实施类案件扣押" type="扣押"/>
+</CASE:schema>

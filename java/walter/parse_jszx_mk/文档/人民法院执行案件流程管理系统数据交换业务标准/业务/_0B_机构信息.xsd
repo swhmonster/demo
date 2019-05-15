@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CASE:schema  xmlns="http://dataexchange.court.gov.cn/2015/data"
+         xmlns:CASE="http://www.w3.org/2001/XMLSchema"
+   targetNamespace="http://dataexchange.court.gov.cn/2015/data"
+elementFormDefault="qualified">
+
+	<CASE:include schemaLocation="_0A_类型_基础.xsd"/>
+	
+	<CASE:complexType name="机构信息1">
+		<CASE:sequence>
+			<CASE:element name="机构标识"		type="N"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="机构名称"		type="C80"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="机构类型"		type="SDM"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="有效"			type="B"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="法院代码"		type="SN"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="隶属机构标识"	type="N"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="是否派出法庭"	type="B"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="部门简称"		type="C10"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="更新时间" 	    type="DT" 	minOccurs="1" maxOccurs="1"/>
+		</CASE:sequence>
+	</CASE:complexType>
+	<CASE:complexType name="机构信息">
+		<CASE:sequence>
+				<CASE:element name="机构信息" type="机构信息1" minOccurs="0"  maxOccurs="32768"/>
+		</CASE:sequence>
+	</CASE:complexType>
+	<CASE:element name="机构信息" type="机构信息"/>
+</CASE:schema>

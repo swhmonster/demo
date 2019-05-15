@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ArterySupport>
+  <defaultLocation>true</defaultLocation>
+  <cnName>加密解密系统</cnName>
+  <postArtery>true</postArtery>
+  <src>src</src>
+  <javaFolder>arteryServer</javaFolder>
+  <web>web</web>
+  <jsFolder>repository/eformjs</jsFolder>
+  <cssFolder>repository/eformcss</cssFolder>
+</ArterySupport>
+

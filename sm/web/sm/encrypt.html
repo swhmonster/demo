@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>加密与解密</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/encrypt.css" />
+		<script type="text/javascript" src="js/encrypt.js" ></script>
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+	</head>
+
+	<body>
+	    <form class="inpform" id="uploadForm" enctype="multipart/form-data">
+		<div class="col-lg-6">
+			<div class="input-group input-center">
+				<input id="t1" type="text" class="form-control" placeholder="请选择需要加密的文件">
+				<span class="input-group-btn">
+					<input type="file" id="file" name="mpfile" onchange="getFilePath()" style="filter:alpha(opacity=0);opacity:0;width: 0;height: 0;"/>   
+        			<button id="bj1" class="btn btn-default" type="button" onclick="selectFile();">请选择</button>
+      			</span>
+			</div>
+			<div class="input-group input-center">
+				<input id="t2" name="key" type="password" class="form-control" placeholder="请选输入密钥（或随机生成）">
+				<span class="input-group-btn">
+        			<button id="bj2" class="btn btn-default" type="button" onclick="KeyRandom()">随机生成</button>
+      			</span>
+			</div>
+			<div class="radio"> 
+                <label class="radio-inline">
+                    <input type="radio" name="optionsRadiosinline" id="optionsRadios1" value="1" checked> 加密
+                </label>
+                <label class="radio-inline">
+                        <input type="radio" name="optionsRadiosinline" id="optionsRadios2"  value="2"> 解密
+                </label>
+            </div>
+            <div class="radio"> 
+                <label class="radio-inline">
+                    <input type="radio" name="optionsRadiosinline2" id="optionsRadios3" value="3" checked> ECB模式
+                </label>
+                <label class="radio-inline">
+                        <input type="radio" name="optionsRadiosinline2" id="optionsRadios4"  value="4"> CBC模式
+                </label>
+            </div>
+            <div class="radio"> 
+                <label class="radio-inline">
+                    <input type="radio" name="optionsRadiosinline3" id="optionsRadios5" value="5" checked> 操作后上传
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="optionsRadiosinline3" id="optionsRadios6"  value="6"> 操作后下载
+                </label>
+            </div>
+			<div class="button">
+                <button id="btn1" type="button" class="btn btn-primary" onclick="Save()">上传</button>
+            </div>
+            <div class="button">
+                <span>请先上传文件再下载！</span>
+            </div>
+            <div class="button">
+                <button id="btn2" type="button" class="btn btn-primary" onclick="DownLoad()">下载</button>
+            </div>
+		</div>
+		  </form>
+	</body>
+
+</html>

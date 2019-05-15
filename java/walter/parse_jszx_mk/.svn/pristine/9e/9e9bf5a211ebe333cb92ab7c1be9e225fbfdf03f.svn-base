@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="GB2312"?>
+<CASE:schema   xmlns="http://dataexchange.court.gov.cn/2009/data"
+          xmlns:CASE="http://www.w3.org/2001/XMLSchema"
+     targetNamespace="http://dataexchange.court.gov.cn/2009/data"
+  elementFormDefault="qualified"
+attributeFormDefault="unqualified">
+
+  <CASE:include schemaLocation="_FBW_0_结构_复用.xsd"/>
+
+  <CASE:complexType name="没收违法所得再审">
+    <CASE:sequence>
+      <CASE:element name="案件标识"           type="案件标识"         minOccurs="1" maxOccurs="1"/>
+      <CASE:element name="收案信息"           type="收案信息_没收违法所得再审"    minOccurs="0" maxOccurs="1"/>
+      <CASE:element name="立案案由"           type="立案案由"         minOccurs="0" maxOccurs="1"/>
+      <CASE:element name="被告人"             type="被告人"           minOccurs="0" maxOccurs="1"/>
+      <CASE:element name="结案信息"           type="结案信息"         minOccurs="0" maxOccurs="1"/>
+      <CASE:element name="文书"               type="文书"             minOccurs="0" maxOccurs="1"/>
+      <CASE:element name="与案实体名录"       type="与案实体名录"     minOccurs="0" maxOccurs="1"/>
+    </CASE:sequence>
+  </CASE:complexType>
+
+  <CASE:element name="没收违法所得再审案件" type="没收违法所得再审"/>
+
+</CASE:schema>

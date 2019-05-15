@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CASE:schema   xmlns="http://dataexchange.court.gov.cn/2015/data"
+          xmlns:CASE="http://www.w3.org/2001/XMLSchema"
+     targetNamespace="http://dataexchange.court.gov.cn/2015/data"
+  elementFormDefault="qualified"
+attributeFormDefault="unqualified">
+
+	<CASE:include schemaLocation="_0A_类型_基础.xsd" />
+	<CASE:complexType name="已查明财产1">
+		<CASE:sequence>
+			<CASE:element name="案件标识"			type="ID"				minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="序号_查明财产"		type="SN"				minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="被执行人"			type="SN"				minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="执行线索序号"		type="BB"				minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="查明方式"			type="C40"				minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="查明日期"			type="D"				minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="财产类型"			type="SDM"				minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="财产名称"			type="C100"				minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="财产状态"			type="C20"				minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="财产清单附件"		type="BB"				minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="财产甄别结果"		type="C1"				minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="财产甄别日期"		type="D"				minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="财产不可执行原因"	type="C240"				minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="现金"				type="现金"				minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="银行存款"			type="银行存款"			minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="互联网金融信息"	type="互联网金融信息"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="其他资金"			type="其他资金"			minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="车辆"				type="车辆"				minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="房产"				type="房产"				minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="土地"				type="土地"				minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="股票"				type="股票"				minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="基金"				type="基金"				minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="债券"				type="债券"				minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="其他财产性权益"	type="其他财产性权益"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="渔船"				type="渔船"				minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="船舶"				type="船舶"				minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="股权"				type="股权"				minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="税务"				type="税务"				minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="其他财产"			type="其他财产"			minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="更新时间" 			type="DT" 				minOccurs="1" maxOccurs="1"/>   
+		</CASE:sequence>
+	</CASE:complexType>	
+	<CASE:complexType name="现金">
+		<CASE:sequence>
+			<CASE:element name="数额"			type="M"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="币种"			type="C20"	minOccurs="1" maxOccurs="1"/>
+		</CASE:sequence>
+	</CASE:complexType>	
+	
+	<CASE:complexType name="银行存款">
+		<CASE:sequence>
+			<CASE:element name="银行名称"		type="C100"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="开户账号"		type="C30"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="账户类别"		type="C20"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="账户状态"		type="C20"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="开户网点"		type="C100"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="开户网点代码"	type="C20"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="开户时间"		type="DT"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="销户时间"		type="DT"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="币种"			type="C20"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="数额"			type="M"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="是否透支"		type="B"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="可用资产数额"	type="M"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="关联资金账户"	type="C30"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="反馈结果时间"	type="DT"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="通讯地址"		type="C100"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="邮政编码"		type="C20"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="联系电话"		type="C20"	minOccurs="0" maxOccurs="1"/>
+		</CASE:sequence>
+	</CASE:complexType>			
+	
+	<CASE:complexType name="互联网金融信息">
+		<CASE:sequence>
+			<CASE:element name="注册人名称"			type="C100"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="注册人证件类型"	type="SDM"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="注册人证件号码"	type="C30"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="注册人手机号码"	type="C30"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="账户" 				type="C30"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="账户类别"			type="C20"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="账户状态"			type="C20"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="账户注册时间" 		type="DT"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="计价币种"			type="C20"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="资产数额"			type="M"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="可用资产数额"		type="M"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="通讯地址"			type="C100"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="邮政编码"			type="C20"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="联系电话"			type="C20"	minOccurs="0" maxOccurs="1"/>	
+		</CASE:sequence>
+	</CASE:complexType>				
+	
+	<CASE:complexType name="其他资金">
+		<CASE:sequence>
+			<CASE:element name="资金名称"		type="C50"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="金额"			type="M"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="币种"			type="C20"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="开户账号"		type="C30"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="开户银行"		type="C100"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="开户名称"		type="C100"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="查询时间"		type="DT"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="账户状态"		type="C20"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="单位名称"		type="C100"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="单位账号"		type="C30"	minOccurs="0" maxOccurs="1"/>	
+		</CASE:sequence>
+	</CASE:complexType>				
+	
+	<CASE:complexType name="车辆">
+		<CASE:sequence>
+			<CASE:element name="注册登记机关"		type="C50"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="机动车登记编号"	    type="C40"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="号牌种类"			type="C30"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="车辆品牌"			type="C20"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="车辆类型"			type="C20"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="车辆识别号"			type="C20"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="发动机号"			type="C20"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="车辆型号"			type="C80"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="注册登记日期"		type="D"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="车辆出厂日期"		type="D"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="车辆使用性质"		type="C30"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="车身颜色"			type="C10"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="机动车状态"			type="C20"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="是否年审"			type="B"	minOccurs="0" maxOccurs="1"/>	
+		</CASE:sequence>
+	</CASE:complexType>				
+	
+	<CASE:complexType name="房产">
+		<CASE:sequence>
+			<CASE:element name="房产证号"				type="C50"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="房产坐落或名称"		    type="C200"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="规划用途或房产类型"	    type="C50"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="房屋性质"				type="C20"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="建筑面积"				type="F"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="共有情况"				type="C20"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="份额比例"				type="C20"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="登记价格"				type="M"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="地号"					type="C50"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="房号"					type="C20"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="房屋编码"				type="C30"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="房产登记机关"			type="C50"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="楼宇位置"				type="C100"	minOccurs="0" maxOccurs="1"/>	
+		</CASE:sequence>
+	</CASE:complexType>				
+	
+	<CASE:complexType name="土地">
+		<CASE:sequence>
+			<CASE:element name="登记机关"					type="C50"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="产权证号"					type="C50"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="土地面积"					type="F"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="权属类别"					type="C20"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="国土资源地址或权属说明"	type="C200"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="共有情况"					type="C20"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="份额比例"					type="F"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="登记价格"					type="M"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="登记时间"					type="DT"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="地号"						type="C50"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="使用权类型"					type="C20"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="使用权面积"					type="F"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="用途"						type="C30"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="权利人"						type="SN"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="独用面积"					type="F"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="分摊面积"					type="F"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="终止日期"					type="D"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="使用权人登记卡续表"		type="BB"	minOccurs="0" maxOccurs="1"/>	
+		</CASE:sequence>
+	</CASE:complexType>			
+	
+	<CASE:complexType name="股票">
+		<CASE:sequence>
+			<CASE:element name="持有证券名称"		type="C100"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="开户机构"			type="C50"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="开户时间"			type="DT"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="证券帐户号"			type="C20"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="帐户类别"			type="C20"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="帐户资金金额"		type="M"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="帐户状态"			type="C20"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="证券代码"			type="C20"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="证券简称"			type="C20"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="持股数量"			type="F"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="证券性质"			type="C20"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="账户名称"			type="C100"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="反馈结果时间"		type="DT"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="当前托管单元"		type="C100"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="结算参与人名称"	type="C100"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="股份性质"			type="C100"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="流通类型"			type="C100"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="权益类别"			type="C100"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="可交易数量"			type="F"	minOccurs="0" maxOccurs="1"/>	
+		</CASE:sequence>
+	</CASE:complexType>				
+	
+	<CASE:complexType name="基金">
+		<CASE:sequence>
+			<CASE:element name="基金名称"		type="C100"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="基金数量"		type="F"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="基金销售单位"	type="C100"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="基金编号"		type="C20"	minOccurs="0" maxOccurs="1"/>
+		</CASE:sequence>
+	</CASE:complexType>				
+	
+	<CASE:complexType name="债券">
+		<CASE:sequence>
+			<CASE:element name="债券名称"		type="C100"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="债券面值"		type="M"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="债券发行单位"	type="C100"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="债券编号"		type="C20"	minOccurs="1" maxOccurs="1"/>
+		</CASE:sequence>
+	</CASE:complexType>				
+	
+	<CASE:complexType name="其他财产性权益">
+		<CASE:sequence>
+			<CASE:element name="权利名称"				type="C100"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="编号"					type="C50"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="权利登记单位"			type="C100"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="当前估值"				type="M"	minOccurs="1" maxOccurs="1"/>
+		</CASE:sequence>
+	</CASE:complexType>				
+	
+	<CASE:complexType name="渔船">
+		<CASE:sequence>
+			<CASE:element name="渔船编码"				type="C20"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="船名"					type="C50"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="渔船种类"				type="C20"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="渔船船长"				type="F"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="渔船形宽"				type="F"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="渔船形深"				type="F"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="总吨位"         	  	type="F"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="净吨位"         	  	type="F"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="主机总功率"				type="F"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="船体材质"				type="C20"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="建造完工日期"			type="D"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="船舶呼号识别码"		type="C50"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="船舶所有人名称"		type="C100"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="船舶所有人地址"		type="C200"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="所有人证件号码"		type="C30"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="船籍港"					type="C50"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="所有权登记审批时间"	type="DT"	minOccurs="0" maxOccurs="1"/>	
+		</CASE:sequence>
+	</CASE:complexType>			
+	
+	<CASE:complexType name="船舶">
+		<CASE:sequence>
+			<CASE:element name="船舶识别号"		type="C20"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="船名"			type="C20"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="船舶曾用名"		type="C40"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="IMO编号"		type="C20"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="船籍港"			type="C20"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="原船籍港"		type="C40"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="船舶种类"		type="C50"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="船舶呼号"		type="C10"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="造船地点"		type="C100"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="建成日期"		type="D"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="船舶长"			type="F"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="船舶宽"			type="F"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="船舶深"			type="F"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="总吨位"			type="F"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="净吨位"			type="F"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="载重吨位"		type="F"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="功率"			type="F"	minOccurs="0" maxOccurs="1"/>	
+		</CASE:sequence>
+	</CASE:complexType>				
+	
+	<CASE:complexType name="股权">
+		<CASE:sequence>
+			<CASE:element name="注册号"				type="C20"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="持股公司名称"		type="C80"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="住所"				type="C100"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="注册资本"			type="C50"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="公司类型"			type="C50"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="经营范围"			type="C240"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="成立时间"			type="DT"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="营业期限"			type="C10"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="出资额"				type="M"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="出资比例"			type="F"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="组织机构代码"		type="C40"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="职务"				type="C20"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="年检情况"			type="C50"	minOccurs="0" maxOccurs="1"/>	
+		</CASE:sequence>
+	</CASE:complexType>				
+	
+	<CASE:complexType name="税务">
+		<CASE:sequence>
+			<CASE:element name="退税账号"		type="C100"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="退税金额"		type="M"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="退税时间"		type="DT"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="纳税账号"		type="C100"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="纳税金额"		type="M"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="抵扣金额"		type="M"	minOccurs="0" maxOccurs="1"/>	
+		</CASE:sequence>
+	</CASE:complexType>				
+	
+	<CASE:complexType name="其他财产">
+		<CASE:sequence>
+			<CASE:element name="存放位置"		type="C100"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="编号"			type="C40"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="数量"			type="F"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="单位"			type="C20"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="品牌"			type="C20"	minOccurs="0" maxOccurs="1"/>	
+		</CASE:sequence>
+	</CASE:complexType>		
+	
+	<CASE:complexType name="已查明财产">
+		<CASE:sequence>
+			<CASE:element name="已查明财产" type="已查明财产1"  minOccurs="0" maxOccurs="32768"/>
+		</CASE:sequence>
+	</CASE:complexType>
+	<CASE:element name="实施类案件已查明财产" type="已查明财产"/>
+</CASE:schema>

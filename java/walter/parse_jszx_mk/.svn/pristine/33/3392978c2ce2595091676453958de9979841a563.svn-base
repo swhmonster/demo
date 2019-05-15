@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CASE:schema   xmlns="http://dataexchange.court.gov.cn/2015/data"
+          xmlns:CASE="http://www.w3.org/2001/XMLSchema"
+     targetNamespace="http://dataexchange.court.gov.cn/2015/data"
+  elementFormDefault="qualified"
+attributeFormDefault="unqualified">
+
+  <CASE:include schemaLocation="_0A_类型_基础.xsd" />
+  <CASE:complexType name="参与分配信息1">
+    <CASE:sequence>
+		<CASE:element name="案件标识"		type="ID"				minOccurs="1" maxOccurs="1"/>
+		<CASE:element name="序号_参与分配"	type="SN"				minOccurs="1" maxOccurs="1"/>
+		<CASE:element name="法院类型"		type="SDM"				minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="移交日期"		type="D"				minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="待分配财产"		type="C240"				minOccurs="1" maxOccurs="1"/>
+		<CASE:element name="待分配总金额"	type="M"				minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="参与分配结果"	type="C240"				minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="参与分配明细"	type="参与分配明细"	minOccurs="0" maxOccurs="5000"/>
+		<CASE:element name="更新时间" 		type="DT" 				minOccurs="1" maxOccurs="1"/>   
+    </CASE:sequence>
+  </CASE:complexType>
+
+	<CASE:complexType name="参与分配明细">
+		<CASE:sequence>
+			<CASE:element name="明细序号"			type="SN"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="申请执行人"			type="SN"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="申请书内容"			type="C240"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="参与分配依据"		type="C240"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="申请分配金额"		type="M"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="具有优先权"			type="B"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="优先权内容"			type="C240"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="优先权生效日期"	type="D"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="分配日期"			type="D"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="分配金额"			type="M"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="提出异议序号"		type="SN"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="异议处理结果"		type="C240"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="申请参与分配案外人"	type="C200"	minOccurs="0" maxOccurs="1"/>
+		</CASE:sequence>
+	</CASE:complexType>
+  <CASE:complexType name="参与分配信息">
+    <CASE:sequence>
+		<CASE:element name="参与分配信息" type="参与分配信息1"  minOccurs="0" maxOccurs="32768"/>
+	</CASE:sequence>
+  </CASE:complexType>
+  <CASE:element name="实施类案件参与分配信息" type="参与分配信息"/>
+</CASE:schema>

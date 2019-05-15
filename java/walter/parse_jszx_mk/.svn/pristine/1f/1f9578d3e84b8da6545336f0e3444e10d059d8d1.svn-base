@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CASE:schema   xmlns="http://dataexchange.court.gov.cn/2015/data"
+          xmlns:CASE="http://www.w3.org/2001/XMLSchema"
+     targetNamespace="http://dataexchange.court.gov.cn/2015/data"
+  elementFormDefault="qualified"
+attributeFormDefault="unqualified">
+
+  <CASE:include schemaLocation="_0A_类型_基础.xsd" />
+  <CASE:complexType name="执行款发放1">
+		<CASE:sequence>
+		    <CASE:element name="案件标识"			type="ID"				minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="流水号_执行款发放"	type="C32"				minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="本次发放总额"		type="M"				minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="申请日期"			type="D"				minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="执行款发放明细"	type="执行款发放明细"	minOccurs="0" maxOccurs="5000"/>
+			<CASE:element name="更新时间" 			type="DT" 				minOccurs="1" maxOccurs="1"/>   
+		</CASE:sequence>
+	</CASE:complexType>		
+	<CASE:complexType name="执行款发放明细">
+		<CASE:sequence>		
+			<CASE:element name="序号"				type="SN"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="接受当事人"			type="SN"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="接受人"				type="C100"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="发放金额"			type="M"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="发放款项类别"		type="C20"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="接受人开户银行"	type="C100"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="接受人开户名称"	type="C100"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="接受人开户账号"	type="C40"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="支付日期"			type="D"	minOccurs="1" maxOccurs="1"/>
+		</CASE:sequence>
+	</CASE:complexType>
+  <CASE:complexType name="执行款发放">
+    <CASE:sequence>
+		<CASE:element name="执行款发放" type="执行款发放1"  minOccurs="0" maxOccurs="32768"/>
+	</CASE:sequence>
+  </CASE:complexType>	
+  <CASE:element name="实施类案件执行款发放" type="执行款发放"/>
+</CASE:schema>

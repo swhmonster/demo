@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CASE:schema   xmlns="http://dataexchange.court.gov.cn/2015/data"
+          xmlns:CASE="http://www.w3.org/2001/XMLSchema"
+     targetNamespace="http://dataexchange.court.gov.cn/2015/data"
+  elementFormDefault="qualified"
+attributeFormDefault="unqualified">
+
+  <CASE:include schemaLocation="_0A_类型_基础.xsd" />
+  <CASE:complexType name="债权凭证1">
+    <CASE:sequence>
+		<CASE:element name="案件标识"			type="ID"	minOccurs="1" maxOccurs="1"/>
+		<CASE:element name="债权数额"			type="M"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="申请日期"			type="D"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="发放原因"			type="C240"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="发放日期"			type="D"	minOccurs="1" maxOccurs="1"/>
+		<CASE:element name="债权凭证编号"		type="C50"	minOccurs="1" maxOccurs="1"/>
+		<CASE:element name="债权人变更情况"	type="C240"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="债权变化情况"		type="C240"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="激销日期"			type="D"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="注销日期"			type="D"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="更新时间" 			type="DT" 	minOccurs="1" maxOccurs="1"/>   
+    </CASE:sequence>
+  </CASE:complexType>
+  <CASE:complexType name="债权凭证">
+    <CASE:sequence>
+		<CASE:element name="债权凭证" type="债权凭证1"  minOccurs="0" maxOccurs="32768"/>
+	</CASE:sequence>
+  </CASE:complexType>
+  <CASE:element name="实施类案件债权凭证" type="债权凭证"/>
+</CASE:schema>

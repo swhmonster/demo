@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CASE:schema   xmlns="http://dataexchange.court.gov.cn/2015/data"
+          xmlns:CASE="http://www.w3.org/2001/XMLSchema"
+     targetNamespace="http://dataexchange.court.gov.cn/2015/data"
+  elementFormDefault="qualified"
+attributeFormDefault="unqualified">
+
+	<CASE:include schemaLocation="_0A_类型_基础.xsd" />
+	<CASE:complexType name="办案期限1">
+		<CASE:sequence>
+			<CASE:element name="案件标识"			type="ID"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="立案期限届满日期"	type="D"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="法定立案期限"		type="SN"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="实际立案天数"		type="SN"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="立案超期天数"		type="SN"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="执行期限起始日期"	type="D"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="执行期限届满日期"	type="D"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="法定执行期限"		type="SN"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="实际执行天数"		type="SN"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="执行超期天数"		type="SN"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="执行超期原因"		type="SDM"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="更新时间" 			type="DT" 	minOccurs="1" maxOccurs="1"/>   
+		</CASE:sequence>
+	</CASE:complexType>
+	<CASE:complexType name="办案期限">
+		<CASE:sequence>
+			<CASE:element name="办案期限" type="办案期限1"  minOccurs="0" maxOccurs="32768"/>
+		</CASE:sequence>
+	</CASE:complexType>
+	<CASE:element name="实施类案件办案期限" type="办案期限"/>
+</CASE:schema>

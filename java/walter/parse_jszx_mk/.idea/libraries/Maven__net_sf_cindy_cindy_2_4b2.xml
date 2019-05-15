@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: net.sf.cindy:cindy:2.4b2">
+    <CLASSES>
+      <root url="jar://D:/repository/maven2/net/sf/cindy/cindy/2.4b2/cindy-2.4b2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/repository/maven2/net/sf/cindy/cindy/2.4b2/cindy-2.4b2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/repository/maven2/net/sf/cindy/cindy/2.4b2/cindy-2.4b2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

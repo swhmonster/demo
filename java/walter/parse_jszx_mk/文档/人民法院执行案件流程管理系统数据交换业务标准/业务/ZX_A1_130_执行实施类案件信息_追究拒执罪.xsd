@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CASE:schema   xmlns="http://dataexchange.court.gov.cn/2015/data"
+          xmlns:CASE="http://www.w3.org/2001/XMLSchema"
+     targetNamespace="http://dataexchange.court.gov.cn/2015/data"
+  elementFormDefault="qualified"
+attributeFormDefault="unqualified">
+ 
+	<CASE:include schemaLocation="_0A_类型_基础.xsd" />
+
+	<CASE:complexType name="追究拒执罪1">
+		<CASE:sequence>
+			<CASE:element name="案件标识"			type="ID"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="序号" 				type="SN" 	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="被追究人" 			type="SN" 	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="诉讼性质" 			type="C2" 	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="是否给予拒执刑罚" 	type="B" 	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="不刑罚原因" 		type="C1" 	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="公诉机关" 			type="C100" minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="经办法院" 			type="C100" minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="刑事案件案号" 		type="C60" 	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="立案日期" 			type="D" 	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="结案日期" 			type="D" 	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="自诉人" 			type="SN" 	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="自诉理由" 			type="C240" minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="拒执判处情况" 		type="SDM" 	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="拒执宣告无罪理由" 	type="SDM" 	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="拒执不负刑事责任原因" type="SDM" minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="拒执终止审理原因" 	type="SDM" 	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="拒执主刑种类" 		type="SDM" 	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="刑期年" 			type="TN" 	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="刑期月" 			type="TN" 	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="判处缓刑" 			type="B" 	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="缓刑年" 			type="TN" 	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="缓刑月" 			type="TN" 	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="罚金类型" 			type="C2" 	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="罚金数额" 			type="M" 	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="更新时间" 			type="DT" 	minOccurs="1" maxOccurs="1"/>   
+		</CASE:sequence>
+	</CASE:complexType>
+	<CASE:complexType name="追究拒执罪">
+		<CASE:sequence>
+			<CASE:element name="追究拒执罪"	type="追究拒执罪1"	minOccurs="0" maxOccurs="32768"/>
+		</CASE:sequence>
+	</CASE:complexType>
+	<CASE:element name="追究拒执罪" type="追究拒执罪"/>
+</CASE:schema>

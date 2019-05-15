@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CASE:schema   xmlns="http://dataexchange.court.gov.cn/2015/data"
+          xmlns:CASE="http://www.w3.org/2001/XMLSchema"
+     targetNamespace="http://dataexchange.court.gov.cn/2015/data"
+  elementFormDefault="qualified"
+attributeFormDefault="unqualified">
+ 
+  <CASE:include schemaLocation="_0A_类型_基础.xsd" />
+  <CASE:complexType name="屏蔽被执行人1">
+    <CASE:sequence>
+		<CASE:element name="案件标识"				type="ID"	minOccurs="1" maxOccurs="1"/>
+		<CASE:element name="流水号_屏蔽被执行人"	type="C36"	minOccurs="1" maxOccurs="1"/>
+		<CASE:element name="屏蔽被执行人"			type="SN"	minOccurs="1" maxOccurs="1"/>
+		<CASE:element name="屏蔽原因"				type="BB"	minOccurs="1" maxOccurs="1"/>
+		<CASE:element name="屏蔽申请日期"			type="D"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="审批结论"				type="B"	minOccurs="0" maxOccurs="1"/>		
+		<CASE:element name="审批人"					type="N"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="审批日期"				type="D"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="审批意见"				type="C240"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="更新时间" 				type="DT" 	minOccurs="1" maxOccurs="1"/>   		
+	</CASE:sequence>
+  </CASE:complexType>
+  <CASE:complexType name="屏蔽被执行人">
+    <CASE:sequence>
+		<CASE:element name="屏蔽被执行人" type="屏蔽被执行人1"  minOccurs="0" maxOccurs="32768"/>
+	</CASE:sequence>
+  </CASE:complexType>	
+  <CASE:element name="实施类案件屏蔽被执行人" type="屏蔽被执行人"/>
+</CASE:schema>

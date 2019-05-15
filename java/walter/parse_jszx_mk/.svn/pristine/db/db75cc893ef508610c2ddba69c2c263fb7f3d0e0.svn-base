@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CASE:schema   xmlns="http://dataexchange.court.gov.cn/2015/data"
+          xmlns:CASE="http://www.w3.org/2001/XMLSchema"
+     targetNamespace="http://dataexchange.court.gov.cn/2015/data"
+  elementFormDefault="qualified"
+attributeFormDefault="unqualified">
+
+  <CASE:include schemaLocation="_0A_类型_基础.xsd" />
+  <CASE:complexType name="法庭使用记录1">
+    <CASE:sequence>
+		<CASE:element name="案件标识"					type="ID"	minOccurs="1" maxOccurs="1"/>
+		<CASE:element name="序号_法庭使用"				type="SN"	minOccurs="1" maxOccurs="1"/>
+		<CASE:element name="法庭用途"					type="SDM"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="庭次"						type="TN"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="开始时间"					type="DT"	minOccurs="1" maxOccurs="1"/>
+		<CASE:element name="结束时间"					type="DT"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="地点"						type="C40"	minOccurs="1" maxOccurs="1"/>
+		<CASE:element name="公开听证"					type="B"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="到庭当事人"					type="BB"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="拒不到庭当事人"			type="BB"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="无正当理由中途退庭当事人"	type="BB"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="到庭代理人"					type="BB"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="出庭作证的证人"			type="BB"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="拒绝继续辩护或代理"		type="B"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="对外宣传"					type="SDM"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="旁听人数"					type="SN"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="人大代表旁听人数"			type="SN"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="政协委员旁听人数"			type="SN"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="审委会委员到庭听案"		type="B"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="笔录"						type="SN"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="听证裁决情况"				type="SDM"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="发出听证通知日期"				type="D"	minOccurs="0" maxOccurs="1"/>
+		<CASE:element name="更新时间" 					type="DT" 	minOccurs="1" maxOccurs="1"/>   
+    </CASE:sequence>
+  </CASE:complexType>
+  <CASE:complexType name="法庭使用记录">
+    <CASE:sequence>
+		<CASE:element name="法庭使用记录" type="法庭使用记录1"  minOccurs="0" maxOccurs="32768"/>
+	</CASE:sequence>
+  </CASE:complexType>
+  <CASE:element name="审查类案件法庭使用记录" type="法庭使用记录"/>
+</CASE:schema>

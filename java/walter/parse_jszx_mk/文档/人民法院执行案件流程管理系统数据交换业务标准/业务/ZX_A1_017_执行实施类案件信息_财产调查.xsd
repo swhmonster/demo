@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CASE:schema   xmlns="http://dataexchange.court.gov.cn/2015/data"
+          xmlns:CASE="http://www.w3.org/2001/XMLSchema"
+     targetNamespace="http://dataexchange.court.gov.cn/2015/data"
+  elementFormDefault="qualified"
+attributeFormDefault="unqualified">
+
+	<CASE:include schemaLocation="_0A_类型_基础.xsd" />
+	<CASE:complexType name="财产调查1">
+		<CASE:sequence>
+			<CASE:element name="案件标识"			type="ID"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="序号_财产调查"		type="SN"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="调查单位"			type="C100"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="调查单位分类"		type="C2"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="被调查人"			type="SN"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="调查时间"			type="DT"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="回复内容"			type="C240"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="调查内容"			type="C240"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="调查结果"			type="C240"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="执行线索序号"		type="BB"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="查明财产清单序号"	type="BB"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="调查原因"		type="C240"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="通知书"	type="BB"	minOccurs="0" maxOccurs="1"/>			
+			<CASE:element name="调查所在单位"	type="B"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="调查居住地"	type="B"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="调查住所地"	type="B"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="调查经营场所"	type="B"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="调查住房公积金"	type="B"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="调查金融理财产品"	type="B"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="调查收益类保险"	type="B"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="调查股息红利"	type="B"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="调查生活居住"	type="B"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="调查收入"	type="B"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="调查债权"	type="B"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="调查股权"	type="B"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="调查企业性质及设立"	type="B"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="调查合并分立"	type="B"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="调查投资经营"	type="B"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="调查债权债务"	type="B"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="调查变更终止"	type="B"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="调查笔录"	type="BB"	minOccurs="0" maxOccurs="1"/>			
+			<CASE:element name="更新时间" 			type="DT" 	minOccurs="1" maxOccurs="1"/>   
+		</CASE:sequence>
+	</CASE:complexType>
+	<CASE:complexType name="财产调查">
+		<CASE:sequence>
+			<CASE:element name="财产调查" type="财产调查1"  minOccurs="0" maxOccurs="32768"/>
+		</CASE:sequence>
+	</CASE:complexType>
+	<CASE:element name="实施类案件财产调查" type="财产调查"/>
+</CASE:schema>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/mvc"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:beans="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc 
+	http://www.springframework.org/schema/mvc/spring-mvc.xsd 
+	http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd 
+	http://www.springframework.org/schema/context 
+	http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<default-servlet-handler />
+
+	<context:component-scan base-package="com.thunisoft.artery" use-default-filters="false">
+		<context:include-filter type="annotation" expression="org.springframework.stereotype.Controller" />
+	</context:component-scan>
+	<context:component-scan base-package="com.thunisoft.summer" use-default-filters="false">
+		<context:include-filter type="annotation" expression="org.springframework.stereotype.Controller" />
+	</context:component-scan>
+	<context:component-scan base-package="com.cczu.sm.controller" use-default-filters="false">
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller" />
+    </context:component-scan>
+
+
+	<interceptors>
+		<beans:bean class="com.thunisoft.artery.support.interceptor.LocaleInterceptor" />
+		<beans:bean class="com.thunisoft.artery.support.interceptor.ParamInterceptor" />
+		<beans:bean class="com.thunisoft.artery.support.interceptor.CacheControlHandlerInterceptor" />
+	</interceptors>
+	
+	<annotation-driven>
+		<message-converters>
+			<beans:bean class="com.thunisoft.artery.converter.StringHttpMessageConverter" />
+		</message-converters>
+	</annotation-driven>
+	
+	<beans:bean id="exceptionResolver" class="com.thunisoft.artery.support.exception.ArteryExceptionResolver">
+	</beans:bean>
+
+	<beans:bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<beans:property name="prefix" value="/web/sm/" />
+		<beans:property name="suffix" value=".html" />
+	</beans:bean>
+	
+	<beans:bean id="multipartResolver"
+    class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+	   <beans:property name="maxUploadSize" value="10000000"></beans:property>
+	</beans:bean>
+
+</beans:beans>

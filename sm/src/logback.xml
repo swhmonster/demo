@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<property resource="props/config.properties" />
+	<property resource="props/local.properties" />
+	<property name="log_dir" value="${catalina.home}/logs" />
+	<property name="app_name" value="app" /> 
+	
+	<statusListener class="ch.qos.logback.core.status.NopStatusListener" />
+	<appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+		<Target>System.out</Target>
+		<encoder>
+			<pattern>%d{yyyy-MM-dd HH:mm:ss:SSS , GMT+8} %m [%c:%L]-[%p] %n
+			</pattern>
+		</encoder>
+	</appender>
+	<appender name="stdoutFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<File>${log_dir}/${app_name}_stdout.log</File>
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">  
+            <level>ERROR</level>  
+            <onMatch>DENY</onMatch>  
+            <onMismatch>ACCEPT</onMismatch>  
+        </filter>
+		<encoder>
+			<pattern>%d{yyyy-MM-dd HH:mm:ss:SSS , GMT+8} [%c:%L]-[%p] %m%n
+			</pattern>
+		</encoder>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${log_dir}/${app_name}_stdout.%d.log</fileNamePattern>
+		</rollingPolicy>
+	</appender>
+	<appender name="errorFile"	class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<File>${log_dir}/${app_name}_stderr.log</File>
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">  
+            <level>ERROR</level>  
+            <onMatch>ACCEPT</onMatch>  
+            <onMismatch>DENY</onMismatch>  
+        </filter>
+		<encoder>
+			<pattern>%d{yyyy-MM-dd HH:mm:ss:SSS , GMT+8} [%c:%L]-[%p] %m%n
+			</pattern>
+		</encoder>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${log_dir}/${app_name}_stderr.%d.log</fileNamePattern>
+		</rollingPolicy>
+	</appender>
+	<appender name="sqlFile"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<File>${log_dir}/${app_name}_jdbc.log</File>
+		<encoder>
+			<pattern>%d{yyyy-MM-dd HH:mm:ss:SSS , GMT+8} [%c:%L]-[%p] %m%n
+			</pattern>
+		</encoder>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${log_dir}/${app_name}_jdbc.%d.log</fileNamePattern>
+		</rollingPolicy>
+	</appender>
+	<appender name="arteryAppender"
+		class="com.thunisoft.artery.support.log.ArteryAppender">
+	</appender>
+	
+	<logger name="org.springframework" level="error" />
+	<logger name="com.thunisoft.crs" level="${logback.common.level}" />
+	<logger name="com.thunisoft.artery" level="${logback.common.level}" />
+	<logger name="org.apache" level="error" />
+	<logger name="com.thunisoft.summer" level="${logback.common.level}" />
+	<logger name="com.thunisoft.test" level="${logback.common.level}" />
+	<logger name="org.quartz" level="error" />
+	
+	<!-- sql -->
+	<logger name="com.ibatis" level="${logback.common.level}" >
+		<appender-ref ref="sqlFile" />
+	</logger>
+	<logger name="com.ibatis.common.jdbc.SimpleDataSource" level="${logback.common.level}" >
+		<appender-ref ref="sqlFile" />
+	</logger>
+	<logger name="com.ibatis.common.jdbc.ScriptRunner" level="${logback.common.level}" >
+		<appender-ref ref="sqlFile" />
+	</logger>
+	<logger name="com.ibatis.sqlmap.engine.impl.SqlMapClientDelegate" level="${logback.common.level}" >
+		<appender-ref ref="sqlFile" />
+	</logger>
+	<logger name="org.mybatis" level="${logback.common.level}" >
+		<appender-ref ref="sqlFile" />
+	</logger>
+	<logger name="java.sql.Connection" level="${logback.common.level}" >
+		<appender-ref ref="sqlFile" />
+	</logger>
+	<logger name="java.sql.Statement" level="${logback.common.level}" >
+		<appender-ref ref="sqlFile" />
+	</logger>
+	<logger name="java.sql.PreparedStatement" level="${logback.common.level}" >
+		<appender-ref ref="sqlFile" />
+	</logger>
+	<logger name="java.sql.ResultSet" level="${logback.common.level}" >
+		<appender-ref ref="sqlFile" />
+	</logger>
+	<logger name="org.hibernate" level="error">
+		<appender-ref ref="sqlFile" />
+	</logger>
+	<logger name="jdbc.sqltiming" level="${logback.common.level}">
+		<appender-ref ref="sqlFile" />
+	</logger>
+	
+	<root level="${logback.root.level}">
+		<appender-ref ref="stdout" />
+		<appender-ref ref="stdoutFile" />
+		<appender-ref ref="errorFile" />
+		<appender-ref ref="arteryAppender" />
+	</root>
+</configuration>

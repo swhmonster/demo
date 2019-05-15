@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="GB2312"?>
+<xsd:schema  xmlns="http://dataexchange.court.gov.cn/2009/data"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+   targetNamespace="http://dataexchange.court.gov.cn/2009/data"
+elementFormDefault="qualified">
+
+  <!-- 最长为10个英文字母或5个汉字的字符串 -->
+  <xsd:simpleType name="C10">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="10"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <!-- 最长为20个英文字母或10个汉字的字符串 -->
+  <xsd:simpleType name="C20">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="20"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <!-- 最长为30个英文字母或15个汉字的字符串 -->
+  <xsd:simpleType name="C30">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="30"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <!-- 最长为40个英文字母或20个汉字的字符串 -->
+  <xsd:simpleType name="C40">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="40"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <!-- 最长为50个英文字母或25个汉字的字符串 -->
+  <xsd:simpleType name="C50">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="50"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <!-- 最长为60个英文字母或30个汉字的字符串 -->  
+  <xsd:simpleType name="C60">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="60"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <!-- 最长为100个英文字母或50个汉字的字符串 -->
+  <xsd:simpleType name="C100">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="100"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <!-- 最长为120个英文字母或60个汉字的字符串 -->
+  <xsd:simpleType name="C120">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="120"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <!-- 最长为200个英文字母或100个汉字的字符串 -->
+  <xsd:simpleType name="C200">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="200"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <!-- 最长为240个英文字母或120个汉字的字符串 -->
+  <xsd:simpleType name="C240">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="240"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  
+  <!-- 最长为500个英文字母或250个汉字的字符串 -->
+  <xsd:simpleType name="C500">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="500"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <!-- 32位整数 -->
+  <xsd:simpleType name="N">
+    <xsd:restriction base="xsd:int"/>
+  </xsd:simpleType>
+
+  <!-- 16位整数 -->
+  <xsd:simpleType name="SN">
+    <xsd:restriction base="xsd:short"/>
+  </xsd:simpleType>
+
+  <!-- 8位整数(无符号) -->
+  <xsd:simpleType name="TN">
+    <xsd:restriction base="xsd:unsignedByte"/>
+  </xsd:simpleType>
+
+  <!-- 浮点数 -->
+  <xsd:simpleType name="F">
+    <xsd:restriction base="xsd:float"/>
+  </xsd:simpleType>
+
+  <!-- 金额 -->
+  <xsd:simpleType name="M">
+    <xsd:restriction base="xsd:decimal">
+      <xsd:minInclusive value="-922337203685477.5808"/>
+      <xsd:maxInclusive value="922337203685477.5807"/>
+      <xsd:totalDigits value="20"/>
+      <xsd:fractionDigits value="4"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <!-- 日期 -->
+  <xsd:simpleType name="D">
+    <xsd:restriction base="xsd:date"/>
+  </xsd:simpleType>
+
+  <!-- 时间 -->
+  <xsd:simpleType name="T">
+    <xsd:restriction base="xsd:time"/>
+  </xsd:simpleType>
+
+  <!-- 日期时间 -->
+  <xsd:simpleType name="DT">
+    <xsd:restriction base="xsd:dateTime"/>
+  </xsd:simpleType>
+
+  <!-- 二进制对象，BASE64编码 -->
+  <xsd:simpleType name="BB">
+    <xsd:restriction base="xsd:base64Binary"/>
+  </xsd:simpleType>
+
+</xsd:schema>

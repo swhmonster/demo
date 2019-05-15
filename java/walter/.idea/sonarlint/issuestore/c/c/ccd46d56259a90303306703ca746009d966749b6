@@ -1,0 +1,21 @@
+
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Û™©¼
+[squid:S1075"ARefactor your code to get this URI from a customizable parameter.(¿ÁùËúÿÿÿÿ
+Bsquid:S1481"(Remove this unused "stl" local variable.(Îµéæûÿÿÿÿ
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ì¤ƒâ
+[squid:S1075"ARefactor your code to get this URI from a customizable parameter.(”°Ç”ûÿÿÿÿ
+gsquid:S2095"FUse try-with-resources or close this "Workbook" in a "finally" clause.(úÁ¾€ýÿÿÿÿ8Çª‚Ó™-
+csquid:S2095"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(áÄÞ¶
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(™à‘Æ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ùÍ²±
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(÷šøÁ
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(åÂªä
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ö‹Ì§øÿÿÿÿ
+M
+squid:S106"9Replace this use of System.out or System.err by a logger.(Â–‘ö
+1squid:S1643"Use a StringBuilder instead.(ÝÖˆü
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¤µ±ôÿÿÿÿÿ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Øàºüÿÿÿÿ

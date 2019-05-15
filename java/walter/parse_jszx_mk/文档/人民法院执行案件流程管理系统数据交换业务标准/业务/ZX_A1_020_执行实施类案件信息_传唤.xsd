@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CASE:schema   xmlns="http://dataexchange.court.gov.cn/2015/data"
+          xmlns:CASE="http://www.w3.org/2001/XMLSchema"
+     targetNamespace="http://dataexchange.court.gov.cn/2015/data"
+  elementFormDefault="qualified"
+attributeFormDefault="unqualified">
+
+	<CASE:include schemaLocation="_0A_类型_基础.xsd" />
+	<CASE:complexType name="传唤1">
+		<CASE:sequence>
+			<CASE:element name="案件标识"			type="ID"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="序号_传唤"			type="SN"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="被传唤人"			type="SN"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="传唤时间"			type="DT"	minOccurs="1" maxOccurs="1"/>
+			<CASE:element name="工作单位或住址"	type="C50"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="应到处所"			type="C50"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="传唤事由"			type="C100"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="传唤情况"			type="C240"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="执行线索序号"		type="BB"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="查明财产清单序号"	type="BB"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="传唤文书序号"		type="BB"	minOccurs="0" maxOccurs="1"/>
+			<CASE:element name="更新时间" 			type="DT" 	minOccurs="1" maxOccurs="1"/>   
+		</CASE:sequence>
+	</CASE:complexType>
+	<CASE:complexType name="传唤">
+		<CASE:sequence>
+			<CASE:element name="传唤" type="传唤1"  minOccurs="0" maxOccurs="32768"/>
+		</CASE:sequence>
+	</CASE:complexType>
+	<CASE:element name="实施类案件传唤" type="传唤"/>
+</CASE:schema>
