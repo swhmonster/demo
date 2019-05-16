@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7a9a2504-aaae-4e7e-87a9-d00f7a1b1dbc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../python/Demo/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../python/Demo/Demo/jcw_autorun/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../python/Demo/Demo/myutils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../python/Demo/Demo/webtest/weboperate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../python/Demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/Demo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../python/Demo/Demo/autorun_checkstart.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/Demo/Demo/jcw_autorun/autorun_checkstart.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../python/Demo/Demo/autorun_startprograms.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/Demo/Demo/jcw_autorun/autorun_startprograms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../python/Demo/Demo/fieldcovercal.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/Demo/Demo/myutils/fieldcovercal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../python/Demo/Demo/threadqueuetest.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/Demo/Demo/myutils/threadqueuetest.py" afterDir="false" />
-    </list>
+    <list default="true" id="7a9a2504-aaae-4e7e-87a9-d00f7a1b1dbc" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
