@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a9a2504-aaae-4e7e-87a9-d00f7a1b1dbc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../python/Demo/Demo/databasetest/postgresql.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../python/Demo/Demo/njnu/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../python/Demo/Demo/njnu/b1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../python/Demo/Demo/webtest/12306getticket.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../python/Demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/Demo/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
