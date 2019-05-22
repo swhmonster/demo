@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f8cce05-6e5e-4020-8fe3-05e121cb09f1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Demo/databasetest/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/databasetest/script_batch_execution_tool.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/jcw_autorun/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/walter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/walter/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Demo/jcw_autorun/autorun_checkstart.py" beforeDir="false" afterPath="$PROJECT_DIR$/Demo/jcw_autorun/autorun_checkstart.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Demo/jcw_autorun/autorun_startprograms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Demo/jcw_autorun/autorun_startprograms.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,19 +20,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Demo/myutils/threadqueuetest.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Demo/myutils/fieldcovercal.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="40" column="27" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="59" />
+            <state relative-caret-position="75">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="e#43#54#0" expanded="true" />
               </folding>
@@ -38,11 +31,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Demo/jcw_autorun/autorun_startprograms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1575">
-              <caret line="63" column="46" lean-forward="true" selection-start-line="63" selection-start-column="46" selection-end-line="63" selection-end-column="46" />
+            <state relative-caret-position="-1356">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
               <folding>
                 <element signature="e#43#52#0" expanded="true" />
               </folding>
@@ -53,7 +46,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Demo/jcw_autorun/autorun_checkstart.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
+            <state relative-caret-position="300">
               <caret line="15" selection-start-line="15" selection-end-line="17" selection-end-column="27" />
             </state>
           </provider>
@@ -62,52 +55,45 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Demo/databasetest/postgresql.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="250">
+              <caret line="10" column="14" selection-start-line="8" selection-end-line="12" selection-end-column="12" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Demo/databasetest/script_batch_execution_tool.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="18" column="58" lean-forward="true" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
+              <folding>
+                <element signature="e#43#52#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Demo/jcw_autorun/readme.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="5" column="11" lean-forward="true" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Demo/databasetest/readme.txt">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Demo/webtest/weboperate.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-81">
-              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+            <state relative-caret-position="269">
+              <caret line="15" column="54" lean-forward="true" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
               <folding>
                 <element signature="e#19#49#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Demo/webtest/12306getticket.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
-              <folding>
-                <element signature="e#19#49#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://D:/Program Files/Python/Lib/codecs.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="337" column="1" selection-start-line="337" selection-start-column="1" selection-end-line="337" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Demo/njnu/b1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="17" />
-              <folding>
-                <element signature="e#43#54#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -150,14 +136,15 @@
         <option value="$PROJECT_DIR$/Demo/databasetest/postgresql.py" />
         <option value="$PROJECT_DIR$/Demo/jcw_autorun/autorun_checkstart.py" />
         <option value="$PROJECT_DIR$/Demo/jcw_autorun/autorun_startprograms.py" />
+        <option value="$PROJECT_DIR$/Demo/databasetest/sqlfiletest.py" />
+        <option value="$PROJECT_DIR$/Demo/jcw_autorun/readme.txt" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-4" />
-    <option name="y" value="-4" />
-    <option name="width" value="968" />
-    <option name="height" value="528" />
+    <option name="x" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1052" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -176,6 +163,12 @@
               <item name="Demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="Demo" type="462c0819:PsiDirectoryNode" />
               <item name="Demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo" type="462c0819:PsiDirectoryNode" />
+              <item name="Demo" type="462c0819:PsiDirectoryNode" />
+              <item name="databasetest" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Demo" type="b2602c69:ProjectViewProjectNode" />
@@ -220,29 +213,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.postgresql">
-    <configuration name="12306getticket" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Demo" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Demo/webtest" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Demo/webtest/12306getticket.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.sqlfiletest">
     <configuration name="b1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Demo" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -331,6 +302,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="sqlfiletest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Demo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Demo/databasetest" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="C:\project_swh\demo\python\Demo\Demo\databasetest\script_batch_execution_tool.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Demo" type="Python.DjangoServer" factoryName="Django server">
       <module name="Demo" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -356,11 +349,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.sqlfiletest" />
         <item itemvalue="Python.postgresql" />
         <item itemvalue="Python.b1" />
         <item itemvalue="Python.fieldcovercal" />
         <item itemvalue="Python.njnusjcj" />
-        <item itemvalue="Python.12306getticket" />
       </list>
     </recent_temporary>
   </component>
@@ -383,7 +376,7 @@
       <workItem from="1557973900380" duration="12409000" />
       <workItem from="1558001046315" duration="600000" />
       <workItem from="1558003001502" duration="16039000" />
-      <workItem from="1558232195546" duration="19834000" />
+      <workItem from="1558232195546" duration="25649000" />
     </task>
     <task id="LOCAL-00001" summary="20190521">
       <created>1558431529820</created>
@@ -396,7 +389,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115024000" />
+    <option name="totallyTimeSpent" value="120839000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -467,11 +460,12 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Demo$b1.coverage" NAME="b1 Coverage Results" MODIFIED="1558238968439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Demo/njnu" />
-    <SUITE FILE_PATH="coverage/Demo$postgresql.coverage" NAME="postgresql Coverage Results" MODIFIED="1558424784284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Demo/databasetest" />
+    <SUITE FILE_PATH="coverage/Demo$postgresql.coverage" NAME="postgresql Coverage Results" MODIFIED="1558512351660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Demo/databasetest" />
     <SUITE FILE_PATH="coverage/Demo$12306getticket.coverage" NAME="12306getticket Coverage Results" MODIFIED="1558232271130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Demo/webtest" />
     <SUITE FILE_PATH="coverage/Demo$mytest.coverage" NAME="mytest Coverage Results" MODIFIED="1557409991959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Demo" />
     <SUITE FILE_PATH="coverage/Demo$threadqueuetest.coverage" NAME="threadqueuetest Coverage Results" MODIFIED="1557908652343" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Demo" />
     <SUITE FILE_PATH="coverage/Demo$fieldcovercal.coverage" NAME="fieldcovercal Coverage Results" MODIFIED="1558236742863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Demo/myutils" />
+    <SUITE FILE_PATH="coverage/Demo$sqlfiletest.coverage" NAME="sqlfiletest Coverage Results" MODIFIED="1558515742606" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Demo/databasetest" />
     <SUITE FILE_PATH="coverage/Demo$TestExcel.coverage" NAME="TestExcel Coverage Results" MODIFIED="1557374392895" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Demo" />
     <SUITE FILE_PATH="coverage/Demo$njnusjcj.coverage" NAME="njnusjcj Coverage Results" MODIFIED="1558233366860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Demo/webtest" />
     <SUITE FILE_PATH="coverage/Demo$weboperate.coverage" NAME="weboperate Coverage Results" MODIFIED="1558084508877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Demo/webtest" />
@@ -621,13 +615,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Program Files/Python/Lib/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="337" column="1" selection-start-line="337" selection-start-column="1" selection-end-line="337" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Demo/webtest/12306getticket.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
@@ -638,12 +625,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Demo/myutils/fieldcovercal.py">
+    <entry file="file://$PROJECT_DIR$/Demo/jcw_autorun/autorun_startprograms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="40" column="27" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="59" />
+        <state relative-caret-position="-1356">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
           <folding>
-            <element signature="e#43#54#0" expanded="true" />
+            <element signature="e#43#52#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -655,37 +642,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://D:/Program Files/Python/Lib/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="308" selection-start-line="308" selection-end-line="308" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Demo/webtest/weboperate.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-81">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        <state relative-caret-position="269">
+          <caret line="15" column="54" lean-forward="true" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
           <folding>
             <element signature="e#19#49#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Demo/databasetest/postgresql.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Demo/jcw_autorun/autorun_checkstart.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
+        <state relative-caret-position="300">
           <caret line="15" selection-start-line="15" selection-end-line="17" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Demo/jcw_autorun/autorun_startprograms.py">
+    <entry file="file://$PROJECT_DIR$/Demo/myutils/fieldcovercal.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1575">
-          <caret line="63" column="46" lean-forward="true" selection-start-line="63" selection-start-column="46" selection-end-line="63" selection-end-column="46" />
+        <state relative-caret-position="75">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#43#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo/databasetest/postgresql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="14" selection-start-line="8" selection-end-line="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo/databasetest/script_batch_execution_tool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="18" column="58" lean-forward="true" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
           <folding>
             <element signature="e#43#52#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo/databasetest/readme.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo/jcw_autorun/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="11" lean-forward="true" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
         </state>
       </provider>
     </entry>

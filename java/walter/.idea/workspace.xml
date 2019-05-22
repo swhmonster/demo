@@ -193,7 +193,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="417" />
     <option name="y" value="13" />
     <option name="width" value="1548" />
@@ -358,8 +358,7 @@
     <option name="totallyTimeSpent" value="57152000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.042689435" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
