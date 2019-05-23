@@ -7,3 +7,7 @@
 1.autorun_checkstart.py，根据服务使用端口号检测启动情况，返回服务进程的pid
 2.在命令行执行命令：python autorun_checkstart.py
 注：若系统安装的python版本为3.x.x，命令改用：python3 autorun_checkstart.py
+
+maven批量打包工具：
+1.打开window命令行，执行命令：python autorun_package.py
+注：window环境需安装python
