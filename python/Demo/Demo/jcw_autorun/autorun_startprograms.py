@@ -24,7 +24,7 @@ def run_program(jar_name):
 
 
 def run_tomcat(sh_name):
-    os.system("sh %s" % (sh_name))
+    os.system("sh %s/bin/startup.sh" % (sh_name))
     print("正在启动：%s" % (sh_name))
 
 
