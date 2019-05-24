@@ -1,22 +1,0 @@
-
-gsquid:CommentedOutCodeLinek"<This block of commented-out lines of code should be removed.(¤Žõèþÿÿÿÿ
-gsquid:CommentedOutCodeLinen"<This block of commented-out lines of code should be removed.(¢¢÷×ûÿÿÿÿ
-asquid:CommentedOutCodeLine%"<This block of commented-out lines of code should be removed.(Åì§4
-gsquid:CommentedOutCodeLine "<This block of commented-out lines of code should be removed.(†÷íªÿÿÿÿÿ
-?squid:S1148c"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-O
-squid:S106#"9Replace this use of System.out or System.err by a logger.(ÉË«š
-bsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(éŠ¸”
-gsquid:CommentedOutCodeLine."<This block of commented-out lines of code should be removed.(¸èå½ÿÿÿÿÿ
-gsquid:CommentedOutCodeLineg"<This block of commented-out lines of code should be removed.(¦˜Ì£ùÿÿÿÿ
-bsquid:CommentedOutCodeLine+"<This block of commented-out lines of code should be removed.( Ëˆ²
-Csquid:S1481",Remove this unused "element" local variable.(‚óó³
-Xsquid:S1075"ARefactor your code to get this URI from a customizable parameter.(¨õÔ‘
-gsquid:CommentedOutCodeLineI"<This block of commented-out lines of code should be removed.(ÂÓÁûÿÿÿÿ
-T
-squid:S106s"9Replace this use of System.out or System.err by a logger.(ý™øøÿÿÿÿ
-T
-squid:S106("9Replace this use of System.out or System.err by a logger.(ž©’ëùÿÿÿÿ
-bsquid:CommentedOutCodeLine1"<This block of commented-out lines of code should be removed.(ÖÀ³
-:squid:S1148r"#Use a logger to log this exception.(Ç’Çê
-Qsquid:S1141]"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ

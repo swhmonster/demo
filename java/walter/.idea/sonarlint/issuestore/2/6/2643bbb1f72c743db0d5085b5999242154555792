@@ -1,11 +1,0 @@
-
-esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Úû…Šýÿÿÿÿ
-[squid:S1075"ARefactor your code to get this URI from a customizable parameter.(ž›¡ùÿÿÿÿ
-R
-squid:S106"9Replace this use of System.out or System.err by a logger.(üÃô‡ÿÿÿÿÿ
-¨%squid:RedundantThrowsDeclarationCheck"tRemove the declaration of thrown exception 'org.apache.poi.EncryptedDocumentException' which is a runtime exception.( ªßªûÿÿÿÿ
-gsquid:S2095"FUse try-with-resources or close this "Workbook" in a "finally" clause.(úÁ¾€ýÿÿÿÿ8áª‚Ó™-
-R
-squid:S106"9Replace this use of System.out or System.err by a logger.(½›¹Ôùÿÿÿÿ
-R
-squid:S106"9Replace this use of System.out or System.err by a logger.(Ô«Í¦úÿÿÿÿ

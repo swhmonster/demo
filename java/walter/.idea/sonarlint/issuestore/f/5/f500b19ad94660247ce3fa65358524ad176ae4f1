@@ -1,25 +1,0 @@
-
-ksquid:S2095€"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(˜ðÂ”þÿÿÿÿ
-csquid:CommentedOutCodeLine¨"<This block of commented-out lines of code should be removed.(´¸•Í
-]squid:S1075"ARefactor your code to get this URI from a customizable parameter.(¦‘ÓÒûÿÿÿÿ
-lsquid:S11928"PDefine a constant instead of duplicating this literal "å­—æ®µè¦†ç›–çŽ‡" 3 times.( ¢„Îþÿÿÿÿ
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(í‘…†ýÿÿÿÿ
-]squid:S1075"ARefactor your code to get this URI from a customizable parameter.(‰Î«êùÿÿÿÿ
-Xsquid:S1075"ARefactor your code to get this URI from a customizable parameter.(Ãøà
-isquid:S2095A"FUse try-with-resources or close this "Workbook" in a "finally" clause.(úÁ¾€ýÿÿÿÿ8Üª‚Ó™-
-9squid:S1643ž"Use a StringBuilder instead.(ÔÉ½šøÿÿÿÿ
-O
-squid:S1060"9Replace this use of System.out or System.err by a logger.(÷½æé
-?squid:S14815"(Remove this unused "ajm" local variable.(ê¿©å
-gsquid:CommentedOutCodeLine$"<This block of commented-out lines of code should be removed.(šçÌâùÿÿÿÿ
-Csquid:S1481&",Remove this unused "element" local variable.(‚óó³
-Jsquid:S14819".Remove this unused "zdfgSheet" local variable.(¯¹Ò™ÿÿÿÿÿ
-t
-squid:S135M"YReduce the total number of break and continue statements in this loop to use at most one.(´Ïˆúÿÿÿÿ
-nsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 55 to the 15 allowed.(ÙØ¤Þýÿÿÿÿ
-dsquid:S2095*"FUse try-with-resources or close this "Workbook" in a "finally" clause.(’ä°Ì8Üª‚Ó™-
-gsquid:CommentedOutCodeLine2"<This block of commented-out lines of code should be removed.(Ó•µûÿÿÿÿ
-Nsquid:S1153£"1Directly append the argument of String.valueOf().(œúèúÿÿÿÿ
-9squid:S1643£"Use a StringBuilder instead.(œúèúÿÿÿÿ
-hsquid:CommentedOutCodeLine²"<This block of commented-out lines of code should be removed.(´Ýþþÿÿÿÿ
-Xsquid:S1075"ARefactor your code to get this URI from a customizable parameter.(Û«êá

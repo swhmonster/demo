@@ -1,15 +1,0 @@
-
-bsquid:S22593"K"NullPointerException" will be thrown when invoking method "writeOneZip()".(ïïÙ
-?squid:S11481"#Use a logger to log this exception.(Âşÿâûÿÿÿÿ
-]squid:S1075"ARefactor your code to get this URI from a customizable parameter.(ÒüÙäüÿÿÿÿ
-T
-squid:S106("9Replace this use of System.out or System.err by a logger.(™äâŸùÿÿÿÿ
-T
-squid:S106&"9Replace this use of System.out or System.err by a logger.(´‹¹öşÿÿÿÿ
-?squid:S11488"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-7squid:S2885" Make "sdf" an instance variable.(µøúÄ
-]squid:S1075"ARefactor your code to get this URI from a customizable parameter.(¹Ñéüÿÿÿÿ
-Xsquid:S22596"AA "NullPointerException" could be thrown; "zos" is nullable here.(Öãü×
-Jsquid:UselessParenthesesCheckc"!Remove these useless parentheses.(¹––™
-@squid:S2140c")Use "java.util.Random.nextInt()" instead.(¹––™
-?squid:S1148T"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ

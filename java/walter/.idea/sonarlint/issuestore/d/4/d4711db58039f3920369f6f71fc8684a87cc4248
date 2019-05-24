@@ -1,7 +1,0 @@
-
-Esquid:S2140")Use "java.util.Random.nextInt()" instead.(²—§ˆ8ê¬¹¸ƒ-
-Gsquid:S1481"&Remove this unused "a" local variable.(¾±Ööþÿÿÿÿ8–’ª¸ƒ-
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(¯ô¢ô8ŒýÕªü,
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(²—§ˆ8ò¤·¸ƒ-
