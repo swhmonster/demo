@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a9a2504-aaae-4e7e-87a9-d00f7a1b1dbc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../python/Demo/Demo/jcw_autorun/autorun_package_multi.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../python/Demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/Demo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../python/Demo/Demo/databasetest/script_batch_execution_tool.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/Demo/Demo/databasetest/script_batch_execution_tool.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../python/Demo/Demo/jcw_autorun/autorun_package.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/Demo/Demo/jcw_autorun/autorun_package.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../python/Demo/Demo/jcw_autorun/autorun_startprograms.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/Demo/Demo/jcw_autorun/autorun_startprograms.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -208,6 +210,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -220,7 +223,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -353,15 +355,15 @@
       <workItem from="1557916835159" duration="1201000" />
       <workItem from="1558019705524" duration="1219000" />
       <workItem from="1558232240076" duration="1186000" />
+      <workItem from="1558670547801" duration="1013000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57751000" />
+    <option name="totallyTimeSpent" value="58764000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.042689435" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />

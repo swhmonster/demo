@@ -1,20 +1,20 @@
 
-gsquid:CommentedOutCodeLine!"<This block of commented-out lines of code should be removed.(áðÌæþÿÿÿÿ
-gsquid:CommentedOutCodeLine#"<This block of commented-out lines of code should be removed.(ÚÈ¨úÿÿÿÿ
-gsquid:CommentedOutCodeLine%"<This block of commented-out lines of code should be removed.(þ„Ì–ýÿÿÿÿ
 gsquid:CommentedOutCodeLine("<This block of commented-out lines of code should be removed.(«Îë»üÿÿÿÿ
-bsquid:CommentedOutCodeLine*"<This block of commented-out lines of code should be removed.(Ž™úÒ
-bsquid:CommentedOutCodeLine."<This block of commented-out lines of code should be removed.(ÄÕ“‹
-gsquid:CommentedOutCodeLine0"<This block of commented-out lines of code should be removed.(É×·èüÿÿÿÿ
-bsquid:CommentedOutCodeLine2"<This block of commented-out lines of code should be removed.(è·’÷
-gsquid:CommentedOutCodeLine5"<This block of commented-out lines of code should be removed.(ÛÁ€Äùÿÿÿÿ
-gsquid:CommentedOutCodeLine<"<This block of commented-out lines of code should be removed.(Ñÿ”’úÿÿÿÿ
-O
-squid:S106D"9Replace this use of System.out or System.err by a logger.(ðÂè‚
 O
 squid:S106_"9Replace this use of System.out or System.err by a logger.(ÛÚ³
-`squid:S2583J"DChange this condition so that it does not always evaluate to "false"(§ÀÏŸûÿÿÿÿ
-[squid:S2583M"DChange this condition so that it does not always evaluate to "false"(¢õ§˜
-Bsquid:S1481B"&Remove this unused "t" local variable.(›Åýýþÿÿÿÿ
+gsquid:CommentedOutCodeLine#"<This block of commented-out lines of code should be removed.(ÚÈ¨úÿÿÿÿ
+bsquid:CommentedOutCodeLine."<This block of commented-out lines of code should be removed.(ÄÕ“‹
+gsquid:CommentedOutCodeLine!"<This block of commented-out lines of code should be removed.(áðÌæþÿÿÿÿ
 ?squid:S1148E"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+`squid:S2583J"DChange this condition so that it does not always evaluate to "false"(§ÀÏŸûÿÿÿÿ
+bsquid:CommentedOutCodeLine2"<This block of commented-out lines of code should be removed.(è·’÷
 :squid:S1148Q"#Use a logger to log this exception.(Ç’Çê
+gsquid:CommentedOutCodeLine5"<This block of commented-out lines of code should be removed.(ÛÁ€Äùÿÿÿÿ
+gsquid:CommentedOutCodeLine%"<This block of commented-out lines of code should be removed.(þ„Ì–ýÿÿÿÿ
+gsquid:CommentedOutCodeLine<"<This block of commented-out lines of code should be removed.(Ñÿ”’úÿÿÿÿ
+gsquid:CommentedOutCodeLine0"<This block of commented-out lines of code should be removed.(É×·èüÿÿÿÿ
+bsquid:CommentedOutCodeLine*"<This block of commented-out lines of code should be removed.(Ž™úÒ
+Bsquid:S1481B"&Remove this unused "t" local variable.(›Åýýþÿÿÿÿ
+[squid:S2583M"DChange this condition so that it does not always evaluate to "false"(¢õ§˜
+O
+squid:S106D"9Replace this use of System.out or System.err by a logger.(ðÂè‚

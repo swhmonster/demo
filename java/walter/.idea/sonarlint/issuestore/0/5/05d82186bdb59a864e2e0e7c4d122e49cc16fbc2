@@ -1,7 +1,7 @@
 
 isquid:S2095"FUse try-with-resources or close this "Workbook" in a "finally" clause.(´—Ó¼ÿÿÿÿÿ8Çª‚Ó™-
-dsquid:S1075"ARefactor your code to get this URI from a customizable parameter.(¹Á¥èúÿÿÿÿ8éÏÖ¸ƒ-
-\"squid:SwitchLastCaseIsDefaultCheck""Add a default case to this switch.(Åİ¶Ìøÿÿÿÿ8éÏÖ¸ƒ-
-Gsquid:S2140?")Use "java.util.Random.nextInt()" instead.(ñ™¾ï8éÏÖ¸ƒ-
 [
 squid:S106H"9Replace this use of System.out or System.err by a logger.(­Ç‘òşÿÿÿÿ8­Ş¸ƒ-
+dsquid:S1075"ARefactor your code to get this URI from a customizable parameter.(¹Á¥èúÿÿÿÿ8éÏÖ¸ƒ-
+Gsquid:S2140?")Use "java.util.Random.nextInt()" instead.(ñ™¾ï8éÏÖ¸ƒ-
+\"squid:SwitchLastCaseIsDefaultCheck""Add a default case to this switch.(Åİ¶Ìøÿÿÿÿ8éÏÖ¸ƒ-
