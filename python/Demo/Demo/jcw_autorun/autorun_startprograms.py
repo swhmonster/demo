@@ -3,6 +3,7 @@
 
 import os
 import signal
+import sys
 
 
 def kill_process(pid):
@@ -28,64 +29,94 @@ def run_tomcat(sh_name):
     print("正在启动：%s" % (sh_name))
 
 
-def run_program_priority(jar_name, port):
-    run_program(jar_name)
-    while get_pid(port) == '':
-        print(jar_name + "starting...")
+def run_program_priority(list, port):
+    i = 0
+    for i in range(0, len(list)):
+        run_program(list[i])
+        print(list[i] + "starting...")
+        while get_pid(port) == '':
+            continue
+        print(list[i] + "successfully started!!!")
     return True
+
+
+def run_self_define(path, gpus, proMap, sysMap):
+    if (gpus.find("tomcat") == 0):
+        tomcatlist = str(gpus).split(",")
+        j = 0
+        for j in range(0, len(tomcatlist)):
+            portlist = str(tomcatlist[j]).split(":")
+            kill_process(get_pid(portlist[1]))
+            run_tomcat(proMap[portlist[1]])
+    else:
+        list = str(gpus).split(",")
+        j = 0
+        for j in range(0, len(list)):
+            kill_process(get_pid(sysMap[list[j]]))
+            run_program(proMap[sysMap[list[j]]])
 
 
 def main():
     path = "/home/ba/"
-    # 端口号集合
-    portSet = set()
-    portSet.add("3939")  # 1 xspch
-    portSet.add("2019")  # 2 zjjdapi
-    portSet.add("2022")  # 3 agapi
-    portSet.add("2021")  # 4 detail
-    portSet.add("2024")  # 5 filesys
-    portSet.add("2300")  # 6 dept-prop
-    portSet.add("2025")  # 7 serial
-    portSet.add("2280")  # 8 xxtx
-    portSet.add("2020")  # 9 agxt
-    portSet.add("81")  # 9 ajsl
-    portSet.add("82")  # 9 scdc
-    portSet.add("83")  # 9 zjjd
+    # 项目路径字典
+    proMap = dict([
+        ("2020", path + "jar_agxt_2020/agxt.jar"),
+        ("2022", path + "jar_agxtApi_2022/agxtApi.jar"),
+        ("2300", path + "jar_dept-prop_2300/dept-prop.jar"),
+        ("2021", path + "jar_detail_2021/detail.jar"),
+        ("2024", path + "jar_filesys_2024/filesys.jar"),
+        ("2025", path + "jar_serial_2025/serial.jar"),
+        ("3939", path + "jar_xspch_3939/xspch.jar"),
+        ("2280", path + "jar_xxtx_2280/xxtx.jar"),
+        ("2019", path + "jar_zjjdApi_2019/zjjdApi.jar"),
+        ("81", path + "tomcat_ajsl_81"),
+        ("82", path + "tomcat_scdc_82"),
+        ("83", path + "tomcat_zjjd_83")
+    ])
 
-    # 项目部署路径列表
-    programList = []
-    programList.append(path + "jar_agxt_2020/agxt.jar")
-    programList.append(path + "jar_agxtApi_2022/agxtApi.jar")
-    programList.append(path + "jar_dept-prop_2300/dept-prop.jar")
-    programList.append(path + "jar_detail_2021/detail.jar")
-    programList.append(path + "jar_filesys_2024/filesys.jar")
-    programList.append(path + "jar_serial_2025/serial.jar")
-    programList.append(path + "jar_xspch_3939/xspch.jar")
-    programList.append(path + "jar_xxtx_2280/xxtx.jar")
-    programList.append(path + "jar_zjjdApi_2019/zjjdApi.jar")
-
-    # tomcat启动文件路径列表
-    tomcatList = []
-    tomcatList.append(path + "tomcat_ajsl_81")
-    tomcatList.append(path + "tomcat_scdc_82")
-    tomcatList.append(path + "tomcat_zjjd_83")
-
-    # 根据pid杀进程
-    for port in portSet:
-        kill_process(get_pid(port))
-
+    # 项目端口号字典
+    sysMap = dict([
+        ("agxt", "2020"),
+        ("agxtApi", "2022"),
+        ("dept-prop", "2300"),
+        ("detail", "2021"),
+        ("filesys", "2024"),
+        ("serial", "2025"),
+        ("xspch", "3939"),
+        ("xxtx", "2280"),
+        ("zjjdApi", "2019"),
+        ("ajsl", "81"),
+        ("scdc", "82"),
+        ("zjjd", "83")
+    ])
     # 启动需优先启动的项目
-    # if(run_program_priority(path+"xxtx/xxtx.jar","2280")):
-    #     for i in range(0, programList.__len__()):
-    #         run_program(programList[i])
+    # 请按优先级顺序将服务添加到列表中，默认顺序先加的优先级高
+    priorityList = []
+    # priorityList.append(path + "xxtx/xxtx.jar")
+    # priorityList.append(path + "xxtx/xxtx.jar")
+    # priorityList.append(path + "xxtx/xxtx.jar")
+    # priorityList.append(path + "xxtx/xxtx.jar")
+    # if
 
-    # 启动springboot项目
-    for i in range(0, programList.__len__()):
-        run_program(programList[i])
+    if (sys.argv.__len__() == 1):
+        # 根据pid杀进程
+        plist = list(proMap.keys())
+        for port in plist:
+            kill_process(get_pid(port))
 
-    # 启动tomcat
-    for i in range(0, tomcatList.__len__()):
-        run_tomcat(tomcatList[i])
+        # 优先启动
+        run_program_priority(priorityList, "2280")
+
+        # 启动springboot项目
+        for i in range(0, list(proMap.values()).__len__()):
+            if (list(proMap.values())[i].find("tomcat") == 0):
+                run_tomcat(list(proMap.values())[i])
+            else:
+                run_program(list(proMap.values())[i])
+
+    # 自定义启动
+    if (sys.argv.__len__() > 1):
+        run_self_define(path, sys.argv[1], proMap, sysMap)
 
 
 main()

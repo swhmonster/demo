@@ -1,10 +1,10 @@
 
 bsquid:S3027"FPut single-quotes around ';' to use the faster "indexOf(char)" method.(ÊÑ«øÿÿÿÿ
-]squid:S1075	"ARefactor your code to get this URI from a customizable parameter.(Î¶Ìôûÿÿÿÿ
-^squid:S1192"GDefine a constant instead of duplicating this literal "C_STM_" 3 times.(Ä€É·
-bsquid:S2095"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(©ªë
 csquid:S2095"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(§òÔ
 bsquid:CommentedOutCodeLine)"<This block of commented-out lines of code should be removed.(ÍšØ¨
+?squid:S11481"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+]squid:S1075	"ARefactor your code to get this URI from a customizable parameter.(Î¶Ìôûÿÿÿÿ
+bsquid:S2095"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(©ªë
 T
 squid:S106-"9Replace this use of System.out or System.err by a logger.(éĞ«şÿÿÿÿ
-?squid:S11481"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+^squid:S1192"GDefine a constant instead of duplicating this literal "C_STM_" 3 times.(Ä€É·
