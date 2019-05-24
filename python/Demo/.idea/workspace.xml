@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f8cce05-6e5e-4020-8fe3-05e121cb09f1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Demo/jcw_autorun/autorun_package_multi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/walter/.idea/sonarlint/issuestore/0/0/00f48894978b51a97df7779963d5a80be204232d" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/walter/.idea/sonarlint/issuestore/0/0/00f48894978b51a97df7779963d5a80be204232d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/walter/.idea/sonarlint/issuestore/0/5/05d82186bdb59a864e2e0e7c4d122e49cc16fbc2" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/walter/.idea/sonarlint/issuestore/0/5/05d82186bdb59a864e2e0e7c4d122e49cc16fbc2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/walter/.idea/sonarlint/issuestore/1/1/11baa404b8daa7b0e90cc52faca5e4d959fffa36" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/walter/.idea/sonarlint/issuestore/1/1/11baa404b8daa7b0e90cc52faca5e4d959fffa36" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/walter/.idea/sonarlint/issuestore/5/d/5d4e1d0d3bf6f81319f6110d93bc5007599a1e49" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/walter/.idea/sonarlint/issuestore/5/d/5d4e1d0d3bf6f81319f6110d93bc5007599a1e49" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/walter/.idea/sonarlint/issuestore/6/3/639266aef4c670930e2f34c0be41f1a5c1a78256" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/walter/.idea/sonarlint/issuestore/6/3/639266aef4c670930e2f34c0be41f1a5c1a78256" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/walter/.idea/sonarlint/issuestore/e/4/e418bba1b3985de6e5b1f238802511ebba6d9290" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/walter/.idea/sonarlint/issuestore/e/4/e418bba1b3985de6e5b1f238802511ebba6d9290" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/walter/.idea/sonarlint/issuestore/f/5/f500b19ad94660247ce3fa65358524ad176ae4f1" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/walter/.idea/sonarlint/issuestore/f/5/f500b19ad94660247ce3fa65358524ad176ae4f1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/walter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/walter/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Demo/jcw_autorun/autorun_package.py" beforeDir="false" afterPath="$PROJECT_DIR$/Demo/jcw_autorun/autorun_package.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Demo/jcw_autorun/autorun_startprograms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Demo/jcw_autorun/autorun_startprograms.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,8 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Demo/jcw_autorun/autorun_startprograms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="46" column="14" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="14" />
+            <state relative-caret-position="283">
+              <caret line="102" column="14" lean-forward="true" selection-start-line="102" selection-start-column="14" selection-end-line="102" selection-end-column="14" />
               <folding>
                 <element signature="e#43#52#0" expanded="true" />
               </folding>
@@ -136,6 +126,7 @@
       <find>xml</find>
       <find>1599</find>
       <find>Scanning</find>
+      <find>programList</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -413,7 +404,7 @@
       <workItem from="1558001046315" duration="600000" />
       <workItem from="1558003001502" duration="16039000" />
       <workItem from="1558232195546" duration="63627000" />
-      <workItem from="1558670504596" duration="7131000" />
+      <workItem from="1558670504596" duration="11256000" />
     </task>
     <task id="LOCAL-00001" summary="20190521">
       <created>1558431529820</created>
@@ -433,10 +424,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165948000" />
+    <option name="totallyTimeSpent" value="170073000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.12860192" />
@@ -799,8 +791,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Demo/jcw_autorun/autorun_startprograms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="46" column="14" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="14" />
+        <state relative-caret-position="283">
+          <caret line="102" column="14" lean-forward="true" selection-start-line="102" selection-start-column="14" selection-end-line="102" selection-end-column="14" />
           <folding>
             <element signature="e#43#52#0" expanded="true" />
           </folding>
