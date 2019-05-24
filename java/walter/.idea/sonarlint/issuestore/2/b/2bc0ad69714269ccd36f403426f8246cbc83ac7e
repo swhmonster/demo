@@ -1,5 +1,0 @@
-
-[
-squid:S106"9Replace this use of System.out or System.err by a logger.(θιη¥ÿÿÿÿÿ8¥Ϊ―ς-
-dsquid:S3457"AFormat specifiers should be used instead of string concatenation.(θιη¥ÿÿÿÿÿ8¥Ϊ―ς-
-Fsquid:S1604"(Make this anonymous inner class a lambda(Ϊ8Σ¬σέª-

@@ -1,13 +1,0 @@
-
-Qsquid:S11414"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
-?squid:S1148>"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-lsquid:S20955"PUse try-with-resources or close this "OutputStreamWriter" in a "finally" clause.(÷¹Ï¾ûÿÿÿÿ
-gsquid:CommentedOutCodeLine/"<This block of commented-out lines of code should be removed.(éÊ®óùÿÿÿÿ
-:squid:S1148B"#Use a logger to log this exception.(Ç’Çê
-T
-squid:S106%"9Replace this use of System.out or System.err by a logger.(÷Ôðôøÿÿÿÿ
-T
-squid:S106C"9Replace this use of System.out or System.err by a logger.(ý™øøÿÿÿÿ
-Xsquid:S1075"ARefactor your code to get this URI from a customizable parameter.(ØÓÙ¤
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(Ô«Í¦úÿÿÿÿ
