@@ -30,13 +30,13 @@ public class AgxtZs {
                     case 2:
                         break;
                     case 3:
-                        cell.setCellValue("灵魂程序员" + i + j);
+                        cell.setCellValue("孙" + i + j);
                         break;
                     case 4:
                         cell.setCellValue("个人");
                         break;
                     case 5:
-                        cell.setCellValue("南京研发中心");
+                        cell.setCellValue("南京");
                         break;
                     case 6:
                         cell.setCellValue("党员");
@@ -63,7 +63,7 @@ public class AgxtZs {
                         cell.setCellValue("1" + (int) ((Math.random() * 9 + 1) * 1000000000));
                         break;
                     case 14:
-                        cell.setCellValue("邓紫棋皮裤");
+                        cell.setCellValue("嗯嗯啊啊");
                         break;
                 }
             }
