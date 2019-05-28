@@ -4,6 +4,7 @@
 import os
 import threading
 import queue
+import sys
 
 
 class myThread(threading.Thread):
@@ -27,18 +28,26 @@ def main():
     # 所在硬盘
     disk = "C:"
     # 硬盘相对路径
-    pathlist = []
-    pathlist.append("C:\\project\\jcw_anhui_xinxihuajianshe_AGXT\\40_源码\\线索排查会")
-    pathlist.append("C:\\project\\jcw_anhui_xinxihuajianshe_AGXT\\40_源码\\agxt")
-    pathlist.append("C:\\project\\jcw_anhui_xinxihuajianshe_AGXT\\40_源码\\案管系统接口服务")
-    pathlist.append("C:\\project\\jcw_anhui_xinxihuajianshe_ZJJD\\40_源码\\ZHBA")
-    pathlist.append("C:\\project\\jcw_anhui_xinxihuajianshe_ZJJD\\40_源码\\api")
-    pathlist.append("C:\\project\\jcw_anhui_xinxihuajianshe_AGXT\\40_源码\\agxt")
+    proMap = dict([
+        ("xspch", disk + "\\project\\jcw_anhui_xinxihuajianshe_AGXT\\40_源码\\线索排查会"),
+        ("agxt", disk + "\\project\\jcw_anhui_xinxihuajianshe_AGXT\\40_源码\\agxt"),
+        ("agxtApi", disk + "\\project\\jcw_anhui_xinxihuajianshe_AGXT\\40_源码\\案管系统接口服务"),
+        ("zhba", disk + "\\project\\jcw_anhui_xinxihuajianshe_ZJJD\\40_源码\\ZHBA"),
+        ("zjjdApi", disk + "\\project\\jcw_anhui_xinxihuajianshe_ZJJD\\40_源码\\api"),
+    ])
+
     threads = []
     workQueue = queue.Queue(10)
-    for p in pathlist:
-        workQueue.put(p)
-    i = 1
+    if (sys.argv.__len__() == 1):
+        pathlist = list(proMap.values())
+        for p in pathlist:
+            workQueue.put(p)
+    else:
+        pathlist1 = str(sys.argv[1]).split(",")
+        i = 0
+        for i in range(0, len(pathlist1)):
+            workQueue.put(proMap[pathlist1[i]])
+
     for i in range(1, 3):
         thread = myThread(threadID=i, q=workQueue, disk=disk)
         thread.start()

@@ -14,5 +14,11 @@ python autorun_startprograms.py tomcat:8080,tomcat8081  (启动tomcat，tomcat:8
 
 maven批量打包工具：
 autorun_package.py:顺序打包
+命令：python autorun_package.py
+
 autorun_package_multi.py:多线程打包（效率较高），根据具体cpu核数配置开启线程数，默认开启3个线程
+支持自定义打包
+全量打包命令：python autorun_package_multi.py
+自定义打包命令：python autorun_package_multi.py xspch,zjjdApi （自定义多个，以英文逗号隔开）
+
 注：window环境需安装python

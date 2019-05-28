@@ -10,6 +10,6 @@ public class Java8Test {
         Map map=new HashMap();
 //        String value="v1";
 //        String newvalue="v2";
-        map.merge(9,"v1",(value,newvalue)->value.concat());
+//        map.merge(9,"v1",(value,newvalue)->value.concat());
     }
 }
