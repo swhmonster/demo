@@ -32,13 +32,13 @@ def main():
     path_list.append("06办案系统\\")
     path_list.append("07增量脚本\\")
     path_list.append("08版本控制\\")
-    conn = psycopg2.connect(database="db_zhba", user="sa", password="tusc@6789#JKL", host="172.23.21.253",
+    conn = psycopg2.connect(database="db_zhba_0528", user="sa", password="tusc@6789#JKL", host="172.23.21.253",
                             port="6543")
     cur = conn.cursor()
     i=0
     for i in range(0,len(path_list)):
         execute_sql(cur, path + path_list[i])
     conn.close()
-
+    print("execute over!")
 
 main()

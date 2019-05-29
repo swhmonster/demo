@@ -20,5 +20,4 @@ autorun_package_multi.py:多线程打包（效率较高），根据具体cpu核�
 支持自定义打包
 全量打包命令：python autorun_package_multi.py
 自定义打包命令：python autorun_package_multi.py xspch,zjjdApi （自定义多个，以英文逗号隔开）
-
-注：window环境需安装python
+注：window环境需安装python；pip安装psycopg2,命令：pip install psycopg2
