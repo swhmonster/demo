@@ -109,9 +109,21 @@ def main():
             else:
                 run_program(list(proMap.values())[i])
 
-    # 自定义启动
-    if (sys.argv.__len__() > 1):
-        run_self_define(sys.argv[1], proMap, sysMap)
+    # 自定义启动，全部服务停止
+    if (sys.argv.__len__() == 2):
+        if (str(sys.argv[1]).__eq__("shutdown")):
+            plist = list(proMap.keys())
+            for port in plist:
+                kill_process(get_pid(port))
+        else:
+            run_self_define(sys.argv[1], proMap, sysMap)
+
+    # 自定义停止
+    if (sys.argv.__len__() == 3):
+        klist = str(sys.argv[2]).split(",")
+        k = 0
+        for k in range(0, len(klist)):
+            kill_process(get_pid(sysMap[klist[k]]))
 
 
 main()
