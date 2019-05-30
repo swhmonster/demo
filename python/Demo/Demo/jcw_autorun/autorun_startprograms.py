@@ -104,7 +104,7 @@ def main():
 
         # 启动springboot项目
         for i in range(0, list(proMap.values()).__len__()):
-            if (list(proMap.values())[i].find("tomcat") < 0):
+            if (list(proMap.values())[i].find("tomcat") > 0):
                 run_tomcat(list(proMap.values())[i])
             else:
                 run_program(list(proMap.values())[i])
