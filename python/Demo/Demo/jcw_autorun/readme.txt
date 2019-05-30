@@ -13,8 +13,8 @@
                             单个tomcat：python autorun_startprograms.py tomcat:8080
                             多个tomcat：python autorun_startprograms.py tomcat:8080,tomcat:8081  (用英文逗号隔开,用英文冒号）
 自定义服务停止命令：
-                单个停止：python autorun_startprograms.py xspch
-                多个停止：python autorun_startprograms.py xspch,zjjdApi(用英文逗号隔开）
+                单个停止：python autorun_startprograms.py shutdown xspch
+                多个停止：python autorun_startprograms.py shutdown xspch,zjjdApi(用英文逗号隔开）
 注：若系统安装的python版本为3.x.x，命令改用：python3 autorun_startprograms.py
 
 
