@@ -40,7 +40,7 @@ def run_program_priority(list, priorityDict):
     return True
 
 
-def run_self_define(path, gpus, proMap, sysMap):
+def run_self_define(gpus, proMap, sysMap):
     if (gpus.find("tomcat") == 0):
         tomcatlist = str(gpus).split(",")
         j = 0
@@ -111,7 +111,7 @@ def main():
 
     # 自定义启动
     if (sys.argv.__len__() > 1):
-        run_self_define(path, sys.argv[1], proMap, sysMap)
+        run_self_define(sys.argv[1], proMap, sysMap)
 
 
 main()
