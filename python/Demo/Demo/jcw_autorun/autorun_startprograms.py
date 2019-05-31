@@ -4,6 +4,7 @@
 import os
 import signal
 import sys
+import datetime
 
 
 def kill_process(pid):
@@ -54,6 +55,12 @@ def run_self_define(gpus, proMap, sysMap):
         for j in range(0, len(list)):
             kill_process(get_pid(sysMap[list[j]]))
             run_program(proMap[sysMap[list[j]]])
+
+
+# 备份方法
+def backup():
+    timenow = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
+    os.rename(path, path + ".bak" + str(timenow))
 
 
 def main():
