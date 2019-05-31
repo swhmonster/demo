@@ -58,13 +58,13 @@ def run_self_define(gpus, proMap, sysMap):
 
 
 # 备份方法
-def backup():
+def backup(path):
     timenow = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
     os.rename(path, path + ".bak" + str(timenow))
 
 
 def main():
-    # path = "/home/ba/"
+    flag_backup=False
     # 项目路径字典
     proMap = dict([
         ("2020", "/home/ba/jar_agxt_2020/agxt.jar"),
@@ -111,6 +111,8 @@ def main():
 
         # 启动springboot项目
         for i in range(0, list(proMap.values()).__len__()):
+            if(flag_backup):
+                backup(list(proMap.values())[i])
             if (list(proMap.values())[i].find("tomcat") > 0):
                 run_tomcat(list(proMap.values())[i])
             else:
