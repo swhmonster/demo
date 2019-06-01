@@ -3,9 +3,9 @@
 
 import os
 
-from . import programsetting
+from Demo.jcw_autorun.settings import programsetting
 
-proMap = dict(zip(programsetting.proMap.values(),programsetting.proMap.keys()))
+proMap = dict(zip(programsetting.sysMap.values(), programsetting.sysMap.keys()))
 # dict([
 #         ("2020",  "agxt"),
 #         ("2022", "agxtApi"),

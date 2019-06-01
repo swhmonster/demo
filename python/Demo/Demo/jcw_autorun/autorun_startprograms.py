@@ -5,7 +5,7 @@ import os
 import signal
 import sys
 import datetime
-from . import programsetting
+from Demo.jcw_autorun.settings import programsetting
 
 
 def kill_process(pid):
@@ -65,7 +65,7 @@ def backup(path):
 
 
 def main():
-    flag_backup=programsetting.flag_backup
+    flag_backup= programsetting.flag_backup
     # 项目路径字典
     proMap = programsetting.proMap
 
