@@ -6,20 +6,6 @@ import os
 from Demo.jcw_autorun.settings import programsetting
 
 proMap = dict(zip(programsetting.sysMap.values(), programsetting.sysMap.keys()))
-# dict([
-#         ("2020",  "agxt"),
-#         ("2022", "agxtApi"),
-#         ("2300",  "dept-prop"),
-#         ("2021",  "detail"),
-#         ("2024",  "filesys"),
-#         ("2025",  "serial"),
-#         ("3939",  "xspch"),
-#         ("2280",  "xxtx"),
-#         ("2019", "zjjdApi"),
-#         ("81",  "ajsl"),
-#         ("82",  "scdc"),
-#         ("83", "zjjd")
-#     ])
 
 counter = 1
 for port in list(proMap.keys()):
