@@ -1,5 +1,7 @@
+# 备份开关
 flag_backup = False
 
+# 一键启停配置
 proMap = dict([
     ("2020", "/home/ba/jar_agxt_2020/agxt.jar"),
     ("2022", "/home/ba/jar_agxtApi_2022/agxtApi.jar"),
@@ -15,7 +17,7 @@ proMap = dict([
     ("83", "/home/ba/tomcat_zjjd_83")
 ])
 
-# 项目端口号字典
+# 自定义启停配置
 sysMap = dict([
     ("agxt", "2020"),
     ("agxtApi", "2022"),
