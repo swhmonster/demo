@@ -22,7 +22,9 @@
 
         单个停止：python autorun_startprograms.py shutdown xspch
         多个停止：python autorun_startprograms.py shutdown xspch,zjjdApi(用英文逗号隔开）
->注：若系统安装的python版本为3.x.x，命令改用：python3 autorun_startprograms.py
+>注1：springboot和tomcat以关键字“tomcat”区分，部署路径需要区分，即部署jar包路径不要有“tomcat”字样，部署tomcat的路径需要有“tomcat”字样（只要路径中存在该字样即可）；
+
+>注2：若系统安装的python版本为3.x.x，命令改用：python3 autorun_startprograms.py
 
 
 
@@ -31,8 +33,9 @@
 2. 在命令行执行命令：
         
         python autorun_checkstart.py
->注：若系统安装的python版本为3.x.x，命令改用：python3 autorun_checkstart.py
-    springboot项目路径不可出现"tomcat"字样，tomcat配置的路径要有"tomcat"字样
+>注1：若系统安装的python版本为3.x.x，命令改用：python3 autorun_checkstart.py
+    
+>注2：springboot项目路径不可出现"tomcat"字样，tomcat配置的路径要有"tomcat"字样
 
 
 
@@ -58,5 +61,6 @@
 3. 在命令行执行命令：
 
         python script_batch_excution_tool.py
->注：若系统安装的python版本为3.x.x，命令改用：python3 script_batch_excution_tool.py
-    运行脚本前需安装python第三方包psycopg2，安装命令为：pip install psycopg2（pip为python包管理工具，若未安装，请先安装）
+>注1：若系统安装的python版本为3.x.x，命令改用：python3 script_batch_excution_tool.py
+    
+>注2：运行脚本前需安装python第三方包psycopg2，安装命令为：pip install psycopg2（pip为python包管理工具，若未安装，请先安装）
