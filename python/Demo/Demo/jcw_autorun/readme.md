@@ -1,5 +1,7 @@
 # 批量启动服务脚本：(v1.0)
->autorun_startprograms.py为批量启动springboot服务、tomcat脚本，根据main()方法中的注释，修改端口号，以及服务启动文件路径
+>autorun_startprograms.py为批量启停springboot服务、tomcat脚本，可自定义启动服务
+
+>更具实际部署情况修改setting文件夹下的programsetting.py文件即可
 ### 执行命令：
 1. 全部服务重启命令：python autorun_startprograms.py
 2. 全部服务停止命令：python autorun_startprograms.py shutdown
