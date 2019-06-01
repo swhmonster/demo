@@ -5,6 +5,7 @@ import os
 import signal
 import sys
 import datetime
+from . import programsetting
 
 
 def kill_process(pid):
@@ -64,38 +65,12 @@ def backup(path):
 
 
 def main():
-    flag_backup=False
+    flag_backup=programsetting.flag_backup
     # 项目路径字典
-    proMap = dict([
-        ("2020", "/home/ba/jar_agxt_2020/agxt.jar"),
-        ("2022", "/home/ba/jar_agxtApi_2022/agxtApi.jar"),
-        ("2300", "/home/ba/jar_dept-prop_2300/dept-prop.jar"),
-        ("2021", "/home/ba/jar_detail_2021/detail.jar"),
-        ("2024", "/home/ba/jar_filesys_2024/filesys.jar"),
-        ("2025", "/home/ba/jar_serial_2025/serial.jar"),
-        ("3939", "/home/ba/jar_xspch_3939/xspch.jar"),
-        ("2280", "/home/ba/jar_xxtx_2280/xxtx.jar"),
-        ("2019", "/home/ba/jar_zjjdApi_2019/zjjdApi.jar"),
-        ("81", "/home/ba/tomcat_ajsl_81"),
-        ("82", "/home/ba/tomcat_scdc_82"),
-        ("83", "/home/ba/tomcat_zjjd_83")
-    ])
+    proMap = programsetting.proMap
 
     # 项目端口号字典
-    sysMap = dict([
-        ("agxt", "2020"),
-        ("agxtApi", "2022"),
-        ("dept-prop", "2300"),
-        ("detail", "2021"),
-        ("filesys", "2024"),
-        ("serial", "2025"),
-        ("xspch", "3939"),
-        ("xxtx", "2280"),
-        ("zjjdApi", "2019"),
-        ("ajsl", "81"),
-        ("scdc", "82"),
-        ("zjjd", "83")
-    ])
+    sysMap = programsetting.sysMap
     # 启动需优先启动的项目
     # 请按优先级顺序将服务添加到列表中，默认顺序先加的优先级高
     # priorityDict = dict(["path","port"])
@@ -113,10 +88,11 @@ def main():
         for i in range(0, list(proMap.values()).__len__()):
             if(flag_backup):
                 backup(list(proMap.values())[i])
-            if (list(proMap.values())[i].find("tomcat") > 0):
-                run_tomcat(list(proMap.values())[i])
             else:
-                run_program(list(proMap.values())[i])
+                if (list(proMap.values())[i].find("tomcat") > 0):
+                    run_tomcat(list(proMap.values())[i])
+                else:
+                    run_program(list(proMap.values())[i])
 
     # 自定义启动，全部服务停止
     if (sys.argv.__len__() == 2):
