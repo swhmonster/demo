@@ -37,7 +37,7 @@
 支持自定义打包
 全量打包命令：python autorun_package_multi.py
 自定义打包命令：python autorun_package_multi.py xspch,zjjdApi （自定义多个，以英文逗号隔开）
->注：window环境需安装python；pip安装psycopg2,命令：pip install psycopg2
+>注：window环境需安装python
 
 # 脚本批量执行脚本：（v1.0）
 1. 根据注释修改sql脚本路径、数据库配置
