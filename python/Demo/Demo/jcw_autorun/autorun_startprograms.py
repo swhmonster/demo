@@ -66,14 +66,12 @@ def backup(path):
 
 def main():
     flag_backup= programsetting.flag_backup
+    flag_priority=programsetting.flag_priority
     # 项目路径字典
     proMap = programsetting.proMap
 
     # 项目端口号字典
     sysMap = programsetting.sysMap
-    # 启动需优先启动的项目
-    # 请按优先级顺序将服务添加到列表中，默认顺序先加的优先级高
-    # priorityDict = dict(["path","port"])
 
     if (sys.argv.__len__() == 1):
         # 根据pid杀进程
@@ -81,8 +79,11 @@ def main():
         for port in plist:
             kill_process(get_pid(port))
 
-        # 优先启动
-        # run_program_priority(list(priorityDict.keys()),priorityDict)
+        # 启动需优先启动的项目
+        # 请按优先级顺序将服务添加到列表中，默认顺序先加的优先级高
+        if(flag_priority):
+            priorityDict = programsetting.priorityDict
+            run_program_priority(list(priorityDict.keys()),priorityDict)
 
         # 启动springboot项目
         for i in range(0, list(proMap.values()).__len__()):

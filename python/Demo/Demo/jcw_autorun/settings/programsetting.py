@@ -1,6 +1,11 @@
 # 备份开关
 flag_backup = False
 
+# 优先启动开关
+flag_priority = False
+# 优先启动配置
+priorityDict = dict(["path", "port"])
+
 # 一键启停配置
 proMap = dict([
     ("2020", "/home/ba/jar_agxt_2020/agxt.jar"),

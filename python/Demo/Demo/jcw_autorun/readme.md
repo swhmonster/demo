@@ -2,6 +2,8 @@
 >autorun_startprograms.py为批量启停springboot服务、tomcat脚本，可自定义启动服务
 
 >更具实际部署情况修改setting文件夹下的programsetting.py文件即可
+
+**支持优先启动服务**
 ### 执行命令：
 1. 全部服务重启命令：
 
