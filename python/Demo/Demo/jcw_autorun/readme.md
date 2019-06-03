@@ -14,16 +14,16 @@
 3. 自定义服务重启命令：
 
         spring boot ：
-            单个服务：python autorun_startprograms.py xspch
-            多个服务：python autorun_startprograms.py xspch,zzjdApi  (用英文逗号隔开)
+                单个服务：python autorun_startprograms.py xspch
+                多个服务：python autorun_startprograms.py xspch,zzjdApi  (用英文逗号隔开)
 
         tomcat：
-            单个tomcat：python autorun_startprograms.py tomcat:8080
-             多个tomcat：python autorun_startprograms.py tomcat:8080,tomcat:8081  (用英文逗号隔开,用英文冒号）
+                单个tomcat：python autorun_startprograms.py tomcat:8080
+                多个tomcat：python autorun_startprograms.py tomcat:8080,tomcat:8081  (用英文逗号隔开,用英文冒号）
 4. 自定义服务停止命令：
 
-        单个停止：python autorun_startprograms.py shutdown xspch
-        多个停止：python autorun_startprograms.py shutdown xspch,zjjdApi(用英文逗号隔开）
+                单个停止：python autorun_startprograms.py shutdown xspch
+                多个停止：python autorun_startprograms.py shutdown xspch,zjjdApi(用英文逗号隔开）
 >注1：springboot和tomcat以关键字“tomcat”区分，部署路径需要区分，即部署jar包路径不要有“tomcat”字样，部署tomcat的路径需要有“tomcat”字样（只要路径中存在该字样即可）；
 
 >注2：若系统安装的python版本为3.x.x，命令改用：python3 autorun_startprograms.py
