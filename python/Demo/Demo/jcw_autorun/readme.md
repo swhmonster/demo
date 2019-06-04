@@ -1,17 +1,20 @@
-# 批量启动服务脚本：(v1.0)
+# 批量启动服务脚本：(v1.1)
 >autorun_startprograms.py为批量启停springboot服务、tomcat脚本，可自定义启动服务
 
 >更具实际部署情况修改setting文件夹下的programsetting.py文件即可
 
-**支持优先启动服务**
+>**支持优先启动服务**
 ### 执行命令：
-1. 全部服务重启命令：
+1. 一键部署安装命令：
+
+        python autorun_startprograms.py install
+2. 全部服务重启命令：
 
         python autorun_startprograms.py
-2. 全部服务停止命令：
+3. 全部服务停止命令：
 
         python autorun_startprograms.py shutdown
-3. 自定义服务重启命令：
+4. 自定义服务重启命令：
 
         spring boot ：
                 单个服务：python autorun_startprograms.py xspch
@@ -20,7 +23,7 @@
         tomcat：
                 单个tomcat：python autorun_startprograms.py tomcat:8080
                 多个tomcat：python autorun_startprograms.py tomcat:8080,tomcat:8081  (用英文逗号隔开,用英文冒号）
-4. 自定义服务停止命令：
+5. 自定义服务停止命令：
 
                 单个停止：python autorun_startprograms.py shutdown xspch
                 多个停止：python autorun_startprograms.py shutdown xspch,zjjdApi(用英文逗号隔开）
