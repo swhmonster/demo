@@ -57,6 +57,8 @@ def run_self_define(gpus, proMap, sysMap):
             kill_process(get_pid(sysMap[list[j]]))
             run_program(proMap[sysMap[list[j]]])
 
+def install_package(path):
+    os.system("sh %s"%(path));
 
 # 备份方法
 def backup(path):
@@ -65,6 +67,7 @@ def backup(path):
 
 
 def main():
+    install_path=programsetting.path+" _install.sh"
     flag_backup= programsetting.flag_backup
     flag_priority=programsetting.flag_priority
     # 项目路径字典
@@ -101,6 +104,8 @@ def main():
             plist = list(proMap.keys())
             for port in plist:
                 kill_process(get_pid(port))
+        elif(str(sys.argv[1]).__eq__("shutdown")):
+            install_package(install_path)
         else:
             run_self_define(sys.argv[1], proMap, sysMap)
 
