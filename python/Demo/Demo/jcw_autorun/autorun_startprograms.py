@@ -21,8 +21,8 @@ def get_pid(port):
     return pid
 
 
-def run_program(jar_name):
-    os.system("nohup java -jar %s &" % (jar_name))
+def run_program(jdk_path, jar_name):
+    os.system("nohup %s -jar %s &" % (jdk_path + "java", jar_name))
     print("正在启动：%s" % (jar_name))
 
 
@@ -36,10 +36,10 @@ def run_tas(sh_name):
     print("正在启动：%s" % (sh_name))
 
 
-def run_program_priority(list, priorityDict):
+def run_program_priority(jdk_path, list, priorityDict):
     i = 0
     for i in range(0, len(list)):
-        run_program(list[i])
+        run_program(jdk_path, list[i])
         print(list[i] + "starting...")
         while get_pid(priorityDict[list[i]]) == '':
             continue
@@ -47,7 +47,7 @@ def run_program_priority(list, priorityDict):
     return True
 
 
-def run_self_define(gpus, proMap, sysMap):
+def run_self_define(jdk_path, gpus, proMap, sysMap):
     if (gpus.find("tomcat") == 0):
         tomcatlist = str(gpus).split(",")
         j = 0
@@ -67,7 +67,7 @@ def run_self_define(gpus, proMap, sysMap):
         j = 0
         for j in range(0, len(list)):
             kill_process(get_pid(sysMap[list[j]]))
-            run_program(proMap[sysMap[list[j]]])
+            run_program(jdk_path, proMap[sysMap[list[j]]])
 
 
 def install_package(path):
@@ -81,6 +81,7 @@ def backup(path):
 
 
 def main():
+    jdk_path = programsetting.jdk_path
     install_path = programsetting.path + " _install.sh"
     flag_backup = programsetting.flag_backup
     flag_priority = programsetting.flag_priority
@@ -100,7 +101,7 @@ def main():
         # 请按优先级顺序将服务添加到列表中，默认顺序先加的优先级高
         if (flag_priority):
             priorityDict = programsetting.priorityDict
-            run_program_priority(list(priorityDict.keys()), priorityDict)
+            run_program_priority(jdk_path, list(priorityDict.keys()), priorityDict)
 
         # 启动springboot项目
         for i in range(0, list(proMap.values()).__len__()):
@@ -112,7 +113,7 @@ def main():
                 elif (list(proMap.values())[i].find("tas") > 0):
                     run_tas(list(proMap.values())[i])
                 else:
-                    run_program(list(proMap.values())[i])
+                    run_program(jdk_path, list(proMap.values())[i])
 
     # 自定义启动，全部服务停止
     if (sys.argv.__len__() == 2):
@@ -123,7 +124,7 @@ def main():
         elif (str(sys.argv[1]).__eq__("install")):
             install_package(install_path)
         else:
-            run_self_define(sys.argv[1], proMap, sysMap)
+            run_self_define(jdk_path, sys.argv[1], proMap, sysMap)
 
     # 自定义停止
     if (sys.argv.__len__() == 3):

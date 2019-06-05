@@ -6,9 +6,11 @@ flag_priority = False
 # 优先启动配置
 priorityDict = dict([("path", "port")])
 
+# 自定义jdk路径(已"/"结束)
+jdk_path = ""
 # 一键启停配置
 # 办案部署安装路径
-path = "/home/ba"
+path = "/home/ba/"
 # 安装路径下各系统包详细路径
 proMap = dict([
     ("2020", path + "jar_agxt_2020/agxt.jar"),
