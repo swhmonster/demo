@@ -31,6 +31,11 @@ def run_tomcat(sh_name):
     print("正在启动：%s" % (sh_name))
 
 
+def run_tas(sh_name):
+    os.system("sh %s/bin/StartTAS.sh" % (sh_name))
+    print("正在启动：%s" % (sh_name))
+
+
 def run_program_priority(list, priorityDict):
     i = 0
     for i in range(0, len(list)):
@@ -50,6 +55,13 @@ def run_self_define(gpus, proMap, sysMap):
             portlist = str(tomcatlist[j]).split(":")
             kill_process(get_pid(portlist[1]))
             run_tomcat(proMap[portlist[1]])
+    elif (gpus.find("tas") == 0):
+        taslist = str(gpus).split(",")
+        j = 0
+        for j in range(0, len(taslist)):
+            portlist = str(taslist[j]).split(":")
+            kill_process(get_pid(portlist[1]))
+            run_tas(proMap[portlist[1]])
     else:
         list = str(gpus).split(",")
         j = 0
@@ -57,8 +69,10 @@ def run_self_define(gpus, proMap, sysMap):
             kill_process(get_pid(sysMap[list[j]]))
             run_program(proMap[sysMap[list[j]]])
 
+
 def install_package(path):
-    os.system("sh %s"%(path));
+    os.system("sh %s" % (path));
+
 
 # 备份方法
 def backup(path):
@@ -67,9 +81,9 @@ def backup(path):
 
 
 def main():
-    install_path=programsetting.path+" _install.sh"
-    flag_backup= programsetting.flag_backup
-    flag_priority=programsetting.flag_priority
+    install_path = programsetting.path + " _install.sh"
+    flag_backup = programsetting.flag_backup
+    flag_priority = programsetting.flag_priority
     # 项目路径字典
     proMap = programsetting.proMap
 
@@ -84,17 +98,19 @@ def main():
 
         # 启动需优先启动的项目
         # 请按优先级顺序将服务添加到列表中，默认顺序先加的优先级高
-        if(flag_priority):
+        if (flag_priority):
             priorityDict = programsetting.priorityDict
-            run_program_priority(list(priorityDict.keys()),priorityDict)
+            run_program_priority(list(priorityDict.keys()), priorityDict)
 
         # 启动springboot项目
         for i in range(0, list(proMap.values()).__len__()):
-            if(flag_backup):
+            if (flag_backup):
                 backup(list(proMap.values())[i])
             else:
                 if (list(proMap.values())[i].find("tomcat") > 0):
                     run_tomcat(list(proMap.values())[i])
+                elif (list(proMap.values())[i].find("tas") > 0):
+                    run_tas(list(proMap.values())[i])
                 else:
                     run_program(list(proMap.values())[i])
 
@@ -104,7 +120,7 @@ def main():
             plist = list(proMap.keys())
             for port in plist:
                 kill_process(get_pid(port))
-        elif(str(sys.argv[1]).__eq__("shutdown")):
+        elif (str(sys.argv[1]).__eq__("install")):
             install_package(install_path)
         else:
             run_self_define(sys.argv[1], proMap, sysMap)
