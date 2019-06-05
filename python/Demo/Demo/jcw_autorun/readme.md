@@ -23,6 +23,10 @@
         tomcat：
                 单个tomcat：python autorun_startprograms.py tomcat:8080
                 多个tomcat：python autorun_startprograms.py tomcat:8080,tomcat:8081  (用英文逗号隔开,用英文冒号）
+
+        tas:
+                单个tas: python autorun_startprograms.py tas:8080
+                多个tas：python autorun_startprograms.py tas:8080,tas:8081(用英文逗号隔开,用英文冒号）
 5. 自定义服务停止命令：
 
                 单个停止：python autorun_startprograms.py shutdown xspch
