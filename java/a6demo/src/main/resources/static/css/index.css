@@ -1,0 +1,36 @@
+/*********************************************
+ * index CSS
+ *
+ * @author huayu
+ * @date 2019-06-06
+ *********************************************/
+.fd-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.fd-bottom {
+    display: flex;
+    line-height: 40px;
+    overflow-y: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.fd-left, .fd-right {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fd-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 180px;
+    font-weight: bold;
+    font-family: Georgia;
+}

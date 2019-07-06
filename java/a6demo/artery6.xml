@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ArterySupport>
+    <cnName>a6demo</cnName>
+    <title>title</title>
+    <controllerPackage>com.thunisoft.demo.controller</controllerPackage>
+    <jsFolder>js</jsFolder>
+    <cssFolder>css</cssFolder>
+    <tplFormHtml>artery.tpl.form.html</tplFormHtml>
+    <tplFormCss>artery.tpl.form.css</tplFormCss>
+    <tplFormJs>artery.tpl.form.js</tplFormJs>
+    <tplFormJava>artery.tpl.form.java</tplFormJava>
+    <tplFormTplHtml>artery.tpl.form.htmlTpl</tplFormTplHtml>
+    <tplFormTplJs>artery.tpl.form.jsTpl</tplFormTplJs>
+</ArterySupport>

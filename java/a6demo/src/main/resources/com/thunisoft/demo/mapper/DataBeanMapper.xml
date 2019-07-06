@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.thunisoft.demo.mapper.DataBeanMapper">
+    <resultMap id="databeanMap" type="com.thunisoft.demo.bean.DataBean">
+        <result property="cBh" column="c_bh"></result>
+    </resultMap>
+    <insert id="addWs">
+
+    </insert>
+    <select id="queryBh" resultMap="databeanMap">
+        select c_bh,c_wsmc from "db_xspch"."t_wssl" order by c_bh desc
+    </select>
+    <update id="updataWs">
+        update "db_xspch"."t_wssl" set c_wsmc=#{wsmc} where c_bh=#{bh}
+    </update>
+    <delete id="deleteWs">
+        delete from "db_xspch"."t_wssl" where c_bh=#{bh}
+    </delete>
+</mapper>

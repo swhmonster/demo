@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:aty="http://www.thunisoft.com">
+<head>
+    <meta type="aty-meta" name="javaLocation" content="com.thunisoft.demo.controller.IndexController.java"
+          th:remove="all">
+    <meta type="aty-meta" name="cssLocation" content="css/index.css" th:remove="all">
+    <meta type="aty-meta" name="jsLocation" content="js/index.js" th:remove="all">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <link rel="stylesheet" th:href="@{/webjars/artery/artery-ui.css}"/>
+    <link rel="stylesheet" aty:import>
+    <link rel="stylesheet" th:href="@{/css/index.css}"/>
+    <title>title</title>
+    <base th:href="@{/}"/>
+</head>
+<body>
+<div id="app" style="height:100%;width:100%">
+    <aty-table :pageable-data="lbdata">
+        <aty-table-column prop="cBh" label="编号">
+        </aty-table-column>
+        <aty-table-column label="文书名称" prop="cWsmc" align="left"></aty-table-column>
+        <aty-table-column label="删改操作" align="left">
+            <template slot-scope="props">
+                <aty-text text="删除" @click="deleteWs(props.row.cBh)"></aty-text>
+                <aty-text text="更新" @click="updateWs(props.row.cBh)"></aty-text>
+            </template>
+        </aty-table-column>
+    </aty-table>
+    <aty-button text="增加"></aty-button>
+</div>
+</body>
+<script type="text/javascript" th:src="@{/webjars/vue/vue.min.js}"></script>
+<script type="text/javascript" th:src="@{/webjars/artery/artery-ui.min.js}"></script>
+<script type="text/javascript" aty:import></script>
+<script type="text/javascript" th:src="@{/js/index.js}"></script>
+</html>
