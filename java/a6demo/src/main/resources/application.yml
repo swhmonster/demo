@@ -1,0 +1,29 @@
+spring:
+  profiles:
+    active: dev
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8 #日期序列化走北京时间
+  datasource:
+      url: jdbc:log4jdbc:ArteryBase://172.23.21.253:6543/db_zhba?ApplicationName=ZHBA
+      username: sa
+      password: tusc@6789#JKL
+      driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+#server:
+#  port: 8080
+#  servlet:
+#    context-path: /demo
+#    session:
+#      cookie:
+#        http-only: true
+#        secure: true
+#      timeout: 30m
+#  tomcat: # 以下配置均为tomcat9.x的默认值
+#    max-threads: 200
+#    min-spare-threads: 10
+#    max-connections: 10000
+#    accept-count: 100
+artery:
+  login:
+    enabled: false
+

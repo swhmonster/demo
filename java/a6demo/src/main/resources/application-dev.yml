@@ -1,0 +1,9 @@
+spring:
+  thymeleaf:
+    cache: false
+#  datasource:
+#    url: jdbc:log4jdbc:ArteryBase://172.23.21.253:6543/db_zhba?
+#    username: sa
+#    password: tusc@6789#JKL
+#    driver-class-name: com.thunisoft.ArteryBase.Driver
+

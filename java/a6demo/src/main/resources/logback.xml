@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="false">
+    <!-- define动态获取LOG_HOME, TAS为${TAS_HOME}/logs, tomcat为${CATALINA_HOME}/logs, springboot为相对于jar路径的logs目录, 如需其他路径可自行配置property-->
+    <!--<property name="LOG_HOME" value="/opt/thunisoft/logs"/>-->
+    <define name="LOG_HOME" class="com.thunisoft.logback.LogbackHomeGetProperty" />
+    <define name="IP" class="com.thunisoft.logback.LogbackIpGetProperty" />
+    <define name="PORT" class="com.thunisoft.logback.LogbackPortGetProperty" />
+    <statusListener class="ch.qos.logback.core.status.NopStatusListener" />
+
+    <property name="APP_NAME" value="a6demo"/>
+
+    <!-- 控制台输出 -->
+    <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+        <Target>System.out</Target>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss:SSS , GMT+8} %m [%c:%L]-[%p] %n</pattern>
+        </encoder>
+    </appender>
+    <!-- 正常日志输出文件 -->
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>${LOG_HOME}/${APP_NAME}_stdout.log</File>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <FileNamePattern>${LOG_HOME}/${APP_NAME}_stdout.%d{yyyy-MM-dd}.log</FileNamePattern>
+            <maxHistory>20</maxHistory>
+        </rollingPolicy>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%-5level] [%-5thread] %logger{20} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <!-- 错误日志输出文件 -->
+    <appender name="FILE-ERROR"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>error</level>
+        </filter>
+        <File>${LOG_HOME}/${APP_NAME}_stderr.log</File>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <FileNamePattern>${LOG_HOME}/${APP_NAME}_stderr.%d{yyyy-MM-dd}.log</FileNamePattern>
+            <maxHistory>20</maxHistory>
+        </rollingPolicy>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%-5level] [%-5thread] %logger{20} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <!-- 默认jdbc日志输出文件 -->
+    <appender name="FILE-JDBC"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>${LOG_HOME}/${APP_NAME}_jdbc.log</File>
+        <!-- 集群部署日志名建议加上ip和port -->
+        <!--<File>${LOG_HOME}/${APP_NAME}_jdbc_${IP}_${PORT}.log</File>-->
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%-5level] [%-5thread] %logger{20} - %msg%n</pattern>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>debug</level>
+        </filter>
+        <append>true</append>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_HOME}/${APP_NAME}_jdbc.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <!--<fileNamePattern>${LOG_HOME}/${APP_NAME}_jdbc.%d{yyyy-MM-dd}_${IP}_${PORT}.log</fileNamePattern>-->
+            <maxHistory>7</maxHistory>
+        </rollingPolicy>
+    </appender>
+    <logger name="com.thunisoft" additivity="false">
+        <level value="info" />
+        <appender-ref ref="FILE" />
+        <appender-ref ref="FILE-ERROR" />
+    </logger>
+    <logger name="jdbc.sqltiming" additivity="false">
+        <appender-ref ref="FILE-JDBC" />
+        <level value="debug" />
+    </logger>
+    <root>
+        <level value="info" />
+        <appender-ref ref="stdout" />
+        <appender-ref ref="FILE" />
+        <appender-ref ref="FILE-ERROR" />
+    </root>
+</configuration>
