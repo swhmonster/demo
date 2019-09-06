@@ -40,10 +40,11 @@ def main():
         ("agxt", disk + "\\project\\jcw_anhui_xinxihuajianshe_AGXT\\40_源码\\agxt"),
         ("agxtApi", disk + "\\project\\jcw_anhui_xinxihuajianshe_AGXT\\40_源码\\案管系统接口服务"),
         ("xxtx", disk + "\\project\\jcw_anhui_xinxihuajianshe_AGXT\\40_源码\\消息提醒"),
-        ("agxtApi", disk + "\\project\\jcw_anhui_xinxihuajianshe_AGXT\\40_源码\\案管系统接口服务"),
         ("zjjdApi", disk + "\\project\\jcw_anhui_xinxihuajianshe_ZJJD\\40_源码\\api"),
         ("dccsform", disk + "\\project\\jcw_anhui_xinxihuajianshe_ZJJD\\40_源码\\审查调查措施")
     ])
+    #临时备份字典
+    proMapTemp=proMap
 
     threads = []
     workQueue = queue.Queue(10)
@@ -68,7 +69,8 @@ def main():
     # 批量取包
     print("collecting packages...")
     os.system("del /q %s" % (collect_path))
-    collect_packages(proMap, collect_path)
+    collect_packages(proMapTemp, collect_path)
+    print(proMapTemp)
     print("collect over!")
 
 
