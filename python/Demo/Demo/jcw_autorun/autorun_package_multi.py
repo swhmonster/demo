@@ -63,7 +63,7 @@ def main():
             proMapList.append(
                 "copy %s %s" % (proMap[pathlist1[i]] + "\\target\\" + pathlist1[i] + ".jar", collect_path))
 
-    for i in range(1, 3):
+    for i in range(1, 8):
         thread = myThread(threadID=i, q=workQueue, disk=disk)
         thread.start()
         threads.append(thread)
