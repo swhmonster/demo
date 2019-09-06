@@ -51,9 +51,11 @@ def main():
     threads = []
     workQueue = queue.Queue(10)
     if (sys.argv.__len__() == 1):
-        pathlist = list(proMap.values())
+        pathlist = list(proMap.keys())
         for p in pathlist:
-            workQueue.put(p)
+            workQueue.put(proMap.get(p))
+            proMapList.append(
+                "copy %s %s" % (proMap.get(p) + "\\target\\" + p + ".jar", collect_path))
     else:
         pathlist1 = str(sys.argv[1]).split(",")
         i = 0
