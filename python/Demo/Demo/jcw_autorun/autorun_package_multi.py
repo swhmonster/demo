@@ -7,7 +7,9 @@ import queue
 import sys
 
 
+# 定义线程类
 class myThread(threading.Thread):
+    # q为先前组装好的打包任务（及打包所在路径）
     def __init__(self, threadID, q, disk):
         threading.Thread.__init__(self)
         self.threadID = threadID
@@ -24,9 +26,9 @@ def start_package(q, disk):
         os.system("%s && cd %s && mvn clean && mvn package -DskipTests" % (disk, p))
 
 
-def collect_packages(proMap, collect_path):
-    for i, el in enumerate(proMap.keys()):
-        os.system("copy %s %s" % (proMap.get(el) + "\\target\\" + el + ".jar", collect_path))
+def collect_packages(proMapList):
+    for i, el in enumerate(proMapList):
+        os.system(el)
 
 
 def main():
@@ -43,8 +45,8 @@ def main():
         ("zjjdApi", disk + "\\project\\jcw_anhui_xinxihuajianshe_ZJJD\\40_源码\\api"),
         ("dccsform", disk + "\\project\\jcw_anhui_xinxihuajianshe_ZJJD\\40_源码\\审查调查措施")
     ])
-    #临时备份字典
-    proMapTemp=proMap
+    # 临时备份字典
+    proMapList = list()
 
     threads = []
     workQueue = queue.Queue(10)
@@ -55,8 +57,11 @@ def main():
     else:
         pathlist1 = str(sys.argv[1]).split(",")
         i = 0
+        # 根据脚本所带参数，遍历参数，往队列中增加任务（即打包所在路径），并拼接取包路径
         for i in range(0, len(pathlist1)):
             workQueue.put(proMap[pathlist1[i]])
+            proMapList.append(
+                "copy %s %s" % (proMap[pathlist1[i]] + "\\target\\" + pathlist1[i] + ".jar", collect_path))
 
     for i in range(1, 3):
         thread = myThread(threadID=i, q=workQueue, disk=disk)
@@ -68,9 +73,10 @@ def main():
 
     # 批量取包
     print("collecting packages...")
+    # 先清空取包路径
     os.system("del /q %s" % (collect_path))
-    collect_packages(proMapTemp, collect_path)
-    print(proMapTemp)
+    # 再复制取包
+    collect_packages(proMapList)
     print("collect over!")
 
 
