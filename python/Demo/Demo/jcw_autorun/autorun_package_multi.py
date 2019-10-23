@@ -34,17 +34,17 @@ def collect_packages(proMapList):
 
 def main():
     # 所在硬盘
-    disk = "C:"
+    disk = "C:\\project"
     # 包收集路径
     collect_path = "C:\\Users\\文浩.000\\Desktop\\collect_packages"
     # 硬盘相对路径
     proMap = dict([
-        ("xspch", disk + "\\project\\jcw_anhui_xinxihuajianshe_AGXT\\40_源码\\线索排查会"),
-        ("agxt", disk + "\\project\\jcw_anhui_xinxihuajianshe_AGXT\\40_源码\\agxt"),
-        ("agxtApi", disk + "\\project\\jcw_anhui_xinxihuajianshe_AGXT\\40_源码\\案管系统接口服务"),
-        ("xxtx", disk + "\\project\\jcw_anhui_xinxihuajianshe_AGXT\\40_源码\\消息提醒"),
-        ("zjjdApi", disk + "\\project\\jcw_anhui_xinxihuajianshe_ZJJD\\40_源码\\api"),
-        ("dccsform", disk + "\\project\\jcw_anhui_xinxihuajianshe_ZJJD\\40_源码\\审查调查措施")
+        ("xspch", disk + "\\jcw_anhui_xinxihuajianshe_AGXT\\40_源码\\线索排查会"),
+        ("agxt", disk + "\\jcw_anhui_xinxihuajianshe_AGXT\\40_源码\\agxt"),
+        ("agxtApi", disk + "\\jcw_anhui_xinxihuajianshe_AGXT\\40_源码\\案管系统接口服务"),
+        ("xxtx", disk + "\\jcw_anhui_xinxihuajianshe_AGXT\\40_源码\\消息提醒"),
+        ("zjjdApi", disk + "\\jcw_anhui_xinxihuajianshe_ZJJD\\40_源码\\api"),
+        ("dccsform", disk + "\\jcw_anhui_xinxihuajianshe_ZJJD\\40_源码\\审查调查措施")
     ])
     # 临时备份字典
     proMapList = list()
