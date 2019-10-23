@@ -10,8 +10,9 @@ from Demo.jcw_autorun.settings import programsetting
 
 def kill_process(pid):
     if (pid != ''):
-        a = os.kill(int(pid), signal.SIGKILL)
-        print('已杀死pid为%s的进程,　返回值是:%s' % (pid, a))
+        os.system("kill -9 %s" % (pid))
+        # a = os.kill(int(pid), signal.SIGKILL)
+        print('已杀死pid为%s的进程!' % (pid))
 
 
 def get_pid(port):

@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 
 import os
-import threading
 import queue
 import sys
+import threading
 
 
 # 定义线程类
@@ -28,6 +28,7 @@ def start_package(q, disk):
 
 def collect_packages(proMapList):
     for i, el in enumerate(proMapList):
+        print(el)
         os.system(el)
 
 
@@ -54,16 +55,16 @@ def main():
         pathlist = list(proMap.keys())
         for p in pathlist:
             workQueue.put(proMap.get(p))
-            proMapList.append(
-                "copy %s %s" % (proMap.get(p) + "\\target\\" + p + ".jar", collect_path))
+            proMapList.append("copy %s %s" % (proMap.get(p) + "\\target\\*.jar", collect_path))
+            # proMapList.append("copy %s %s" % (proMap.get(p) + "\\target\\" + p + ".jar", collect_path))
     else:
         pathlist1 = str(sys.argv[1]).split(",")
         i = 0
         # 根据脚本所带参数，遍历参数，往队列中增加任务（即打包所在路径），并拼接取包路径
         for i in range(0, len(pathlist1)):
             workQueue.put(proMap[pathlist1[i]])
-            proMapList.append(
-                "copy %s %s" % (proMap[pathlist1[i]] + "\\target\\" + pathlist1[i] + ".jar", collect_path))
+            proMapList.append("copy %s %s" % (proMap[pathlist1[i]] + "\\target\\*.jar", collect_path))
+            # proMapList.append("copy %s %s" % (proMap[pathlist1[i]] + "\\target\\" + pathlist1[i] + ".jar", collect_path))
 
     for i in range(1, 8):
         thread = myThread(threadID=i, q=workQueue, disk=disk)
