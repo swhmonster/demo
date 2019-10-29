@@ -26,10 +26,14 @@ def start_package(q, disk):
         os.system("%s && cd %s && mvn clean && mvn package -DskipTests" % (disk, p))
 
 
-def collect_packages(proMapList):
+def collect_packages(proMapList, collect_path):
     for i, el in enumerate(proMapList):
-        print(el)
-        os.system(el)
+        eljar = el + "*.jar " + collect_path
+        elwar = el + "*.war " + collect_path
+        print(eljar)
+        print(elwar)
+        os.system(eljar)
+        os.system(elwar)
 
 
 def main():
@@ -44,7 +48,8 @@ def main():
         ("agxtApi", disk + "\\project\\jcw_anhui_xinxihuajianshe_AGXT\\40_源码\\案管系统接口服务"),
         ("xxtx", disk + "\\project\\jcw_anhui_xinxihuajianshe_AGXT\\40_源码\\消息提醒"),
         ("zjjdApi", disk + "\\project\\jcw_anhui_xinxihuajianshe_ZJJD\\40_源码\\api"),
-        ("dccsform", disk + "\\project\\jcw_anhui_xinxihuajianshe_ZJJD\\40_源码\\审查调查措施")
+        ("dccsform", disk + "\\project\\jcw_anhui_xinxihuajianshe_ZJJD\\40_源码\\审查调查措施"),
+        ("zjjd", disk + "\\project\\jcw_anhui_xinxihuajianshe_ZJJD\\40_源码\\ZHBA")
     ])
     # 临时备份字典
     proMapList = list()
@@ -55,7 +60,7 @@ def main():
         pathlist = list(proMap.keys())
         for p in pathlist:
             workQueue.put(proMap.get(p))
-            proMapList.append("copy %s %s" % (proMap.get(p) + "\\target\\*.jar", collect_path))
+            proMapList.append("copy %s" % (proMap.get(p) + "\\target\\"))
             # proMapList.append("copy %s %s" % (proMap.get(p) + "\\target\\" + p + ".jar", collect_path))
     else:
         pathlist1 = str(sys.argv[1]).split(",")
@@ -63,7 +68,8 @@ def main():
         # 根据脚本所带参数，遍历参数，往队列中增加任务（即打包所在路径），并拼接取包路径
         for i in range(0, len(pathlist1)):
             workQueue.put(proMap[pathlist1[i]])
-            proMapList.append("copy %s %s" % (proMap[pathlist1[i]] + "\\target\\*.jar", collect_path))
+            proMapList.append("copy %s" % (
+                    proMap[pathlist1[i]] + "\\target\\"))
             # proMapList.append("copy %s %s" % (proMap[pathlist1[i]] + "\\target\\" + pathlist1[i] + ".jar", collect_path))
 
     for i in range(1, 8):
@@ -79,7 +85,7 @@ def main():
     # 先清空取包路径
     os.system("del /q %s" % (collect_path))
     # 再复制取包
-    collect_packages(proMapList)
+    collect_packages(proMapList, collect_path)
     print("collect over!")
 
 
