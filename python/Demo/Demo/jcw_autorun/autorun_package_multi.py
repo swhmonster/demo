@@ -5,6 +5,7 @@ import os
 import queue
 import sys
 import threading
+import time
 
 
 # 定义线程类
@@ -37,6 +38,9 @@ def collect_packages(proMapList, collect_path):
 
 
 def main():
+    localtime=time.asctime(time.localtime(time.time()))
+    startTime=time.time()
+    print(localtime)
     # 所在硬盘
     disk = "C:"
     # 包收集路径
@@ -49,6 +53,8 @@ def main():
         ("xxtx", disk + "\\project\\jcw_anhui_xinxihuajianshe_AGXT\\40_源码\\消息提醒"),
         ("zjjdApi", disk + "\\project\\jcw_anhui_xinxihuajianshe_ZJJD\\40_源码\\api"),
         ("dccsform", disk + "\\project\\jcw_anhui_xinxihuajianshe_ZJJD\\40_源码\\审查调查措施"),
+        ("ajslNew", disk + "\\project\\JCW_ANHUI_anjianshenli\\40_源码\\ajslNew"),
+        ("ajsl", disk + "\\project\\JCW_ANHUI_anjianshenli\\40_源码\\AJSL"),
         ("zjjd", disk + "\\project\\jcw_anhui_xinxihuajianshe_ZJJD\\40_源码\\ZHBA")
     ])
     # 临时备份字典
@@ -87,6 +93,8 @@ def main():
     # 再复制取包
     collect_packages(proMapList, collect_path)
     print("collect over!")
-
+    print(localtime)
+    endTime=time.time()
+    print("cost: %.2f s"%(endTime-startTime))
 
 main()
