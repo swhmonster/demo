@@ -53,11 +53,13 @@ def main():
         ("xxtx", disk + "\\project\\jcw_anhui_xinxihuajianshe_AGXT\\40_源码\\消息提醒"),
         ("zjjdApi", disk + "\\project\\jcw_anhui_xinxihuajianshe_ZJJD\\40_源码\\api"),
         ("dccsform", disk + "\\project\\jcw_anhui_xinxihuajianshe_ZJJD\\40_源码\\审查调查措施"),
-        ("ajslNew", disk + "\\project\\JCW_ANHUI_anjianshenli\\40_源码\\ajslNew"),
-        ("ajsl", disk + "\\project\\JCW_ANHUI_anjianshenli\\40_源码\\AJSL"),
-        ("zjjd", disk + "\\project\\jcw_anhui_xinxihuajianshe_ZJJD\\40_源码\\ZHBA")
+        ("ajslNew", disk + "\\project\\JCW_ANHUI_anjianshenli\\40_源码\\ajslNew")
+        # ("ajsl", disk + "\\project\\JCW_ANHUI_anjianshenli\\40_源码\\AJSL"),
+        # ("zjjd", disk + "\\project\\jcw_anhui_xinxihuajianshe_ZJJD\\40_源码\\ZHBA")
     ])
     # 临时备份字典
+    
+    
     proMapList = list()
 
     threads = []
