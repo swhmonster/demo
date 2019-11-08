@@ -21,6 +21,8 @@ def get_pid(port):
             '/')[0]
     return pid
 
+def get_pid_byjarname():
+    pid=os.system()
 
 def run_program(jdk_path, jar_name):
     jar_path = ""
@@ -29,11 +31,11 @@ def run_program(jdk_path, jar_name):
         jar_path+=(list[i]+"/")
     if (jdk_path == ''):
         print(jar_path)
-        os.system("cd %s && nohup java -jar %s > file 2>&1 &" % (jar_path, jar_name))
+        os.system("cd %s && nohup java -Xdebug -Xnoagent -Djava.compiler=NONE -jar %s > /dev/null 2>&1 &" % (jar_path, jar_name))
         print("正在启动：%s" % (jar_name))
     else:
         print(jar_path)
-        os.system("cd %s && nohup %s -jar %s > file 2>&1 &" % (jar_path,jdk_path, jar_name))
+        os.system("cd %s && nohup java -Xdebug -Xnoagent -Djava.compiler=NONE -jar %s > /dev/null 2>&1 &" % (jar_path,jdk_path, jar_name))
         print("正在启动：%s" % (jar_name))
 
 
