@@ -21,20 +21,22 @@ class myThread(threading.Thread):
 
 def click_to_thousand(user_list):
     while not user_list.empty():
-        driver = webdriver.Chrome(executable_path=r"C:\Users\孙文浩\AppData\Local\Google\Chrome\Application\Application\chromedriver.exe")
+        driver = webdriver.Chrome(executable_path=r"C:\Users\孙文浩\AppData\Local\Google\Chrome\Application\chromedriver.exe")
         driver.get("http://180.168.3.74:9980")
         time.sleep(3)  # 等待页面加载
 
         try:
-            user_input = driver.find_element_by_id('username')
-            password_input = driver.find_element_by_id('password')
+            listaa=driver.find_elements_by_class_name("el-input__inner")
+            user_input = listaa[0]
+            password_input = listaa[1]
             user_input.send_keys(user_list.get())
             password_input.send_keys('6789@jkl')
-            driver.find_element_by_class_name('btn-sign').click()
+            driver.find_element_by_class_name('el-button--primary').click()
+            time.sleep(3)
         except NoSuchElementException:
             driver.find_element_by_link_text('退出').click()
         a = 0
-        count = 20000
+        count = 100
         time.sleep(1)
         driver.find_element_by_link_text('标注任务').click()
         # while (a < count):
@@ -54,12 +56,12 @@ def click_to_thousand(user_list):
                 for i, e in enumerate(commit_list):
                     e.click()
                     time.sleep(random.random() / 10)
-                    if (i == 2):
-                        break
+                    # if (i == 2):
+                    #     break
                 drop_list = driver.find_elements_by_class_name('btn-error')
-                for i, e in enumerate(drop_list):
-                    e.click()
-                    time.sleep(random.random() / 10)
+                # for i, e in enumerate(drop_list):
+                #     e.click()
+                #     time.sleep(random.random() / 10)
                 # driver.find_element_by_class_name('btn-common-large').click()
                 time.sleep(0.5)
                 driver.find_element_by_class_name('btn-common-large').click()
@@ -84,7 +86,7 @@ def click_to_thousand(user_list):
 
 def main():
     user_list = [
-        'sijiachang'
+        'lining'
     ]
     threads = []
     workQueue = queue.Queue(20)
