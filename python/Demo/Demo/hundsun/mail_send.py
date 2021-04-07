@@ -26,8 +26,9 @@ mail_user = 'sunwh33441'  # 用户名
 mail_pass = 'qwer123!@#'  # 口令
 sender = 'sunwh33441@hundsun.com'
 # mail_recipient = 'sunwh33441@hundsun.com,lujie32015@hundsun.com,'
-mail_recipient = 'sunwh33441@hundsun.com,lujie32015@hundsun.com'
-file_path = "E:\\seeauto"  # 代理服务器文件存储路径
+mail_recipient = 'sunwh33441@hundsun.com,lujie32015@hundsun.com,wujl27952@hundsun.com'
+# file_path = "E:\\seeauto"  # 代理服务器文件存储路径
+file_path = u"E:\\天鉴邮件暂存路径"  # 代理服务器文件存储路径
 file_prefix = u"网下申购通知"  # 文件前缀
 
 
@@ -37,7 +38,7 @@ file_prefix = u"网下申购通知"  # 文件前缀
 # mail_pass = '#mail_pass#'  # 口令
 # mail_recipient = '#mail_recipient#'  # 收件人
 # sender = '#sender#'  # 发件人
-# file_path = "#file_path#"
+# file_path = u"#file_path#"
 # file_prefix = u"#file_prefix#"
 
 
